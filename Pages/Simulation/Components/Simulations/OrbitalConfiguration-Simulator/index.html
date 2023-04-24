@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbital Configuration Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="simulation">
+        <h1 class="heading">Orbital Configuration Simulator</h1>
+        <img src="img/1.png" id="img">
+        <div class="slidercontainer">
+            <button onclick="ImgUpdateBtnPrev()" class="button-10">Previous</button>
+            <input type="range" min="1" max="108" value="1" id="slider"  onchange="ImgUpdate()" >
+            <button onclick="ImgUpdateBtnNext()" class="button-10">Next</button>
+        </div>
+        <div class="text">Change Atomic Number using the slider to get the orbital Configuration of the respective element.</div>
+    
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

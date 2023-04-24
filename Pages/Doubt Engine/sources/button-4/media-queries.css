@@ -1,0 +1,98 @@
+@media screen and (max-width: 1030px) {
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .main-nav {
+        overflow: initial;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+         opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+   }
+   .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: -100%;
+        left: 0;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1;
+        /* background-color: aqua; */
+        /* max-height: 10vh; */
+        margin: 0;
+        padding: 0;
+
+        background: rgba(236, 235, 255, 0.2);
+        /* border-radius: 16px; */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.3px);
+        -webkit-backdrop-filter: blur(3.3px);
+        border: 1px solid rgba(236, 235, 255, 0.3);
+
+    }
+    .hover-link{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        top: 13%;
+    }
+
+    .course {
+        flex-direction: column;
+        height: 60vh;
+    }
+    .course-preview {
+        width: 70vw;
+    }
+    .course-info {
+        width: 100%;
+        height: 200%;
+    }
+    .card-btn {
+        bottom: 5vh;
+        right: 5vw;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    :root {
+        --padding-inline-section: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .center{
+        position: relative;
+        left: 0vw;
+    }
+    
+}
