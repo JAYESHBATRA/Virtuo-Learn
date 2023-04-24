@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuo Learn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="icon" type="image/x-icon" href="../HomePage/assets/logo.png">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+      <div class="container main-nav flex">
+          <a href="../../../../index.html" class="company-logo">
+              <img src="./assets/asset 41.png" alt="company logo">
+          </a>
+          <div class="nav-links" id="nav-links">
+              <ul class="nav-menu">
+                  <li><a href="../../../About-Us/index.html" class="hover-link">About Us</a></li>
+                  <li><a href="../../../Simulation/index.html" class="hover-link">Simulations</a></li>
+                  <li><a href="../../../3D-Visualizations/index.html" class="hover-link">3D Visualisations</a></li>
+                  <li><a href="../../../Quizes/index.html" class="hover-link">Quizes</a></li>
+                  <li><a href="../../../Videos/index.html" class="hover-link">Videos</a></li>
+                  <li><a href="../../../Doubt Engine/index.html" class="hover-link">Doubt Engine</a></li>
+              </ul>
+          </div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+      </div>
+  </nav>
+
+    <!-- header section -->
+    <header>
+      <div class="header">
+        <h1>2D Motion</h1>
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+          <source src="../../assets/Video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </header>
+
+    <!-- footer -->
+    <!-- <a href="#" class="company-logo">
+        <img src="./assets/asset 41.png" alt="company logo">
+    </a> -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="company-logo footer-logo">
+                <img src="./assets/asset 41.png" alt="company logo">
+            </a>
+            <p>Developed By Jayesh Batra</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      })
+    </script>
+
+</body>
+</html>
