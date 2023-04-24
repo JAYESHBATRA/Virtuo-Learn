@@ -1,0 +1,11 @@
+Model Information:
+* title:	Human Brain
+* source:	https://sketchfab.com/3d-models/human-brain-7a27c17fd6c0488bb31ab093236a47fb
+* author:	3DRT STUDIOS (https://sketchfab.com/Hanako.com)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Human Brain" (https://sketchfab.com/3d-models/human-brain-7a27c17fd6c0488bb31ab093236a47fb) by 3DRT STUDIOS (https://sketchfab.com/Hanako.com) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
