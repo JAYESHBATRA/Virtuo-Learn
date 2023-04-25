@@ -17,9 +17,6 @@ Virtuo Learn is a platform that provides immersive learning experiences like nev
 
 
 ## Demo
-
-Link :
-
 Netlify: https://virtuo-learn.netlify.app/
 
 ## Features
