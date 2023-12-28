@@ -22,6 +22,9 @@ body:
     attributes:
       label: "Checklist"
       options:
+        - label: "I have starred the repository"
+          required: true
+          
         - label: "I have checked the existing issues"
           required: true
           
