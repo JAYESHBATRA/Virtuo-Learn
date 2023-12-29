@@ -56,3 +56,32 @@ window.addEventListener("resize", function () {
 });
 
 animate();
+
+ 
+
+// Add a reference to the loading overlay
+const loadingOverlay = document.getElementById('loading-overlay');
+
+// Show the loading overlay initially
+loadingOverlay.style.display = 'flex';
+
+loader.load(
+  `models/model/scene.gltf`,
+  function (gltf) {
+    object = gltf.scene;
+    scene.add(object);
+
+    // Hide the loading overlay when the model is loaded
+    loadingOverlay.style.display = 'none';
+  },
+  function (xhr) {
+    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+  },
+  function (error) {
+    console.error(error);
+
+    // Hide the loading overlay in case of an error
+    loadingOverlay.style.display = 'none';
+  }
+);
+ 
