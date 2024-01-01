@@ -598,3 +598,23 @@ footer{
   font-size: 14px;
   color: #cacdd2;
 }
+.popup{
+  
+  transition: all 300ms ease-out;
+}
+.popup-basic:hover{
+  
+  box-shadow: 8px 18px 25px  #dc5555;
+  
+  }
+ 
+.popup-premium:hover{
+  
+  box-shadow:  8px 18px 25px #5F4B8BFF;
+  
+  }
+.popup-ultimate:hover{
+  
+  box-shadow:  8px 18px 25px #f5b55a;
+  
+  }
