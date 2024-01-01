@@ -1,0 +1,11 @@
+Model Information:
+* title:	DNA
+* source:	https://sketchfab.com/3d-models/dna-60e95170b37549e3b45ee490b74bb112
+* author:	Holoxica (https://sketchfab.com/holoxica)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DNA" (https://sketchfab.com/3d-models/dna-60e95170b37549e3b45ee490b74bb112) by Holoxica (https://sketchfab.com/holoxica) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
