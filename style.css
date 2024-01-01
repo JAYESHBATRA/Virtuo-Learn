@@ -420,6 +420,10 @@ header {
   .features li .icon.cross{
     color: #cd3241;
   }
+
+.green-check{
+    color: #2db94d;
+}
   
   .table .btn{
     width: 100%;
