@@ -598,11 +598,3 @@ footer{
   font-size: 14px;
   color: #cacdd2;
 }
-.basic:hover{
-
-  animation: mymove 0.5s ;
-  
-  }
-  @keyframes mymove {
-    50% {box-shadow: 10px 20px 30px rgb(73, 73, 79);}
-  }
