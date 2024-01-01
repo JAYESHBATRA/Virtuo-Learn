@@ -230,6 +230,8 @@ ul {
 	bottom: 5vh;
 	right: 2vw;
 	letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .card-btn:hover {
