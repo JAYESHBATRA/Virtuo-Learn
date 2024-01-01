@@ -124,7 +124,7 @@ ul {
 }
 
 .nav-links {
-    flex-basis: 730px;
+    flex-basis: 790px;
 }
 
 .nav-menu{
@@ -134,7 +134,7 @@ ul {
 
 .nav-links ul {
     justify-content: end;
-    gap: 40px;
+    gap: 35px;
 }
 
 .nav-toggle {
