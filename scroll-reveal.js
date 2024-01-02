@@ -1,7 +1,6 @@
 //Insitialised the Scroll-Reveal component
 
 ScrollReveal({
-	reset: true,
 	distance: "40px",
 	duration: 2000,
 });
