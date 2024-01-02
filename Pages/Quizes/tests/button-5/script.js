@@ -76,7 +76,7 @@ const quizData = [
         c: "The total energy of an isolated system is constant.",
         d: "As the temperature of a system approaches absolute zero, the entropy approaches a minimum value.",
         correct: "a",
-        topic: "Zeroth Law of Motion",
+        topic: "Zeroth Law of Thermodynamics",
         difficulty: "Medium",
       },
       {
