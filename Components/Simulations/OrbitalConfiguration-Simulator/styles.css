@@ -1,3 +1,21 @@
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: linear-gradient(to top, #2294ed , #1d69a3);
+}
+
 body {
   overflow-x: hidden;
 }
