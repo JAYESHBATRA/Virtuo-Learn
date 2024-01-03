@@ -43,11 +43,15 @@ body {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 3rem !important;
+	position: relative;
+	z-index: -10;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2rem !important;
+	z-index: -10;
+	position: relative;
 }
 
 h3 {
@@ -56,9 +60,11 @@ h3 {
 
 p {
 	font-family: "Roboto", sans-serif;
-	font-size: 1.25rem;
+	font-size: 1.25rem !important;
 	color: var(--secondary-text-color);
 	line-height: 1.8rem;
+	z-index: -10;
+	position: relative;
 }
 
 a {
@@ -130,45 +136,45 @@ ul {
 /* nav bar */
 
 .main-nav {
-	margin-top: 20px;
-	justify-content: space-between;
+    margin-top: 20px;
+    justify-content: space-between;
 }
 
 .company-logo img {
-	width: 200px;
+    width: 200px;
 }
 
 .nav-links {
-	flex-basis: 790px;
+    flex-basis: 730px;
 }
 
-.nav-menu {
-	display: flex;
-	align-items: center;
+.nav-menu{
+  display: flex;
+  align-items: center;
 }
 
 .nav-links ul {
-	justify-content: end;
-	gap: 35px;
+    justify-content: end;
+    gap: 40px;
 }
 
 .nav-toggle {
-	display: none;
+    display: none;
 }
 
-.hamburger {
-	display: none;
-	cursor: pointer;
+.hamburger{
+  display: none;
+  cursor: pointer;
 }
 
-.bar {
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background-color: black;
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
 /* social media section */
 
@@ -255,9 +261,16 @@ header {
 	margin-top: 20px;
 }
 
+.header-right{
+	z-index: -10;
+	position: relative;
+}
+
 .header-right img {
 	width: 200%;
-	transform: translateX(-13vw);
+	/* transform: translateX(-13vw); */
+	z-index: -10;
+	position: relative;
 }
 
 /* features section */
