@@ -36,6 +36,12 @@ html.sr .load-hidden {
   background: linear-gradient(to top, #2294ed , #1d69a3);
 }
 
+
+::selection {
+    background: var(--accent-color);
+    color: #fff;
+}
+
 body {
 	font-family: "Poppins", sans-serif;
 	color: var(--primary-text-color);
