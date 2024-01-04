@@ -1,9 +1,8 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1030px) {
     
     h3 {
         font-size: 1.2rem;
     }
-    
 
     .main-nav {
         overflow: initial;
@@ -22,9 +21,10 @@
    .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
     }
+
     .nav-menu{
         position: absolute;
-        top: -100%;
+        top: -1000px;
         left: 0;
         gap: 0;
         flex-direction: column;
@@ -34,7 +34,7 @@
         z-index: 1;
         /* background-color: aqua; */
         /* max-height: 10vh; */
-        margin: 0;
+        margin-top: 50px;
         padding: 0;
 
         background: rgba(236, 235, 255, 0.2);
@@ -50,6 +50,10 @@
     }
     .nav-menu.active{
         top: 13%;
+    }
+
+    .company-logo{
+        min-width: 200px;
     }
 }
 
@@ -134,5 +138,4 @@
         position: relative;
         left: -13vw;
     }
-
 }

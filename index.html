@@ -1,343 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtuo Learn</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media-queries.css">
-    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtuo Learn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-queries.css">
+  <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-80WSMNJP27"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-80WSMNJP27');
 </script>
+
 <body>
 
 
 
-    <!-- social media section -->
+  <!-- social media section -->
 
-    <div class="mf-social-side-list">
-      <ul>
-        <li>
+  <div class="mf-social-side-list">
+    <ul>
+      <li>
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li>
+      </li>
+      <li>
         <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
+      </li>
+      <li>
         <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-        </li>
-        <li>
+      </li>
+      <li>
         <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        </li>
-      </ul>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- nav bar -->
+  <nav>
+    <div class="container main-nav flex">
+      <a href="./index.html" class="company-logo">
+        <img src="./assets/asset 41.png" alt="company logo">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="hover-link">Home</a></li>
+          <li><a href="./Pages/About-Us/index.html" class="hover-link">About Us</a></li>
+          <li><a href="./Pages/Simulation/index.html" class="hover-link">Simulations</a></li>
+          <li><a href="./Pages/3D-Visualizations/index.html" class="hover-link">3D Visualisations</a></li>
+          <li><a href="./Pages/Quizes/index.html" class="hover-link">Quizzes</a></li>
+          <li><a href="./Pages/Videos/index.html" class="hover-link">Videos</a></li>
+          <li><a href="./Pages/Doubt Engine/index.html" class="hover-link">Doubt Engine</a></li>
+        </ul>
       </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-    <!-- nav bar -->
-    <nav>
-        <div class="container main-nav flex">
-            <a href="./index.html" class="company-logo">
-                <img src="./assets/asset 41.png" alt="company logo">
-            </a>
-            <div class="nav-links" id="nav-links">
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="hover-link">Home</a></li>
-                    <li><a href="./Pages/About-Us/index.html" class="hover-link">About Us</a></li>
-                    <li><a href="./Pages/Simulation/index.html" class="hover-link">Simulations</a></li>
-                    <li><a href="./Pages/3D-Visualizations/index.html" class="hover-link">3D Visualisations</a></li>
-                    <li><a href="./Pages/Quizes/index.html" class="hover-link">Quizes</a></li>
-                    <li><a href="./Pages/Videos/index.html" class="hover-link">Videos</a></li>
-                    <li><a href="./Pages/Doubt Engine/index.html" class="hover-link">Doubt Engine</a></li>
-                </ul>
-            </div>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <!-- header section -->
+  <header>
+    <div class="container header-section flex">
+      <div class="header-left">
+        <h1 id="automatic-change">Learn Interactively</h1>
+        <p id="sub-para">Experience immersive learning like never before with simulations, 3D visualizations, customized
+          quizzes, and
+          videos all in one place!</p>
+        <a href="#features" class="primary-button get-started-btn">Get Started</a>
+      </div>
+      <div class=" header-right">
+          <img src="./assets/asset 2.svg" alt="hero image" class="hero-image">
+      </div>
+    </div>
+  </header>
 
-    <!-- header section -->
-    <header>
-        <div class="container header-section flex">
-            <div class="header-left">
-                <h1 id="automatic-change">Learn Interactively</h1>
-                <p>Experience immersive learning like never before with simulations, 3D visualizations, customized quizzes, and videos all in one place!</p>
-                <a href="#features" class="primary-button get-started-btn"">Get Started</a>
-            </div>
-            <div class="header-right">
-                <img src="./assets/asset 2.svg" alt="hero image">
-            </div>
-        </div>
-    </header>
-
-    <script type="text/javascript">
-      (function () {
-        var words = ["Learn Interactively","Learn Engagingly" ],
+  <script type="text/javascript">
+    (function () {
+      var words = ["Learn Interactively", "Learn Engagingly"],
         i = 0;
-        setInterval(function(){ $('#automatic-change').fadeOut(function(){
-            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
-          }); }, 2000)
-      })();
-    </script>
+      setInterval(function () {
+        $('#automatic-change').fadeOut(function () {
+          $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        });
+      }, 2000)
+    })();
+  </script>
 
-    
-    <!-- features section -->
 
-    <section class="features-section" id="features">
-        <div class="container">
-            <div class="features-header">
-                <h2 class="features-heading-text">Our Products</h2>
-            </div>
-            <div class="features-area flex">
-                <div class="features-card flex">
-                    <img src="./assets/asset 11.svg" alt="">
-                    <h3>Simulations</h3>
-                    <p>Explore real-world scenarios and experiment with different outcomes in a safe, virtual environment.</p>
-                    <a href="./Pages/Simulation/index.html" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./assets/asset 13.svg" alt="">
-                    <h3>3D Visualisations</h3>
-                    <p>Experience & learn concepts in a whole new dimension with 3D visualizations.</p>
-                    <a href="./Pages/3D-Visualizations/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./assets/asset 14.svg" alt="">
-                    <h3>Quizes</h3>
-                    <p>Pinpoint knowledge gaps and improve understanding with personalized quiz feedback.</p>
-                    <a href="./Pages/Quizes/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./assets/asset 15.svg" alt="">
-                    <h3>Videos</h3>
-                    <p>Explore key concepts through engaging, informative videos with expert instruction.</p>
-                    <a href="./Pages/Videos/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex center">
-                    <img src="./assets/asset 16.svg" alt="">
-                    <h3>Doubt Engine</h3>
-                    <p>Complex doubts made simple with our powerful doubt engine.</p>
-                    <a href="./Pages/Doubt Engine/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-            </div>
+  <!-- features section -->
+
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="features-header">
+        <h2 class="features-heading-text">Our Products</h2>
+      </div>
+      <div class="features-area flex">
+        <div class="features-card flex">
+          <img src="./assets/asset 11.svg" alt="">
+          <h3>Simulations</h3>
+          <p>Explore real-world scenarios and experiment with different outcomes in a safe, virtual environment.</p>
+          <a href="./Pages/Simulation/index.html" class="secondary-button">Learn More <i
+              class="fa-solid fa-right-long"></i></a>
         </div>
-    </section>
-
-    <!-- big features section -->
-    <section class="big-feature-section">
-        <div class="container flex big-feature-container">
-            <div class="feature-img">
-                <img src="./assets/asset 18.svg" alt="">
-            </div>
-            <div class="feature-desc flex">
-                <h4>Step 1</h4>
-                <h3>Watch Videos</h3>
-                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
-            </div>
+        <div class="features-card flex">
+          <img src="./assets/asset 13.svg" alt="">
+          <h3>3D Visualisations</h3>
+          <p>Experience & learn concepts in a whole new dimension with 3D visualizations.</p>
+          <a href="./Pages/3D-Visualizations/index.html" class="secondary-button">Learn more <i
+              class="fa-solid fa-right-long"></i></a>
         </div>
-    </section>
-    
-    <section class="big-feature-section">
-        <div class="container flex big-feature-container" id="second-big-feature">
-            <div class="feature-img">
-                <img src="./assets/asset 21.svg" alt="">
-            </div>
-            <div class="feature-desc flex">
-                <h4>Step 2</h4>
-                <h3>Refer Simulations & 3D visualizations</h3>
-                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
-            </div>
+        <div class="features-card flex">
+          <img src="./assets/asset 14.svg" alt="">
+          <h3>Quizzes</h3>
+          <p>Pinpoint knowledge gaps and improve understanding with personalized quiz feedback.</p>
+          <a href="./Pages/Quizes/index.html" class="secondary-button">Learn more <i
+              class="fa-solid fa-right-long"></i></a>
         </div>
-    </section>
-
-    <section class="big-feature-section">
-        <div class="container flex big-feature-container">
-            <div class="doubt-img">
-                <img src="./assets/asset 40.svg" alt="" class="doubt-img">
-            </div>
-            <div class="feature-desc flex">
-                <h4>Step 3</h4>
-                <h3>Resolve Doubts from Doubt Engine</h3>
-                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
-            </div>
+        <div class="features-card flex">
+          <img src="./assets/asset 15.svg" alt="">
+          <h3>Videos</h3>
+          <p>Explore key concepts through engaging, informative videos with expert instruction.</p>
+          <a href="./Pages/Videos/index.html" class="secondary-button">Learn more <i
+              class="fa-solid fa-right-long"></i></a>
         </div>
-    </section>
-    
-    <section class="big-feature-section">
-        <div class="container flex big-feature-container" id="second-big-feature">
-            <div class="feature-img">
-                <img src="./assets/asset 24.svg" alt="" class="doubt-img">
-            </div>
-            <div class="feature-desc flex">
-                <h4>Step 4</h4>
-                <h3>Give Quizes</h3>
-                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
-            </div>
+        <div class="features-card flex center">
+          <img src="./assets/asset 16.svg" alt="">
+          <h3>Doubt Engine</h3>
+          <p>Complex doubts made simple with our powerful doubt engine.</p>
+          <a href="./Pages/Doubt Engine/index.html" class="secondary-button">Learn more <i
+              class="fa-solid fa-right-long"></i></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- pricing section -->
+  <!-- big features section -->
+  <section class="big-feature-section">
+    <div class="container flex big-feature-container">
+      <div class="feature-img">
+        <img src="./assets/asset 18.svg" alt="" class="feature-image-left">
+      </div>
+      <div class="feature-desc flex right">
+        <h4>Step 1</h4>
+        <h3>Watch Videos</h3>
+        <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful
+          experiences for your users.</p>
+      </div>
+    </div>
+  </section>
 
-    <div class="pricing">
-        <div class="wrapper">
-            <div class="table basic popup popup-basic">
-              <div class="head_tab"><h2>Skill Builder<br> Elite </h2></div>
-              <div class="aj_p"><p>A combination of video tutorials, interactive exercises, and personalized feedback</p></div>
-              <div class="price-section">
-                <div class="price-area">
-                  <div class="inner-area">
-                    <span class="text">₹</span>
-                    <span class="price">499<span style="font-size:12px">/mo</span></span>
-        
-                  </div>
-                </div>
-              </div>
-              <div class="package-name"></div>
-              <ul class="features">
-                <div class="btn"><button>Buy Now</button></div>
-                <p class="aj_des">₹399/mo when you renew</p>
-                <li>
-                  <span class="list-name">Video Lectures</span>
-                  <span class="icon check"><i class="fas fa-check"></i></span>
-                </li>
-                <li>
-                  <span class="list-name">Quizes</span>
-                  <span class="icon check"><i class="fas fa-check"></i></span>
-                </li>
-                <li>
-                  <span class="list-name">Simulations</span>
-                  <span class="icon cross"><i class="fas fa-times"></i></span>
-                </li>
-                <li>
-                    <span class="list-name">3D Visualizations</span>
-                    <span class="icon cross"><i class="fas fa-times"></i></span>
-                  </li>
-                <li>
-                  <span class="list-name">Doubt Engine</span>
-                  <span class="icon cross"><i class="fas fa-times"></i></span>
-                </li>
-              </ul>
-              
-            </div>
-            <div class="table premium popup popup-premium">
-              <div class="head_tab"><h2>Academic<br>Edge Pro</h2></div>
-              <div class="aj_p"><p>Wide range of academic resources, including video lectures, Interactive simulations and 3D Visualisations</p></div>
-              <div class="ribbon"><span>BEST VALUE</span></div>
-              <div class="price-section">
-                <div class="price-area">
-                  <div class="inner-area">
-                    <span class="text">₹</span>
-                    <span class="price">699<span style="font-size:12px">/mo</span></span>
-                  </div>
-                </div>
-              </div>
-              <div class="package-name"></div>
-              <ul class="features">
-                <div class="btn"><button>Buy Now</button></div>
-                <p class="aj_des">₹599/mo when you renew</p>
-                <li>
-                  <span class="list-name">Video Lectures</span>
-                  <span class="icon check"><i class="fas fa-check"></i></span>
-                </li>
-                <li>
-                  <span class="list-name">Quizes</span>
-                  <span class="icon check"><i class="fas fa-check"></i></span>
-                </li>
-                <li>
-                  <span class="list-name">Simulations</span>
-                  <span class="icon check"><i class="fas fa-check"></i></span>
-                </li>
-                <li>
-                    <span class="list-name">3D Visualisations</span>
-                    <span class="icon check"><i class="fas fa-check"></i></span>
-                  </li>
-                <li>
-                  <span class="list-name">Doubt Engine</span>
-                  <span class="icon cross"><i class="fas fa-times"></i></span>
-                </li>
-              </ul>
-              
-            </div>
-            <div class="table ultimate popup popup-ultimate">
-              <div class="head_tab"><h2>CareerLaunch <br>Accelerator</h2></div>
-              <div class="aj_p"><p>Prepare for your dream career, which includes video lectures, simulations, 3D Visualisations, Quizes, and a Doubt Engine to resolve doubts.</p></div>
-              <div class="price-section">
-                <div class="price-area">
-                  <div class="inner-area">
-                    <span class="text">₹</span>
-                    <span class="price">899<span style="font-size:12px">/mo</span></span>
-                  </div>
-                </div>
-              </div>
-              <div class="package-name"></div>
-              <ul class="features">
-                <div class="btn"><button>Buy Now</button></div>
-                <p class="aj_des">₹799/mo when you renew</p>
-                <li>
-                    <span class="list-name">Video Lectures</span>
-                    <span class="icon check"><i class="fas fa-check"></i></span>
-                  </li>
-                  <li>
-                    <span class="list-name">Quizes</span>
-                    <span class="icon check"><i class="fas fa-check"></i></span>
-                  </li>
-                  <li>
-                    <span class="list-name">Simulations</span>
-                    <span class="icon check"><i class="fas fa-check"></i></span>
-                  </li>
-                  <li>
-                      <span class="list-name">3D Visualisations</span>
-                      <span class="icon check"><i class="fas fa-check"></i></span>
-                    </li>
-                  <li>
-                    <span class="list-name ">Doubt Engine</span>
-                    <span class="icon cross"><i class="fas fa-check check-green"></i></span>
-                  </li>
-              </ul>
-              
+  <section class="big-feature-section">
+    <div class="container flex big-feature-container" id="second-big-feature">
+      <div class="feature-img">
+        <img src="./assets/asset 21.svg" alt="" class="feature-image-right">
+      </div>
+      <div class="feature-desc flex left">
+        <h4>Step 2</h4>
+        <h3>Refer Simulations & 3D visualizations</h3>
+        <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful
+          experiences for your users.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="big-feature-section">
+    <div class="container flex big-feature-container">
+      <div class="doubt-img">
+        <img src="./assets/asset 40.svg" alt="" class="doubt-img feature-image-left">
+      </div>
+      <div class="feature-desc flex right">
+        <h4>Step 3</h4>
+        <h3>Resolve Doubts from Doubt Engine</h3>
+        <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful
+          experiences for your users.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="big-feature-section">
+    <div class="container flex big-feature-container" id="second-big-feature">
+      <div class="feature-img">
+        <img src="./assets/asset 24.svg" alt="" class="doubt-img feature-image-right">
+      </div>
+      <div class=" feature-desc flex left">
+        <h4>Step 4</h4>
+        <h3>Give Quizzes</h3>
+        <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful
+          experiences for your users.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- pricing section -->
+
+  <div class="pricing">
+    <div class="wrapper">
+      <div class="table basic popup popup-basic">
+        <div class="head_tab">
+          <h2>Skill Builder<br> Elite </h2>
+        </div>
+        <div class="aj_p">
+          <p>A combination of video tutorials, interactive exercises, and personalized feedback</p>
+        </div>
+        <div class="price-section">
+          <div class="price-area">
+            <div class="inner-area">
+              <span class="text">₹</span>
+              <span class="price">499<span style="font-size:12px">/mo</span></span>
+
             </div>
           </div>
+        </div>
+        <div class="package-name"></div>
+        <ul class="features">
+          <div class="btn"><button>Buy Now</button></div>
+          <p class="aj_des">₹399/mo when you renew</p>
+          <li>
+            <span class="list-name">Video Lectures</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Quizzes</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Simulations</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+          <li>
+            <span class="list-name">3D Visualizations</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Doubt Engine</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="table premium popup popup-premium">
+        <div class="head_tab">
+          <h2>Academic<br>Edge Pro</h2>
+        </div>
+        <div class="aj_p">
+          <p>Wide range of academic resources, including video lectures, Interactive simulations and 3D Visualisations
+          </p>
+        </div>
+        <div class="ribbon"><span>BEST VALUE</span></div>
+        <div class="price-section">
+          <div class="price-area">
+            <div class="inner-area">
+              <span class="text">₹</span>
+              <span class="price">699<span style="font-size:12px">/mo</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="package-name"></div>
+        <ul class="features">
+          <div class="btn"><button>Buy Now</button></div>
+          <p class="aj_des">₹599/mo when you renew</p>
+          <li>
+            <span class="list-name">Video Lectures</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Quizzes</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Simulations</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">3D Visualisations</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Doubt Engine</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="table ultimate popup popup-ultimate">
+        <div class="head_tab">
+          <h2>CareerLaunch <br>Accelerator</h2>
+        </div>
+        <div class="aj_p">
+          <p>Prepare for your dream career, which includes video lectures, simulations, 3D Visualisations, Quizzes, and
+            a
+            Doubt Engine to resolve doubts.</p>
+        </div>
+        <div class="price-section">
+          <div class="price-area">
+            <div class="inner-area">
+              <span class="text">₹</span>
+              <span class="price">899<span style="font-size:12px">/mo</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="package-name"></div>
+        <ul class="features">
+          <div class="btn"><button>Buy Now</button></div>
+          <p class="aj_des">₹799/mo when you renew</p>
+          <li>
+            <span class="list-name">Video Lectures</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Quizzes</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Simulations</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">3D Visualisations</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name ">Doubt Engine</span>
+            <span class="icon cross"><i class="fas fa-check check-green"></i></span>
+          </li>
+        </ul>
+
+      </div>
     </div>
-    
-    <!-- footer -->
-    <!-- <a href="#" class="company-logo">
+  </div>
+
+  <!-- footer -->
+  <!-- <a href="#" class="company-logo">
         <img src="./assets/asset 41.png" alt="company logo">
     </a> -->
-    <footer>
-        <div class="footer-content">
-            <a href="#" class="company-logo footer-logo">
-                <img src="./assets/asset 41.png" alt="company logo">
-            </a>
-            <p>Developed By Jayesh Batra</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <a href="#" class="company-logo footer-logo">
+        <img src="./assets/asset 41.png" alt="company logo">
+      </a>
+      <p>Developed By Jayesh Batra</p>
+    </div>
+  </footer>
 
-    <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      })
- 
-    </script>
-
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    })
+  </script>
+  <script src="scroll-reveal.js"></script>
 </body>
+
 </html>

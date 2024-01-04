@@ -13,13 +13,13 @@
     }
 
     .hamburger.active .bar:nth-child(2){
-         opacity: 0;
+        opacity: 0;
     }
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
    }
    .hamburger.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .nav-menu{
@@ -57,28 +57,4 @@
     :root {
         --padding-inline-section: 10px;
     }
-
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .center{
-        position: relative;
-        left: 0vw;
-    }
-    .header img{
-        width: 80vw;
-      }
 }
