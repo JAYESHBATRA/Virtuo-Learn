@@ -1,11 +1,76 @@
 body{
-    background-color:antiquewhite;
+    background-color:rgb(0, 0, 0);
+}
+.Main-Form{
+    background-color: white;
+    margin:0px 5px 5px 5px;
+    padding:10px 10px;
+}
+.legend-area{
+    color:blue;
+}
+.Field-area{
+    display:flex;
+    border-style:solid;
+    border-color:rgb(100, 99, 99);
+}
+.Field-area:hover{
+    cursor:text;
+    border-color:red;
+}
+.Field-area-1{
+    display:flex;
+    border-style:solid;
+    border-color:rgb(100, 99, 99);
 }
 .container .nav-bar{
     display:flex;
+    padding:5px 5px;
     border-style:solid;
     border-color:black;
     border-width:2px;
     background-color: rgb(113, 157, 252);
     border-radius:25px;
+}
+
+.text{
+    width:100%;
+    border:none;
+    background:transparent;
+    outline:none;
+    height:25px;
+    color:#000000;
+    font-size: 16px;
+}
+.text:hover{
+    cursor:pointer;
+    border-bottom:1px solid blue;
+}
+.text1{
+    width:100%;
+    height:100%;
+    border:none;
+    background: transparent;
+    outline:none;
+    color:#020202;
+    font-size: 16px;
+}
+.radio{
+    width:15px;
+    height:15px;
+    accent-color:rgb(0, 60, 190);
+}
+.button{
+    display:flex;
+    border-style:solid;
+    justify-content: space-around;
+    border-color:black;
+    width:10em;
+    height:3em;
+    border-width:2px;
+    background-color: rgb(73, 243, 138);
+    border-radius:15px;
+}
+.button:hover{
+    background-color: rgb(17, 155, 47);
 }
