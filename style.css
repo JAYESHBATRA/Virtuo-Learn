@@ -309,6 +309,19 @@ header {
     width: 100%;
 }
 
+
+
+.bfs-1 {
+  padding: 108px 0;
+}
+
+.bfs-2 {
+  padding: 44px 0;
+}
+.bfs-4 {
+  margin-bottom: 64px;
+}
+
 /* pricing section */
 
 .pricing{
