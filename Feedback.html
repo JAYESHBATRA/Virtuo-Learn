@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="Feedback.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav class="nav-bar">
+                <h1> Send us your Feedback! </h1>
+            </nav>
+        </div>
+        <br>
+        <div class="Main-form">
+            <form action="Form">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <table>
+                        <tr>
+                            <td> <label for="user-name">Enter Your Full Name:&nbsp;</label></td>
+                            <td> <input type="text" placeholder="Your Name..."> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="mobile-number">Your Mobile Number:&nbsp;</label></td>
+                            <td> <input type="tel" placeholder="123..."> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="user-email">Your Email Address:&nbsp;</label></td>
+                            <td> <input type="email" placeholder="kanwal@gmail.com"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="Question-1">Is this the first time you have visited the webiste?&nbsp;</label></td>
+                            <table>
+                                <tr>
+                                    <td>Yes:<input type="radio" name="Question-1"> </td>
+                                    <td>No:<input type="radio" name="Question-1"> </td>
+                                </tr>
+                            </table>
+                        </tr>
+                        <tr>
+                            <td> <label for="Question-2"> Did you find what you needed?&nbsp;</label></td>
+                            <table>
+                                <tr>
+                                    <td><input type="checkbox" name="Question-2">Yes, all of it </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="Question-2">Yes, some of it </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="Question-2">No, none of it </td>
+                                </tr>
+                            </table>
+                        </tr>
+                    </table>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Your Feedback</legend>
+                    <div>
+                        <textarea autofocus maxlength="1000" name="user_msg" cols="75" rows="10" placeholder="Type your feedback..."></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

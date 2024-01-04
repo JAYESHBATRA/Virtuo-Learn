@@ -1,0 +1,11 @@
+body{
+    background-color:antiquewhite;
+}
+.container .nav-bar{
+    display:flex;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    background-color: rgb(113, 157, 252);
+    border-radius:25px;
+}
