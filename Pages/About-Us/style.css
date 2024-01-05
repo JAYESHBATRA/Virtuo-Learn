@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
 
-
 /* resets */
 
 * {
@@ -25,8 +24,7 @@ html {
 
 ::-webkit-scrollbar {
   width: 12px;
-
-
+}
 
 ::-webkit-scrollbar-track {
   border-radius: 5px;
@@ -37,7 +35,6 @@ html {
   border-radius: 5px;
   background: linear-gradient(to top, #2294ed, #1d69a3);
 }
-
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -159,14 +156,12 @@ ul {
   display: none;
 }
 
-
-.hamburger{ /* In Use */
+.hamburger {
   display: none;
   cursor: pointer;
 }
 
-
-.bar{ /* In Use */
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -234,5 +229,3 @@ footer {
   font-size: 14px;
   color: #cacdd2;
 }
-
-
