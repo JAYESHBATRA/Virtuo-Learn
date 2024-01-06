@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="m-0 p-0 box-border font-poppins scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,45 +8,75 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" type="image/x-icon" href="../HomePage/assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_text_color: '#183b56',
+              secondary_text_color: '#577592',
+              accent_color: '#2294ed',
+              accent_color_dark: '#1d69a3',
+              padding_inline_section: '20px',
+              author_color: '#cacdd2',
+            }
+          },
+          fontFamily: {
+            'roboto': ['Roboto', 'sans-serif'],
+            'poppins': ['Poppins', 'sans-serif']
+          },
+          screens: {
+            'lg': '1030px',
+            // => @media (min-width: 1535px) { ... }
+
+            'md': '479px',
+            // => @media (min-width: 767px) { ... }
+
+            'sm': '100px'
+          }
+        }
+      }
+    </script>
 </head>
-<body>
+<body class="text-primary_text_color overflow-x-hidden font-poppins">
     <!-- nav bar -->
     <nav>
-      <div class="container main-nav flex">
-          <a href="../../index.html" class="company-logo">
-              <img src="./assets/asset 41.png" alt="company logo">
+      <div class="container main-nav max-w-[1180px] overflow-hidden m-auto px-[20px] lg:px-[10px] justify-between mt-5 flex items-center">
+          <a href="../../index.html" class="no-underline inline-block company-logo">
+              <img src="./assets/asset 41.png" alt="company logo" class="md:w-[200px] sm:min-w-[200px]">
           </a>
-          <div class="nav-links" id="nav-links">
-              <ul class="nav-menu">
-                  <li><a href="../../index.html" class="hover-link">Home</a></li>
-                  <li><a href="../About-Us/index.html" class="hover-link">About Us</a></li>
-                  <li><a href="../Simulation/index.html" class="hover-link">Simulations</a></li>
-                  <li><a href="../3D-Visualizations/index.html" class="hover-link">3D Visualisations</a></li>
-                  <li><a href="../Quizes/index.html" class="hover-link">Quizzes</a></li>
-                  <li><a href="../Videos/index.html" class="hover-link">Videos</a></li>
-                  <li><a href="../Doubt Engine/index.html" class="hover-link">Doubt Engine</a></li>
-              </ul>
-          </div>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+          <div class="basis-[730px] nav-links" id="nav-links">
+            <ul class="nav-menu flex items-center list-none gap-10 justify-end">
+                <li><a href="../../index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">Home</a></li>
+                <li><a href="../About-Us/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">About Us</a></li>
+                <li><a href="../Simulation/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">Simulations</a></li>
+                <li><a href="../3D-Visualizations/index.html" class="text-primary_text_color transition duration-200 ease-out hover:text-accent_color">3D Visualisations</a></li>
+                <li><a href="../Quizes/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">Quizzes</a></li>
+                <li><a href="../Videos/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">Videos</a></li>
+                <li><a href="../Doubt Engine/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">Doubt Engine</a></li>
+            </ul>
+        </div>
+        <div class="hamburger cursor-pointer">
+          <span class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
+          <span class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
+          <span class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
+        </div>
       </div>
   </nav>
 
     <!-- header section -->
     <header>
       <div class="header">
-        <h1>Doubt Engine</h1>
-        <img src="assets/asset 42.svg" alt="Doubt Engine">
+        <h1 class="text-[2rem] font-bold text-center mt-[4vh] md:text-[2rem] lg:text-5xl ">Doubt Engine</h1>
+        <img src="assets/asset 42.svg" alt="Simulation" class="block md:w-[40vw] mx-auto my-0 w-[80vw]">
       </div>
     </header>
 
     <!-- button section -->
     <button class="button-10" role="button">Get Answers</button>
 
-    <div class="under-development-text">
+    <div class="text-center max-w-[80vw] mt-[15px] mx-auto my-0">
       <p>We are currently developing this page to provide you with the best experience possible. We apologize for any inconvenience this may cause, but rest assured that our team is working diligently to bring you the most up-to-date and informative content.</p>
       
       <p>While we work on completing this page, please feel free to explore the rest of our website. We offer a wide range of products and services that we believe will be of interest to you. From our user-friendly interface to our top-of-the-line customer service, we strive to provide you with the best possible experience.</p>
@@ -54,14 +84,14 @@
 
 
     <!-- footer -->
-    <footer>
-        <div class="footer-content">
-            <a href="#" class="company-logo footer-logo">
-                <img src="./assets/asset 41.png" alt="company logo">
-            </a>
-            <p>Developed By Jayesh Batra</p>
-        </div>
-    </footer>
+    <footer class="h-auto w-screen bg-[#ebf2fa] mt-[5vh] pt-10 bottom-0 inset-x-0">
+      <div class="flex items-center justify-center flex-col text-center footer-content">
+          <a class="no-underline inline-block w-[200px] text-[2.1rem] font-medium capitalize leading-[3rem] company-logo footer-logo" href="#">
+              <img src="./assets/asset 41.png" alt="company logo">
+          </a>
+          <p class="max-w-[500px] leading-7 text-[14px] text-author_color mx-auto my-2.5">Developed By Jayesh Batra</p>
+      </div>
+  </footer>
 
     <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
 
