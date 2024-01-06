@@ -273,7 +273,7 @@ header {
 }
 
 .header-right img {
-	width: 200%;
+	/* width: 200%; */
 	/* transform: translateX(-13vw); */
 	z-index: -10;
 	position: relative;

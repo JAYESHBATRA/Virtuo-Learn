@@ -74,7 +74,7 @@
 
     .header-right{
         position: relative;
-        left: -3vw;
+        /* left: -3vw; */
     }
 
 
@@ -136,6 +136,6 @@
 
     .header-right{
         position: relative;
-        left: -13vw;
+        /* left: -13vw; */
     }
 }
