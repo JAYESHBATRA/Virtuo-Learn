@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <!-- nav bar -->
@@ -38,8 +39,8 @@
     <!-- header section -->
     <header>
       <div class="header">
-        <h1>Videos</h1>
-        <img src="assets/asset 42.svg" alt="Simulation">
+        <h1 class="head-txt">Videos</h1>
+        <img src="assets/asset 42.svg" alt="Simulation" class="head-img">
       </div>
     </header>
 
@@ -47,7 +48,7 @@
 
     <div class="cards">
       <div class="courses-container">
-      <div class="course">
+      <div class="course card-1">
         <div class="course-preview">
           <h6>Course</h6>
           <h2>Physics</h2>
@@ -58,7 +59,7 @@
           <button class="card-btn" onclick="window.location.href = './sources/button-1/index.html' ">Watch</button>
         </div>
       </div>
-      <div class="course">
+      <div class="course card-2">
         <div class="course-preview">
           <h6>Course</h6>
           <h2>Chemistry</h2>
@@ -69,7 +70,7 @@
           <button class="card-btn" onclick="window.location.href = './sources/button-2/index.html' ">Watch</button>
         </div>
       </div>
-      <div class="course">
+      <div class="course card-3">
         <div class="course-preview">
           <h6>Course</h6>
           <h2>Biology</h2>
@@ -108,6 +109,7 @@
         navMenu.classList.toggle("active");
       })
     </script>
+    <script src="../../scroll-reveal.js"></script>
 
 </body>
 </html>
