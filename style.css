@@ -160,8 +160,7 @@ ul {
 }
 
 .nav-links ul {
-    justify-content: end;
-    gap: 40px;
+	justify-content: space-between;
 }
 
 .nav-toggle {
