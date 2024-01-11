@@ -36,3 +36,6 @@ body:
 
         - label: "I am a SWOC'24 contributor"
           required: false
+           
+        - label: "I am an IWOC 2.0 contributor"
+          required: false
