@@ -8,6 +8,7 @@
   <title>Virtuo Learn</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media-queries.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./assets/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -55,7 +56,12 @@
         <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       </li>
       <li>
-        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="assets/twitterLogo.jpg" alt="Twitter Logo" id="tw-logo" style="
+    border-radius: 50%;
+    width: full;
+">
+        </a>
       </li>
     </ul>
   </div>
@@ -96,7 +102,7 @@
         <a href="#features" class="primary-button get-started-btn">Get Started</a>
       </div>
       <div class=" header-right">
-          <img src="./assets/asset 2.svg" alt="hero image" class="hero-image">
+        <img src="./assets/asset 2.svg" alt="Virtuo-Learn" class="hero-image block md:w-[40vw] mx-auto my-0 w-[80vw]">
       </div>
     </div>
   </header>
@@ -356,6 +362,8 @@
     </div>
   </div>
 
+  <button onclick="topFunction()" class="icon-arrow-up" id="myBtn" title="Scroll to Top"></button>
+
   <!-- footer -->
   <!-- <a href="#" class="company-logo">
         <img src="./assets/asset 41.png" alt="company logo">
@@ -403,6 +411,21 @@
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
     })
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
   <script src="scroll-reveal.js"></script>
 </body>
