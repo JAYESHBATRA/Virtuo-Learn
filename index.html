@@ -8,13 +8,17 @@
   <title>Virtuo Learn</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media-queries.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
+ <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
   <link rel="icon" type="image/x-icon" href="./assets/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <script>
+  document.addEventListener("DOMContentLoaded", function () {
     tailwind.config = {
       theme: {
         extend: {
@@ -23,8 +27,10 @@
           }
         }
       }
-    }
-  </script>
+    };
+  });
+</script>
+
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-80WSMNJP27"></script>
 <script>
