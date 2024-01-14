@@ -19,16 +19,21 @@ function setup() {
 		slider.position(width*(0.02), height*(0.42));
 	}
 	slider_m1 = createSlider(50, 200, ball_m1, 10);
-	slider_m1.position(width - posx, height*(0.29));
+	slider_m1.position(width - posx, height * 0.23);
+	text_m1 = createP(); // Initialize text_m1
+	text_m2 = createP(); // Initialize text_m
+	text_u1 = createP(); // Initialize text_m
+	text_u2 = createP(); // Initialize text_m
 
 	slider_m2 = createSlider(50, 200, ball_m2, 10);
-	slider_m2.position(width - posx, height*(0.325));
+	slider_m2.position(width - posx, height * 0.26);
+
 
 	slider_u1 = createSlider(0, 10, ball_u1, 1);
-	slider_u1.position(width - posx, height*(0.360));
+	slider_u1.position(width - posx, height * 0.29);
 
 	slider_u2 = createSlider(0, 5, ball_u2, 1);
-	slider_u2.position(width - posx, height*(0.395));
+	slider_u2.position(width - posx, height * 0.32);
 
 	x = 100;
 	y = height / 2;
@@ -56,15 +61,28 @@ function draw() {
 
 	textSize(15);
 	let p = 140;
-	text("m1", width - posx + p, 20);
-	text("m2", width - posx + p, 40);
-	text("u1", width - posx + p, 60);
-	text("u2", width - posx + p, 80);
+	// text("m1", width - posx + p, 20);
+	// createP("m1").position(width - posx + p, height*0.26);
 
-	text(slider_m1.value() + " kg", width - posx - 60, 20);
-	text(slider_m2.value() + " kg", width - posx - 60, 40);
-	text(slider_u1.value() + " m/s", width - posx - 60, 60);
-	text(slider_u2.value() + " m/s", width - posx - 60, 80);
+	
+   text_m1.position(width - posx - 70, height * 0.22);
+   text_m2.position(width - posx - 70, height * 0.25);
+   text_u1.position(width - posx - 70, height * 0.28);
+   text_u2.position(width - posx - 70, height * 0.31);
+
+  
+  // Use the text element to display the slider value
+  text_m1.html(slider_m1.value() + " kg");
+  text_m2.html(slider_m2.value() + " kg");
+  text_u1.html(slider_u1.value() + " m/s");
+  text_u2.html(slider_u2.value() + " m/s");
+
+
+  createP("m1").position(width - posx + p, height*0.22);
+  createP("m2").position(width - posx + p, height*0.25);
+  createP("u1").position(width - posx + p, height*0.28);
+  createP("u2").position(width - posx + p, height*0.31);
+
 
 	b1.createParticle();
 	b2.createParticle();
