@@ -605,23 +605,91 @@ table .ribbon::after {
 
 /* footer */
 
-footer {
-	bottom: 0;
+.footer {
+/*	bottom: 0;
 	left: 0;
 	right: 0;
 	background: #111;
+	*/
+	
 	height: auto;
-	width: 100vw;
-	padding-top: 40px;
-	background-color: #ebf2fa;
+	
+	padding-top: 20px;
+	background-color: #ebf2fa; 
 }
 
 .footer-content {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
+    justify-content:space-around;
+    align-items:center ;
+    flex-direction: row;
+	
+}
+
+.app-logo{
+	margin-left: 50px;
+	padding-left: 50px;
+	width: 300px;
+}
+
+.app-info{
+	margin-right: 10px;
+	padding-left: 100px;
+	width: 1000px;
+	
+}
+.footer-logo img{
+	height: 61px;
+	width: 270px;
+	border-left: 6px solid #2d4bf0;
+	padding-left: 10px;
+	padding-right: 15px;
+	border-right: 6px solid #2d4bf0;
+}
+.app-info p{
+	padding-bottom: 30px;
+	color: ffffff;
+	padding-left: 20px;
+	
+}
+
+.useful-links{
+	margin: 60px;
+	width: 500px;
+	text-decoration:underline;
+	padding-right: 30px;
+}
+
+.useful-links ul{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	padding-left: 10px;
+}
+.links-title{
+	font-size: 1.40rem;
+	
+    line-height: 1.30rem;
+    color: rgb(33, 28, 28);
+    height: fit-content;
+	padding-bottom: 20px;
+}
+.links-title-span{
+	padding-left: 10px;
+	border-left: 6px solid #2d4bf0;
+	padding-right: 10px;
+	border-right: 6px solid #2d4bf0;
+	
+}
+.useful-links ul li {
+	font-size: 18px;
+	padding: 3px;
+	color: ffffff;
+}
+
+.useful-links ul li a:hover{
+	color: #111;
+	transition: 0.5s;
+	transform: scale(1.1);
 }
 
 .footer-logo {
@@ -630,13 +698,23 @@ footer {
 	text-transform: capitalize;
 	line-height: 3rem;
 }
-
-.footer-content p {
-	max-width: 500px;
-	margin: 10px auto;
-	line-height: 28px;
-	font-size: 14px;
-	color: #cacdd2;
+.copyright{
+	background-color:  #d6d9fd;
+	padding: 18px;
+	text-align: center;
+}
+.copyright h3{
+	font-size: 20px;
+	color: rgb(33, 28, 28);
+}
+.copyright h3 a{
+	
+	color: rgb(34, 91, 184);
+}
+.copyright h3 a:hover{
+	
+	transition: 0.5s;
+	transform: scale(1.1);
 }
 .popup {
 	transition: all 300ms ease-out;
