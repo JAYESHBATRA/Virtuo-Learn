@@ -169,10 +169,14 @@ const quizData = [
             document.getElementsByClassName('recommendations')[0].appendChild(temp);
           }
             // this is for recommended videos
+            var linkArray=['https://youtu.be/22mc0XGLlJg','https://www.youtube.com/live/1DWZFkipYtE?si=BVOGWeUHCj1tnd8L','https://youtu.be/Qn4xTMvMpvk?si=6-4FRjdo8b_oEDes','https://youtu.be/CyY_97Z9P54?si=VyZhmZPsgSH0WTe_','https://youtu.be/d7lVcc5M5Tg?si=MDC3NLt1z-QabYb6','https://youtu.be/dZGDUKQa_6g?si=i4tTFSIxvn4YF8Tk','https://youtu.be/V7BL9HKZYMY?si=J3z7GHvpkFhxKmLr','https://youtu.be/pdJeQUd2g_4?si=0nEre6pGbX-pIVbB','https://youtu.be/Q9-JjyAEqnU?si=S9blYvkBdfxK5O_K','https://youtu.be/-YG11QCiDvM?si=QCCRIF9ufm6fZwZm'];
+            var link = document.createElement("a");
             var image = document.createElement("img");
             image.setAttribute("src", "img/" + weak_topics[i] + ".png");
             temp.className = 'thumbnail';
-            document.querySelector(".recommendation-thumbnails").appendChild(image);
+              link.setAttribute("href", linkArray[i]);
+            link.appendChild(image);
+            document.querySelector(".recommendation-thumbnails").appendChild(link);
           }
 
         for (i = 0; i < weak_topics.length; i++) {
