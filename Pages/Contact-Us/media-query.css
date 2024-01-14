@@ -1,0 +1,35 @@
+@media only screen and (max-width: 767px) {
+    .box-wrapper {
+        width: 100%;
+    }
+  
+    .info-wrap,
+    .form-wrap {
+        width: 100%;
+        height: inherit;
+        float: none;
+    }
+  
+    .info-wrap {
+        border-radius: 30px 30px 0px 0px;
+    }
+  
+    .form-wrap {
+        border-radius: 0px 0px 30px 30px;
+    }
+  
+    .form-group {
+        width: 100%;
+        float: none;
+        margin: 25px 0px;
+    }
+  
+    .form-fields .form-group:last-child,
+    .submit-button {
+        width: 100%;
+    }
+  
+    .submit-button {
+        margin: 10px 0px;
+    }
+  }
