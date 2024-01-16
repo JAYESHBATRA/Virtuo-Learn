@@ -92,7 +92,11 @@
     <nav>
       <div class="container main-nav flex">
         <a href="./index.html" class="company-logo">
-          <img src="./assets/asset 41.png" alt="company logo" />
+          <img
+            src="./assets/asset 41.png"
+            id="headerlogoimage"
+            alt="company logo"
+          />
         </a>
         <div class="nav-links" id="nav-links">
           <ul class="nav-menu">
@@ -122,6 +126,9 @@
               <a href="./Pages/Doubt Engine/index.html" class="hover-link"
                 >Doubt Engine</a
               >
+            </li>
+            <li>
+              <img src="./assets/asset 43.png" id="icon" />
             </li>
           </ul>
         </div>
@@ -485,7 +492,11 @@
         <div class="app-info">
           <div class="company-logo footer-logo">
             <a href="index.html">
-              <img src="./assets/asset 41.png" alt="company logo" />
+              <img
+                src="./assets/asset 41.png"
+                id="logofooter"
+                alt="company logo"
+              />
             </a>
           </div>
           <p>
@@ -559,5 +570,29 @@
       }
     </script>
     <script src="scroll-reveal.js"></script>
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+          headerlogoimage.src = "./assets/asset 45.png";
+        } else {
+          headerlogoimage.src = "./assets/asset 41.png";
+        }
+
+        if (document.body.classList.contains("dark-theme")) {
+          logofooter.src = "./assets/asset 45.png";
+        } else {
+          logofooter.src = "./assets/asset 41.png";
+        }
+
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "./assets/asset 44.png";
+        } else {
+          icon.src = "./assets/asset 43.png";
+        }
+      };
+    </script>
   </body>
 </html>
