@@ -25,6 +25,17 @@
 .nav-toggle {
     display: none;
 }
+.current-page {
+	color:#4d006b;
+	background-origin: border-box; 
+	padding: 8px 12px;
+    border-radius: 8px; 
+    border: 2px solid rgb(0, 30, 94);
+    text-decoration: none; 
+	font-weight: lighter;
+}
+
+
 
 .hamburger{ /* In Use */
   display: none;
