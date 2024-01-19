@@ -768,3 +768,8 @@ table .ribbon::after {
         transform: translateY(3px);
     }
 }
+
+#mode-switch-icon{
+	width: 22px;
+	cursor: pointer;
+}
