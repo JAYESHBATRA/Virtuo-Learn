@@ -296,6 +296,7 @@ header {
 	background-image: url(./assets/asset\ 32.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-bottom: 96px;
 }
 
 .features-header {
@@ -357,6 +358,9 @@ header {
 
 .doubt-img {
 	width: 100%;
+}
+.step-1{
+	margin-bottom: 108px;
 }
 
 /* pricing section */
