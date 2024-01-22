@@ -140,62 +140,19 @@ const quizData = [
   
   loadQuiz();
   
-  submitButton.addEventListener("click", () => {
-    const answer = getSelected();
-    if (answer) {
-      if (answer === quizData[currentQuiz].correct) {
-        score++;
-        currentQuiz++;
-      }
-      else{
-        weak_topics.push(quizData[currentQuiz].topic);
-        currentQuiz++;
-      }
-      if (currentQuiz < quizData.length) loadQuiz();
-      else {
-        quiz.innerHTML = `
-            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-            <button onclick="history.go(0)">Play Again</button>
-        `
-        var temp;
-        for (i = 0; i < weak_topics.length; i++) {
-          if(i===0){
-            // this is for recommended videos heading
-            temp = document.createElement('h3');
-            temp.className = 'Recommended-Videos-Title';
-            temp.innerHTML = "Recommended Videos ";
-            document.getElementsByClassName('recommendations')[0].appendChild(temp);
-          }
-            // this is for recommended videos
-            var image = document.createElement("img");
-            image.setAttribute("src", "img/" + weak_topics[i] + ".png");
-            temp.className = 'thumbnail';
-            document.querySelector(".recommendation-thumbnails").appendChild(image);
-          }
-          
-        for (i = 0; i < weak_topics.length; i++) {
-            if(i===0){
-                temp = document.createElement('div');
-                temp.className = 'heading';
-                temp.innerHTML = "Weak Topics:" ;
-                document.getElementsByClassName('weak')[0].appendChild(temp);
-            }
-            temp = document.createElement('div');
-            temp.className = 'topic';
-            temp.innerHTML = weak_topics[i];
-            document.getElementsByClassName('weak')[0].appendChild(temp);
-            }
-      }
-    }
-    if(currentQuiz>=quizData.length){    let link = document.createElement("a");
-    link.href="/Pages/Quizes/tests/button-5/solution.html";
+   
+  document.getElementById("answer").innerHTML = quizData[0].correct;
 
-      temp = document.createElement('button');
-      
-      
-      temp.className = 'solution-button';
-      temp.innerHTML = "Solutions" ;
-      link.appendChild(temp);
-      document.getElementsByClassName('solution-div')[0].appendChild(link);
+  let next_Button = document.getElementById("next");
+  next_Button.addEventListener("click", () => {
+    if (currentQuiz == 9) {
+      next_Button.disabled = true;
+    } else {
+      currentQuiz++;
+      console.log(currentQuiz);
+  
+      next_Button.disabled = false;
+      document.getElementById("answer").innerHTML = quizData[currentQuiz].correct;
+      loadQuiz();
     }
   });
