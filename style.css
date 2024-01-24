@@ -55,6 +55,10 @@ h1 {
 }
 
 h2 {
+	font-weight: bolder;
+	text-decoration: underline;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Climate Crisis', sans-serif;
 	font-size: 2rem !important;
 	z-index: -10;
 	position: relative;
@@ -62,6 +66,15 @@ h2 {
 
 h3 {
 	font-size: 1.5rem;
+	color:rgb(15, 15, 182);
+	font-weight: 500;
+}
+h4{
+	color: #ce0a0a;
+	font-size: large;
+	text-decoration: underline;
+	font-weight: 600;
+	/* border: 2px black solid ; */
 }
 
 p {
@@ -71,16 +84,25 @@ p {
 	line-height: 1.8rem;
 	z-index: -10;
 	position: relative;
+	text-indent: 0vw;
 }
 
-a {
+.hover-link{
 	text-decoration: none;
 	display: inline-block;
 }
 
+a:link{
+	color: blue;
+
+	
+}
+a:hover{
+	background-color:yellow;
+}
 ul {
 	list-style: none;
-}
+} 
 
 /* utility classes */
 
@@ -121,16 +143,18 @@ ul {
 }
 
 
-.primary-button {
-	background-color: var(--accent-color);
-	border-radius: 6px;
-	font-weight: 700;
+ .primary-button { 
+	 background-color: var(--accent-color);
+	  /* border-radius: 6px; */
+	 font-weight: 500;
 	color: white !important;
-	padding: 12px 24px;
+	padding: 3px 10px; 
 	box-shadow: 0 0 2px var(--secondary-text-color);
 	transition: 0.2s ease-out;
-	text-align: center;
-}
+	text-align: left; 
+
+
+ } 
 
 .primary-button:hover {
 	background-color: var(--accent-color-dark);
