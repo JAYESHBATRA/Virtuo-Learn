@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Botpress chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: white;
+        background-color: #000000;
+        font-family: Arial, sans-serif;
+      }
+ 
+      .center-div {
+        width: 50vw;
+        height: 80vh;
+        background-color: rgb(102, 71, 255);
+        border-radius: 15px;
+        padding: 5px;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+ 
+      @media only screen and (max-width: 600px) {
+        .center-div {
+          height: 40vh;
+          width: 80vw;
+          background-color: rgb(102, 71, 255);
+          border-radius: 15px;
+          padding: 5px;
+          box-sizing: border-box;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div>
+      <p style="text-align: center;"> Virtuo Learn Chatbot </p>
+      <div class="absolute inset-4 ">
+        <div
+          class="center-div relative h-full w-full overflow-clip rounded-md border border-zinc-200 bg-white p-2 px-0 py-0"
+        >
+          <iframe
+            style="border: none;"
+            srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+            <script>
+              window.botpressWebChat.init({
+                  'composerPlaceholder': 'Chat with bot',
+                  'botConversationDescription': '',
+                  'botName': 'Virtuo Learn Bot',
+                  'botId': 'aa0010db-8f06-41ca-98ef-27970fb908b6',
+                  'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                  'messagingUrl': 'https://messaging.botpress.cloud',
+                  'clientId': 'aa0010db-8f06-41ca-98ef-27970fb908b6',
+                  'enableConversationDeletion': true,
+                  'showPoweredBy': true,
+                  'className': 'webchatIframe',
+                  'containerWidth': '100%25',
+                  'layoutWidth': '100%25',
+                  'hideWidget': true,
+                  'showCloseButton': false,
+                  'disableAnimations': true,
+                  'closeOnEscape': false,
+                  'showConversationsButton': false,
+                  'enableTranscriptDownload': false,
+                  'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'
+                  
+              });
+            window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+            </script></body>"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
