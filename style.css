@@ -1,6 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
-
 /* resets */
+
+
+.visualizer-container {
+            perspective: 1000px;
+            margin-top: 50px;
+        }
+
+        .visualizer {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            transform-style: preserve-3d;
+            transform: rotateX(45deg) rotateY(45deg);
+            transition: transform 0.5s ease;
+        }
+
+        .visualizer .cube-face {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, 0.7);
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            text-align: center;
+            line-height: 300px;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .toggle-3d-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+
 
 html.sr .load-hidden {
 	visibility: hidden;
