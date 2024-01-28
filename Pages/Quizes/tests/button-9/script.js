@@ -1,104 +1,104 @@
 const quizData = [
     {
-      question: "What is the formula for the volume of a rectangular prism?",
-      a: "V = lwh",
-      b: "V = lw",
-      c: " V = 2(l + w + h)",
-      d: "V = l^2 + w^2 + h^2",
-      correct: "a",
-      topic: "Volume of 3D Shapes",
+      question: "What is the common ratio of the geometric sequence 3, 6, 12, 24, ...?",
+      a: "3",
+      b: "2",
+      c: "4",
+      d: "6",
+      correct: "b",
+      topic: "Geometric Progression",
       difficulty: "Easy",
     },
     {
-      question: "Which of the following is the equation of a plane in 3D space?",
-      a: "ax + by + cz = d",
-      b: "y = mx + b",
-      c: "x^2 + y^2 = r^2",
-      d: "z = mx + ny + p",
-      correct: "a",
-      topic: "Equations of Planes in 3D Space",
-      difficulty: "Moderate",
+      question: "The product of three consecutive terms in an arithmetic series is 2310. If the common difference is 5, find the terms.",
+      a: "10, 15, 20",
+      b: "7, 12, 17",
+      c: "5, 10, 15",
+      d: "8, 13, 18",
+      correct: "b",
+      topic: "Arithmetic Series",
+      difficulty: "Medium",
     },
 
     {
-      question: "What is the name of a three-sided polygon that lies in a plane in 3D space?",
-      a: "Triangle",
-      b: "Quadrilateral",
-      c: "Pentagon",
-      d: "Hexagon",
+      question: "If the sum of an infinite geometric series is 12 and the common ratio is 1/3 31, find the first term. ",
+      a: "9",
+      b: "6",
+      c: "12",
+      d: "3",
       correct: "a",
-      topic: "Basic 3D Geometry",
-      difficulty: "Moderate",
+      topic: "Geometric Series",
+      difficulty: "Hard",
     },
     {
-      question: "If two vectors are parallel, what can be said about their cross product?",
-      a: "It is zero",
-      b: "It is undedefined",
-      c: "It is always negative",
-      d: "It is always positive",
+      question: "If a + b + c = 15 and ab + bc + ca = 50, find the value of abc in the arithmetic progression.",
+      a: "40",
+      b: "45",
+      c: "50",
+      d: "55",
       correct: "a",
-      topic: "Vector Operations",
-      difficulty: "Moderate",
+      topic: "Arithmatic Progression",
+      difficulty: "Hard",
     },
     {
-        question: "Which of the following is the correct formula for the surface area of a sphere?",
-        a: " A = 4πr^2",
-        b: "A = πr^2",
-        c: "A = 2πrh",
-        d: "A = 2πr",
-        correct: "a",
-        topic: "Surface Area of 3D Shapes",
+        question: "Determine the sum of the first 20 terms of the series: 4 + 8 + 12 + … + 80.",
+        a: "820",
+        b: "800",
+        c: "810",
+        d: "830",
+        correct: "c",
+        topic: "Sequence",
         difficulty: "Easy",
       },
       {
-        question: "What is the relationship between the angle θ and the direction cosines l, m, and n in a direction cosines form of a line equation in 3D space?",
-        a: "l^2 + m^2 + n^2 = 1",
-        b: " l + m + n = 1",
-        c: " l = m = n",
-        d: "θ = l + m + n",
+        question: "If the sum of an arithmetic series is 75, the first term is 3, and the common difference is 5, how many terms are there?",
+        a: "12",
+        b: " 15",
+        c: " 10",
+        d: "18",
         correct: "a",
-        topic: "Lines in 3D Space",
-        difficulty: "Moderate",
+        topic: "Arithmetic series",
+        difficulty: "Medium",
       },
       {
-        question: "If a pyramid has a triangular base, how many vertices does it have?",
+        question: "If the sum of the first n terms of an arithmetic series is given by 𝑆𝑛 = 2𝑛^2 + 5𝑛 , find the first term.",
+        a: "2",
+        b: "5",
+        c: "3",
+        d: "4",
+        correct: "c",
+        topic: "Arithmatic series",
+        difficulty: "Medium",
+      },
+      {
+        question: "Find the sum of the series 1 + 2/3 + 3/9 + 4/27+ … up to infinity.",
         a: "3",
         b: "4",
         c: "5",
         d: "6",
-        correct: "c",
-        topic: "3D Shapes",
-        difficulty: "Easy",
-      },
-      {
-        question: "What is the term for the point inside a right-angled triangle where the altitude meets the hypotenuse?",
-        a: "Orthocenter",
-        b: "Centroid",
-        c: "Incenter",
-        d: "Circumcenter",
-        correct: "a",
-        topic: "Right-Angled Triangles in 3D",
+        correct: "b",
+        topic: "Series",
         difficulty: "Hard",
       },
       {
-        question: "Which of the following is the equation of a cylinder in 3D space?",
-        a: " x^2 + y^2 = r^2",
-        b: "z = mx + ny",
-        c: "V = lwh",
-        d: " (x - h)^2 + (y - k)^2 = r^2",
-        correct: "a",
-        topic: "Equations of Surfaces in 3D",
-        difficulty: "Easy",
+        question: "The sum of the first n terms of an arithmetic series is given by 𝑆𝑛 = 2𝑛^2 + 3𝑛 . Find the common difference.",
+        a: "2",
+        b: "3",
+        c: "5",
+        d: "4",
+        correct: "b",
+        topic: "Arithmatic series",
+        difficulty: "Medium",
       },
       {
-        question: "If a line and a plane are perpendicular, what can be said about the direction vector of the line and the normal vector of the plane?",
-        a: "They are parallel",
-        b: "They are anti parallel",
-        c: "They are orthogonal",
-        d: "They are collinear",
-        correct: "c",
-        topic: "Lines and Planes in 3D",
-        difficulty: "Hard",
+        question: "Evaluate the product of the first 8 terms in the geometric sequence: 2, 4, 8, 16, ...",
+        a: "16384",
+        b: "4096",
+        c: "8192",
+        d: "2048",
+        correct: "b",
+        topic: "Geometric sequence",
+        difficulty: "Easy",
       },
     ];
   
@@ -111,7 +111,6 @@ const quizData = [
     const d_text = document.getElementById("d_text");
     const submitButton = document.getElementById("submit");
     const difficulty = document.getElementById("difficulty");
-    const quizcount = document.getElementById("quizcount");
     
     let currentQuiz = 0;
     let score = 0;
@@ -138,7 +137,6 @@ const quizData = [
       c_text.innerText = currentQuizData.c;
       d_text.innerText = currentQuizData.d;
       difficulty.innerText = currentQuizData.difficulty;
-      quizcount.innerText = currentQuiz+1+"/"+quizData.length;
     };
     
     loadQuiz();
@@ -196,16 +194,10 @@ const quizData = [
         }
       }
       if(currentQuiz>=quizData.length){
-        let link = document.createElement("a");
-        link.href="/Pages/Quizes/tests/button-7/solution.html";
-  
           temp = document.createElement('button');
-          
-          
           temp.className = 'solution-button';
           temp.innerHTML = "Solutions" ;
-          link.appendChild(temp);
-          document.getElementsByClassName('solution-div')[0].appendChild(link);
+          document.getElementsByClassName('solution-div')[0].appendChild(temp);
       }
   
     });

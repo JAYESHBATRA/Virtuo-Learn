@@ -110,6 +110,17 @@ ul {
 	color: var(--accent-color);
 }
 
+.current-page {
+	color:#4d006b;
+	background-origin: border-box; 
+	padding: 8px 12px;
+    border-radius: 8px; 
+    border: 2px solid rgb(0, 30, 94);
+    text-decoration: none; 
+	font-weight: lighter;
+}
+
+
 .primary-button {
 	background-color: var(--accent-color);
 	border-radius: 6px;
@@ -285,6 +296,7 @@ header {
 	background-image: url(./assets/asset\ 32.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-bottom: 96px;
 }
 
 .features-header {
@@ -346,6 +358,9 @@ header {
 
 .doubt-img {
 	width: 100%;
+}
+.step-1{
+	margin-bottom: 108px;
 }
 
 /* pricing section */
@@ -756,4 +771,9 @@ table .ribbon::after {
     50%{
         transform: translateY(3px);
     }
+}
+
+#mode-switch-icon{
+	width: 22px;
+	cursor: pointer;
 }

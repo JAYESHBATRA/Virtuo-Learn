@@ -201,10 +201,16 @@ const quizData = [
       }
     }
     if(currentQuiz>=quizData.length){
+      let link = document.createElement("a");
+      link.href="/Pages/Quizes/tests/button-1/solutions.html";
+
         temp = document.createElement('button');
+        
+        
         temp.className = 'solution-button';
         temp.innerHTML = "Solutions" ;
-        document.getElementsByClassName('solution-div')[0].appendChild(temp);
+        link.appendChild(temp);
+        document.getElementsByClassName('solution-div')[0].appendChild(link);
     }
 
   });
