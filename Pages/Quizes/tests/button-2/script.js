@@ -110,6 +110,8 @@ const quizData = [
   const d_text = document.getElementById("d_text");
   const submitButton = document.getElementById("submit");
   const difficulty = document.getElementById("difficulty");
+  const quizcount = document.getElementById("quizcount");
+
   
   let currentQuiz = 0;
   let score = 0;
@@ -136,6 +138,7 @@ const quizData = [
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
     difficulty.innerText = currentQuizData.difficulty;
+    quizcount.innerText = currentQuiz+1+"/"+quizData.length;
   };
   
   loadQuiz();
