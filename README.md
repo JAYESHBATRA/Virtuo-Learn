@@ -32,6 +32,16 @@ Vercel: https://virtuo-learn.vercel.app
 
 **Client:** HTML, CSS, JavaScipt, THREE.JS, Matter.JS, P5.JS
 
+## Setup Guide
+
+- First fork the repository
+- Clone the project locally using git clone https://github.com/User-name/Virtuo-Learn.git
+- Open terminal and run command cd Virtuo-Learn
+- Add remote using command git remote add origin https://github.com/User-name/Virtuo-Learn.git
+- Then setup upstream using command git remote add upstream https://github.com/JAYESHBATRA/Virtuo-Learn.git
+- Make sure you have **Live Server** extension installed on your code editor if you're using vs-code
+- Finally run index.html using Go live
+
 ## Screen Shots
 
 <img width="944" alt="1" src="https://user-images.githubusercontent.com/112322302/234294808-0675c059-6f5d-4472-9ac8-ee94c6239f8d.png">
