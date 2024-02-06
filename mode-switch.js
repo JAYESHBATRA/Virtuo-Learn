@@ -1,6 +1,10 @@
 var icon = document.getElementById("mode-switch-icon");
 
-icon.onclick = function () {
+// Check if dark mode preference is stored in local storage
+var darkModeEnabled = localStorage.getItem("dark-mode") === "true";
+
+// Function to toggle dark mode
+function toggleDarkMode() {
   var footer = document.querySelector("footer");
   var tables = document.querySelectorAll(".wrapper .table");
   var linksTitle = document.querySelectorAll(".links-title");
@@ -15,23 +19,13 @@ icon.onclick = function () {
   var h4Elements = document.querySelectorAll("h4");
   var usefulLinks = document.querySelectorAll(".useful-links");
 
-  document.body.classList.toggle("dark-mode");
-  document.documentElement.style.setProperty("--primary-text-color", "#ffffff");
-  document.documentElement.style.setProperty(
-    "--secondary-text-color",
-    "#ffffff"
-  );
+  document.body.classList.toggle("dark-mode", darkModeEnabled);
+  document.documentElement.style.setProperty("--primary-text-color", darkModeEnabled ? "#ffffff" : "#183b56");
+  document.documentElement.style.setProperty("--secondary-text-color", darkModeEnabled ? "#ffffff" : "#577592");
 
-  if (document.body.classList.contains("dark-mode")) {
+  if (darkModeEnabled) {
     document.body.style.backgroundColor = "#111111";
-    document.documentElement.style.setProperty(
-      "--primary-text-color",
-      "#ffffff"
-    );
-    document.documentElement.style.setProperty(
-      "--secondary-text-color",
-      "#ffffff"
-    );
+    
     footer.style.backgroundColor = "#242525";
     tables.forEach(function (table) {
       table.style.backgroundColor = "#242426";
@@ -64,14 +58,7 @@ icon.onclick = function () {
     });
   } else {
     document.body.style.backgroundColor = "#ffffff";
-    document.documentElement.style.setProperty(
-      "--primary-text-color",
-      "#183b56"
-    );
-    document.documentElement.style.setProperty(
-      "--secondary-text-color",
-      "#577592"
-    );
+
     footer.style.backgroundColor = "#ebf2fa";
     tables.forEach(function (table) {
       table.style.backgroundColor = "#e9ebff";
@@ -103,4 +90,16 @@ icon.onclick = function () {
       link.style.textShadow = ""; // remove text shadow in light mode
     });
   }
+
+  // Update dark mode preference in local storage
+  localStorage.setItem("dark-mode", darkModeEnabled);
+}
+
+// Set initial dark mode state based on local storage preference
+toggleDarkMode();
+
+// Toggle dark mode when icon is clicked
+icon.onclick = function () {
+  darkModeEnabled = !darkModeEnabled;
+  toggleDarkMode();
 };
