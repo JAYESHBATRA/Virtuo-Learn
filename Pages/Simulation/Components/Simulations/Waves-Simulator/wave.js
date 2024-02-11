@@ -181,7 +181,7 @@ function reset() {
     document.getElementById('vel').value = 150;
     document.getElementById('fun').selectedIndex = 0;
     fun = sin;
-    drawWave(1, 150);
+    drawWave(1, 1000);
 }
 rst.onclick = reset;
 reset();
