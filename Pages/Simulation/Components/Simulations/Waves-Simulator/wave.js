@@ -122,7 +122,7 @@ function updateWave() {
     if (t) {
         drawWave(t, v*t);
     } else {
-        drawWave(t, 150);
+        drawWave(t, 1000);
     }
 }
 for(i=0; i<3; i++) {
