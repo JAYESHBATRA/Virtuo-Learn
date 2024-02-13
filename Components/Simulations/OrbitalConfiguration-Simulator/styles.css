@@ -89,3 +89,50 @@ body {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
+
+/* periodic table css*/
+
+.card{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.row :hover{
+  border: 2px solid rgb(199, 20, 20);
+  background-color: inherit;
+  
+  }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+
+}
+.inner {
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+
+.elt {
+  font-size: 10px;
+  text-align: center;
+}
+
+.elt-num{
+  font-size: 15px;
+  line-height: 12px;
+}
+
