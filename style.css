@@ -120,7 +120,10 @@ ul {
 	font-weight: lighter;
 }
 
-
+.current-page-dark-mode {
+	color: rgb(207, 226, 243);
+	border-color: rgb(111, 168, 220);
+  }
 .primary-button {
 	background-color: var(--accent-color);
 	border-radius: 6px;
