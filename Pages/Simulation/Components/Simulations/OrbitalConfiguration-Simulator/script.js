@@ -2,9 +2,14 @@ let slider = document.getElementById("slider");
 
 
 function ImgUpdate(a){
-    var currentVal = slider.value;
     var img = document.getElementById("img");
     img.setAttribute("src",`img/${a}.png`);
+    
+};
+
+function ImgUpdated(){
+    var currentVal = slider.value;
+    var img = document.getElementById("img");
     img.setAttribute("src",`img/${currentVal}.png`);
 
 };
