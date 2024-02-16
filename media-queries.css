@@ -48,6 +48,9 @@
     .hover-link{
         margin: 16px 0;
     }
+    #home-hover:hover{
+        color: #61b3f2;
+    }
     .nav-menu.active{
         top: 13%;
     }
