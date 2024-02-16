@@ -20,18 +20,12 @@ function toggleDarkMode() {
   var usefulLinks = document.querySelectorAll(".useful-links");
 
   document.body.classList.toggle("dark-mode", darkModeEnabled);
-  document.documentElement.style.setProperty(
-    "--primary-text-color",
-    darkModeEnabled ? "#ffffff" : "#183b56"
-  );
-  document.documentElement.style.setProperty(
-    "--secondary-text-color",
-    darkModeEnabled ? "#ffffff" : "#577592"
-  );
+  document.documentElement.style.setProperty("--primary-text-color", darkModeEnabled ? "#ffffff" : "#183b56");
+  document.documentElement.style.setProperty("--secondary-text-color", darkModeEnabled ? "#ffffff" : "#577592");
 
   if (darkModeEnabled) {
     document.body.style.backgroundColor = "#111111";
-
+    
     footer.style.backgroundColor = "#242525";
     tables.forEach(function (table) {
       table.style.backgroundColor = "#242426";
@@ -43,7 +37,8 @@ function toggleDarkMode() {
     copyrightH3.style.color = "#ffffff";
     companyLogo.src = "./assets/asset 45.png"; // change to asset 45 in dark mode
     footerLogo.src = "./assets/asset 45.png"; // change to asset 45 in dark mode
-    currentPage.classList.add("current-page-dark-mode"); // add dark mode class if active
+    currentPage.style.color = "#cfe2f3"; // change to #fffee0 in dark mode
+    currentPage.style.borderColor = "#6fa8dc"; // change to #9fc5e8 in dark mode
     icon.src = "./assets/asset 44.png"; // change to asset 44 in dark mode
     automaticChangeDiv.style.color = "#cfe2f3"; // change to #cfe2f3 in dark mode
     automaticChangeDiv.style.textShadow = "2px 2px 2px #000000"; // add text shadow in dark mode
@@ -75,7 +70,8 @@ function toggleDarkMode() {
     copyrightH3.style.color = "rgb(33, 28, 28)";
     companyLogo.src = "./assets/asset 41.png"; // change back to asset 41 in light mode
     footerLogo.src = "./assets/asset 41.png"; // change back to asset 41 in light mode
-    currentPage.classList.remove("current-page-dark-mode"); // removes dark mode class from current page
+    currentPage.style.color = "#4d006b"; // change back to #4d006b in light mode
+    currentPage.style.borderColor = "rgb(0, 30, 94)"; // change back to rgb(0, 30, 94) in light mode
     icon.src = "./assets/asset 43.png"; // change back to asset 43 in light mode
     automaticChangeDiv.style.color = ""; // change back to original color in light mode
     automaticChangeDiv.style.textShadow = ""; // remove text shadow in light mode
