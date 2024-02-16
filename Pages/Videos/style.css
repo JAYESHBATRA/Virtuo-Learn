@@ -260,6 +260,10 @@ ul {
 	letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.2s;
+    display: flex;
+    gap:7px;
+    justify-content: center;
+   align-items: center;
 }
 
 .card-btn:hover {
