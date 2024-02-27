@@ -122,7 +122,7 @@ function updateWave() {
     if (t) {
         drawWave(t, v*t);
     } else {
-        drawWave(t, 150);
+        drawWave(t, 1000);
     }
 }
 for(i=0; i<3; i++) {
@@ -181,7 +181,7 @@ function reset() {
     document.getElementById('vel').value = 150;
     document.getElementById('fun').selectedIndex = 0;
     fun = sin;
-    drawWave(1, 150);
+    drawWave(1, 1000);
 }
 rst.onclick = reset;
 reset();
