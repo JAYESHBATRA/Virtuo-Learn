@@ -47,7 +47,25 @@ body {
 	color: var(--primary-text-color);
 	overflow-x: hidden;
 }
-
+nav {
+    text-align: center;
+    }
+    
+    nav ul{
+      list-style: none;
+      margin: 0 2px;
+      padding: 0;
+    }
+    
+    nav li {
+       display: inline-block;
+       padding: 5px 5px;
+    }
+    
+    nav a {
+      font-weight: normal;
+      font-size: .80em;
+    }
 h1 {
 	font-size: 3rem !important;
 	position: relative;
@@ -99,6 +117,7 @@ ul {
 .flex {
 	display: flex;
 	align-items: center;
+	
 }
 
 .hover-link {
