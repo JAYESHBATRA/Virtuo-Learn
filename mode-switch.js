@@ -5,6 +5,7 @@ var darkModeEnabled = localStorage.getItem("dark-mode") === "true";
 
 // Function to toggle dark mode
 function toggleDarkMode() {
+  var nav = document.getElementById("main_navbar") 
   var footer = document.querySelector("footer");
   var tables = document.querySelectorAll(".wrapper .table");
   var linksTitle = document.querySelectorAll(".links-title");
@@ -25,7 +26,8 @@ function toggleDarkMode() {
 
   if (darkModeEnabled) {
     document.body.style.backgroundColor = "#111111";
-    
+    nav.style.backgroundColor = "#111111";
+    companyLogo.style = " -webkit-filter: invert(100%);";
     footer.style.backgroundColor = "#242525";
     tables.forEach(function (table) {
       table.style.backgroundColor = "#242426";
@@ -58,6 +60,8 @@ function toggleDarkMode() {
     });
   } else {
     document.body.style.backgroundColor = "#ffffff";
+    nav.style.backgroundColor = "#ffffff";
+    companyLogo.style = " fill : black;"
 
     footer.style.backgroundColor = "#ebf2fa";
     tables.forEach(function (table) {
