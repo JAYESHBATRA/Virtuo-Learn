@@ -49,6 +49,10 @@ body {
 }
 nav {
     text-align: center;
+	position: sticky;
+	top:2px;
+	background-color: #fefefe;
+    z-index: 1;
     }
     
     nav ul{
@@ -187,6 +191,8 @@ ul {
 .nav-menu{
   display: flex;
   align-items: center;
+  column-gap: 15px;
+  width: max-content;
 }
 
 .nav-links ul {
