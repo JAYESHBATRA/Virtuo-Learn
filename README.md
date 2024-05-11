@@ -23,7 +23,7 @@ Vercel: https://virtuo-learn.vercel.app
 
 - Simulations
 - 3D Visualizations
-- Quizes with personalized recommendations 
+- Quizzes with personalized recommendations 
 - Videos
 - Doubt Engine
 
@@ -36,10 +36,10 @@ Vercel: https://virtuo-learn.vercel.app
 
 - First fork the repository
 - Clone the project locally using git clone https://github.com/User-name/Virtuo-Learn.git
-- Open terminal and run command cd Virtuo-Learn
+- Open the terminal and run the command cd Virtuo-Learn
 - Add remote using command git remote add origin https://github.com/User-name/Virtuo-Learn.git
-- Then setup upstream using command git remote add upstream https://github.com/JAYESHBATRA/Virtuo-Learn.git
-- Make sure you have **Live Server** extension installed on your code editor if you're using vs-code
+- Then setup upstream using the command git remote add upstream https://github.com/JAYESHBATRA/Virtuo-Learn.git
+- Make sure you have the **Live Server** extension installed on your code editor if you're using vs-code
 - Finally run index.html using Go live
 
 ## Screen Shots
