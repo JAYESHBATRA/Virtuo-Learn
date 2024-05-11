@@ -47,11 +47,20 @@ body {
 	color: var(--primary-text-color);
 	overflow-x: hidden;
 }
+#main_navbar {
+	background-color: rgba(237, 225, 225, 0.144); /* Adjust the color and opacity as needed */
+	backdrop-filter: blur(70px);
+        -webkit-backdrop-filter: blur(50px);
+        border: 1px solid rgba(236, 235, 255, 0.3);
+  }
+  
+  
+
 nav {
     text-align: center;
 	position: sticky;
 	top:2px;
-	background-color: #fefefe;
+	background-color: #edc8c827;
     z-index: 1;
     }
     
@@ -801,4 +810,7 @@ table .ribbon::after {
 #mode-switch-icon{
 	width: 22px;
 	cursor: pointer;
+}
+/*body{
+color:#38373743
 }
