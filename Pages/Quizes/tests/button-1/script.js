@@ -112,11 +112,25 @@ const quizData = [
   const submitButton = document.getElementById("submit");
   const difficulty = document.getElementById("difficulty");
   const quizcount = document.getElementById("quizcount");
+  const prev_score= document.getElementById("max-score");
  
-  
+
   let currentQuiz = 0;
   let score = 0;
   const weak_topics=[];
+  const loadScore=()=>{
+    const score= localStorage.getItem('btn-1-max');
+   if(score){
+    prev_score.innerHTML=`Max score <br>${score}`;
+   }
+    
+  }
+  const storeMax=(score)=>{
+    const maxscore = localStorage.getItem('btn-1-max');
+    if (score>maxscore){
+      localStorage.setItem('btn-1-max',score)
+    }
+  }
   
   const deselectAnswers = () => {
     answerElements.forEach((answer) => (answer.checked = false));
@@ -132,6 +146,7 @@ const quizData = [
   
   const loadQuiz = () => {
     deselectAnswers();
+   
     const currentQuizData = quizData[currentQuiz];
     questionElement.innerText = currentQuizData.question;
     a_text.innerText = currentQuizData.a;
@@ -143,7 +158,7 @@ const quizData = [
   };
   
   loadQuiz();
-  
+  loadScore();
   submitButton.addEventListener("click", () => {
     const answer = getSelected();
     if (answer) {
@@ -161,6 +176,8 @@ const quizData = [
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
             <button onclick="history.go(0)">Play Again</button>
         `
+        storeMax(score);
+        loadScore();
         
         var temp;
         for (i = 0; i < weak_topics.length; i++) {
