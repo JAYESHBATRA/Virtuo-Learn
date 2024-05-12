@@ -68,6 +68,14 @@
         right: 5vw;
     }
 }
+@media screen and (max-width:1310px){
+    footer{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        right:0
+    }
+}
 
 @media screen and (max-width: 479px) {
     :root {
