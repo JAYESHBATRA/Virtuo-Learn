@@ -26,7 +26,9 @@ function toggleDarkMode() {
 
   if (darkModeEnabled) {
     document.body.style.backgroundColor = "#111111";
-    nav.style.backgroundColor = "#111111";
+    nav.style.backgroundColor = /*"#38373768"*/"#38373743";
+    nav.style.backdropFilter = "blur(100px)"; 
+    
     companyLogo.style = " -webkit-filter: invert(100%);";
     footer.style.backgroundColor = "#242525";
     tables.forEach(function (table) {

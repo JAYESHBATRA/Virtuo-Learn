@@ -36,20 +36,23 @@
         /* max-height: 10vh; */
         margin-top: 50px;
         padding: 0;
+       }
 
-        background: rgba(236, 235, 255, 0.2);
-        /* border-radius: 16px; */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3.3px);
-        -webkit-backdrop-filter: blur(3.3px);
-        border: 1px solid rgba(236, 235, 255, 0.3);
-
+       body.dark-mode .nav-menu {
+        background-color: rgba(0, 0, 0, 0.932);
+        backdrop-filter: blur(8px); 
     }
+    
+    .nav-menu:not(.dark-mode) {
+        background-color:rgba(194, 190, 190, 0.925);; 
+        backdrop-filter: blur(10px)
+    }
+
     .hover-link{
         margin: 16px 0;
     }
     #home-hover:hover{
-        color: #61b3f2;
+        color: #9dc3df;
     }
     .nav-menu.active{
         top: 13%;
