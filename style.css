@@ -660,10 +660,10 @@ table .ribbon::after {
 
 .footer-content {
 	display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items:center ;
     flex-direction: row;
-	
+	padding: 3vh;
 }
 
 .app-logo{
@@ -676,7 +676,15 @@ table .ribbon::after {
 	margin-right: 10px;
 	padding-left: 100px;
 	width: 1000px;
+	align-items: center;
+	/* padding-right: 100px; */
+
 	
+}
+
+.app-paragraph{
+	word-wrap: break-word;
+	margin-right: 4vh;
 }
 .footer-logo img{
 	height: 61px;
@@ -689,25 +697,28 @@ table .ribbon::after {
 .app-info p{
 	padding-bottom: 30px;
 	color: ffffff;
-	padding-left: 20px;
+	/* padding-left: 20px; */
 	
 }
 
 .useful-links{
-	margin: 60px;
+	margin: auto;
 	width: 500px;
 	text-decoration:underline;
-	padding-right: 30px;
+	/* padding-right: 30px; */
 }
 
 .useful-links ul{
 	display: grid;
     grid-template-columns: repeat(2, 1fr);
-	padding-left: 10px;
+	padding: auto;
+	/* text-align: center; */
+	
 }
 .links-title{
 	font-size: 1.40rem;
-	
+	width: 100%;
+	text-align: start;
     line-height: 1.30rem;
     color: rgb(33, 28, 28);
     height: fit-content;
@@ -721,9 +732,10 @@ table .ribbon::after {
 	
 }
 .useful-links ul li {
-	font-size: 18px;
+	font-size: 2.3vh;
 	padding: 3px;
 	color: ffffff;
+	
 }
 
 .useful-links ul li a:hover{

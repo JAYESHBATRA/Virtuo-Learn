@@ -58,6 +58,8 @@
     .company-logo{
         min-width: 200px;
     }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -89,15 +91,20 @@
         flex-direction: column;
     }
 
-    .footer-container {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-        align-items: center;
-    }
+    
+
+
 
     .link-column {
         align-items: stretch;
+    }
+
+
+
+    .app-info{
+        width: fit-content;
+        padding: 2px 3vh;
+        word-wrap: break-word;
     }
 
 
@@ -141,4 +148,47 @@
         position: relative;
         /* left: -13vw; */
     }
+
+    /* .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    } */
 }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 4vh;
+        text-align: center;
+        align-items: center;
+        padding-inline: 2vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .links-title {
+        /* font-size: small; */
+        text-align: center;
+
+    }
+
+    .app-paragraph{
+        margin-right: auto;
+    }
+
+    .useful-links ul li{
+        padding-left: 7vh;
+        text-align: start;
+        font-size: small;
+    }
+
+    .useful-links ul{
+        /* padding-inline: 7vh; */
+        /* text-align: start; */
+    }
+    .useful-links{
+        width: auto;
+    }
+  }
