@@ -157,6 +157,7 @@ ul {
 .nav-menu{
   display: flex;
   align-items: center;
+  height:400px;
 }
 
 .nav-links ul {
@@ -186,12 +187,14 @@ ul {
 .header h1{
   text-align: center;
   margin-top: 4vh;
+  position: relative;
 }
 
 .header img{
     display: block;
     margin: 0 auto;
     width: 35vw;
+    position: relative;
   }
 
 /*Cards */

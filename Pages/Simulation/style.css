@@ -157,6 +157,7 @@ ul {
 .nav-menu{
   display: flex;
   align-items: center;
+  height:400px;
 }
 
 .nav-links ul {

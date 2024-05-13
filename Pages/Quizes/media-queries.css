@@ -24,7 +24,7 @@
 
     .nav-menu{
         position: absolute;
-        top: -100%;
+        top: -1000px;
         left: 0;
         gap: 0;
         flex-direction: column;
@@ -37,7 +37,7 @@
         margin: 0;
         padding: 0;
 
-        background: rgba(236, 235, 255, 0.2);
+        background-color:rgba(194, 190, 190, 0.925);
         /* border-radius: 16px; */
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(3.3px);

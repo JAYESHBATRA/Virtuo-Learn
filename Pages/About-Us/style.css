@@ -22,6 +22,12 @@
 
 /* nav bar */
 
+.nav-menu{
+  display: flex;
+  align-items: center;
+  height:400px;
+}
+
 .nav-toggle {
     display: none;
 }

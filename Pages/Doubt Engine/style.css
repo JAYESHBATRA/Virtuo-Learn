@@ -41,6 +41,12 @@
   background-color: black;
 }
 
+.nav-menu{
+  display: flex;
+  align-items: center;
+  height:400px;
+}
+
   /* Button Section */
   .button-10 {
     display: flex;
