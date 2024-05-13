@@ -315,8 +315,26 @@ header {
 }
 
 /* features section */
+@media(max-width :983px){
 
+	
+	.container{
+		margin-left: 10%;
+	}
+	.big-feature-section{
+		margin-left: 10%;
+	}
+
+	.pricing{
+		margin-left: 10%;
+	}
+	.footer{
+		margin-left: 10%;
+	}
+}
 .features-section {
+	width: 100vw;
+    margin: auto;
 	padding: 80px var(--padding-inline-section) 0;
 	background-image: url(./assets/asset\ 32.svg);
 	background-repeat: no-repeat;
@@ -662,7 +680,7 @@ table .ribbon::after {
 	display: flex;
     justify-content:space-around;
     align-items:center ;
-    flex-direction: row;
+    flex-direction: column;
 	
 }
 
@@ -673,10 +691,13 @@ table .ribbon::after {
 }
 
 .app-info{
-	margin-right: 10px;
-	padding-left: 100px;
-	width: 1000px;
-	
+	/* margin-right: 10px; */
+	/* padding-left: 100px; */
+	width: 90%;
+	text-align: center;
+}
+.app-info p{
+	text-align: justify;
 }
 .footer-logo img{
 	height: 61px;
@@ -694,16 +715,20 @@ table .ribbon::after {
 }
 
 .useful-links{
-	margin: 60px;
-	width: 500px;
+	/* margin: 60px; */
+	/* width: 500px; */
+	width: 90%;
 	text-decoration:underline;
-	padding-right: 30px;
+	text-align: left;
+	/* padding-right: 30px; */
 }
 
 .useful-links ul{
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, -1fr); */
+	/* justify-content: center; */
 	padding-left: 10px;
+	grid-template-columns: repeat(2, 50%);
 }
 .links-title{
 	font-size: 1.40rem;
@@ -724,6 +749,7 @@ table .ribbon::after {
 	font-size: 18px;
 	padding: 3px;
 	color: ffffff;
+	text-align: left;
 }
 
 .useful-links ul li a:hover{
