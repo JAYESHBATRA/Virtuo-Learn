@@ -166,7 +166,63 @@
     <header>
       <div class="container header-section flex">
         <div class="header-left">
-          <h1 id="automatic-change">Learn Interactively</h1>
+          <div class="wrapper1">
+            <div class="static-txt">Learn </div>
+            <div data-typewriter="Interactively,Engagingly,Enjoyingly,Happily"></div>
+<!--            insert words here-->
+          </div>
+
+          <script>
+            class Typerwriter {
+              constructor(el, options){
+                this.el = el;
+                this.words = [...this.el.dataset.typewriter.split(',')];
+                this.speed = options?.speed || 100;
+                this.delay = options?.delay || 1500;
+                this.repeat = options?.repeat;
+                this.initTyping();
+              }
+
+              wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+              toggleTyping = () => this.el.classList.toggle('typing');
+
+              async typewrite(word){
+                await this.wait(this.delay);
+                this.toggleTyping();
+                for (const letter of word.split('')) {
+                  this.el.textContent += letter;
+                  await this.wait(this.speed)
+                }
+                this.toggleTyping();
+                await this.wait(this.delay);
+                this.toggleTyping();
+                while (this.el.textContent.length !== 0){
+                  this.el.textContent = this.el.textContent.slice(0, -1);
+                  await this.wait(this.speed)
+                }
+                this.toggleTyping();
+              }
+
+              async initTyping() {
+                for (const word of this.words){
+                  await this.typewrite(word);
+                }
+                if(this.repeat){
+                  await this.initTyping();
+                } else {
+                  this.el.style.animation = 'none';
+                }
+              }
+            }
+
+            document.querySelectorAll('[data-typewriter]').forEach(el => {
+              new Typerwriter(el, {
+                repeat: true,
+              })
+            })
+          </script>
+
           <p id="sub-para">
             Experience immersive learning like never before with simulations, 3D
             visualizations, customized quizzes, and videos all in one place!
@@ -185,18 +241,22 @@
       </div>
     </header>
 
-    <script type="text/javascript">
-      (function () {
-        var words = ["Learn Interactively", "Learn Engagingly"],
-          i = 0;
-        setInterval(function () {
-          $("#automatic-change").fadeOut(function () {
-            $(this)
-              .html(words[(i = (i + 1) % words.length)])
-              .fadeIn();
-          });
-        }, 2000);
-      })();
+<!--    <script type="text/javascript">-->
+<!--      (function () {-->
+<!--        var words = ["Learn Interactively", "Learn Engagingly"],-->
+<!--          i = 0;-->
+<!--        setInterval(function () {-->
+<!--          $("#automatic-change").fadeOut(function () {-->
+<!--            $(this)-->
+<!--              .html(words[(i = (i + 1) % words.length)])-->
+<!--              .fadeIn();-->
+<!--          });-->
+<!--        }, 2000);-->
+<!--      })();-->
+<!--    </script>-->
+
+    <script>
+
     </script>
 
     <!-- features section -->
