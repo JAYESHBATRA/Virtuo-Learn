@@ -316,6 +316,23 @@ ul {
 .recommendations h3{
   margin-left: 1.5vw;
 }
+.max-wrapper{
+  background-color:#F0F1FF;
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : 7px solid #242969;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+#max-score{
+ font-family: 'Poppins', sans-serif;
+ font-weight: bold;
+ text-align: center;
+}
 /* footer */
 
 footer{

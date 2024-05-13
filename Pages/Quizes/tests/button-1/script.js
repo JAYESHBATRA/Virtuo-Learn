@@ -113,6 +113,7 @@ const quizData = [
   const difficulty = document.getElementById("difficulty");
   const quizcount = document.getElementById("quizcount");
   const prev_score= document.getElementById("max-score");
+  const max_wrapper= document.getElementsByClassName("max-wrapper")[0]
  
 
   let currentQuiz = 0;
@@ -122,6 +123,8 @@ const quizData = [
     const score= localStorage.getItem('btn-1-max');
    if(score){
     prev_score.innerHTML=`Max score <br>${score}`;
+   }else{
+    max_wrapper.style.display='none'
    }
     
   }
