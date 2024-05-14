@@ -226,6 +226,34 @@ ul {
   transition: all 0.3s ease-in-out;
   background-color: black;
 }
+
+/* bottom bar for mobile devices */
+.mf-optimize-navbar{
+	/* make this bar sticky to the bottom for mobile devices but make a gap like modern bar*/
+	display: none;
+	background-color: #ecfcff;
+	position: fixed;
+	bottom: 10px;
+	height: 8vh;
+	width: 100%;
+	z-index: 100;
+	border-top: 2px solid black;
+}
+
+.mf-optimize-navbar-home{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+	.mf-optimize-navbar{
+		display: block;
+	}
+	
+}
+
 /* social media section */
 
 *,
@@ -238,6 +266,7 @@ ul {
 	top: 30vh;
 	left: 10px;
 	z-index: 100;
+	opacity: 0.7;
 }
 .mf-social-side-list ul {
 	list-style: none;
