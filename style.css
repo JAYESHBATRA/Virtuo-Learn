@@ -79,10 +79,33 @@ nav {
       font-weight: normal;
       font-size: .80em;
     }
-h1 {
+.wrapper1{
 	font-size: 3rem !important;
 	position: relative;
 	z-index: -10;
+	display: flex;
+}
+
+[data-typewriter] {
+	font-size: 3rem !important;
+	position: relative;
+	height: 2rem;
+	margin-left: 8px;
+}
+
+[data-typewriter]:not(.typing){
+	animation: blink-caret 1.1s step-end infinite;
+}
+
+@keyframes blink-caret {
+	0%,
+	100% {
+		border-color: transparent
+	}
+
+	50% {
+		border-color: #ff8e3c;
+	}
 }
 
 h2 {
