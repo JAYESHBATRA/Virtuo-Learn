@@ -37,7 +37,7 @@
         margin: 0;
         padding: 0;
 
-        background: rgba(236, 235, 255, 0.2);
+        background: rgba(194, 190, 190, 0.925);
         /* border-radius: 16px; */
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(3.3px);
@@ -50,6 +50,9 @@
     }
     .nav-menu.active{
         top: 13%;
+    }
+    .nav-menu{
+        height:400px;
     }
 }
 
