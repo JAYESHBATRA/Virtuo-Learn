@@ -48,6 +48,9 @@ body {
 	overflow-x: hidden;
 }
 #main_navbar {
+	/* given same padding to top and bottom  */
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: rgba(237, 225, 225, 0.144); /* Adjust the color and opacity as needed */
 	backdrop-filter: blur(70px);
         -webkit-backdrop-filter: blur(50px);
@@ -208,7 +211,7 @@ ul {
 /* nav bar */
 
 .main-nav {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     justify-content: space-between;
 }
 
