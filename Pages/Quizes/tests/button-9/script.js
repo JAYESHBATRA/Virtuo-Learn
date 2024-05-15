@@ -221,5 +221,7 @@ const loadScore=()=>{
           temp.innerHTML = "Solutions" ;
           document.getElementsByClassName('solution-div')[0].appendChild(temp);
       }
-  
+        document.querySelector('.solution-button').addEventListener("click",()=>{
+          window.location.href = "solution.html";
+        })
     });
