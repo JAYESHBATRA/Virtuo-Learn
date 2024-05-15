@@ -25,7 +25,9 @@ html.sr .load-hidden {
 ::-webkit-scrollbar{
   width: 12px;
 }
-
+.feature-desc > p{
+	text-align: center;
+}
 ::-webkit-scrollbar-track{
   border-radius: 5px;
   box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
