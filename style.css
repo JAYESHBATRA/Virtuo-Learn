@@ -230,6 +230,9 @@ ul {
 .nav-links ul {
 	justify-content: space-between;
 }
+.nav-links ul li{
+	padding-left:5px;
+}
 
 .nav-toggle {
     display: none;
