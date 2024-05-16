@@ -44,7 +44,7 @@
     }
     
     .nav-menu:not(.dark-mode) {
-        background-color:rgba(194, 190, 190, 0.925);; 
+        background-color:rgba(194, 190, 190, 0.925); 
         backdrop-filter: blur(10px)
     }
 
@@ -60,6 +60,11 @@
 
     .company-logo{
         min-width: 200px;
+    }
+
+    .switch-container {
+        cursor: pointer;
+        bottom: -15px;
     }
 
 
