@@ -505,6 +505,21 @@ header {
 .step-1{
 	margin-bottom: 108px;
 }
+/*Our products section */
+img:hover{
+transform: scale(1.05);
+filter: url(#my-shadow);
+
+}
+#features h3:hover{
+	color: #7b3ae4; 
+text-shadow: 3px 4px 7px rgba(146, 145, 144, 0.8);
+}
+.features-header:hover{
+	color: #7b3ae4; 
+text-shadow: 3px 4px 7px rgba(146, 145, 144, 0.8);
+transform: scale(1.05);
+}
 
 /* pricing section */
 
