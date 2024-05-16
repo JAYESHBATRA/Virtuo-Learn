@@ -1,111 +1,197 @@
-var icon = document.getElementById("mode-switch-icon");
+document.addEventListener('DOMContentLoaded', () => {
+  const switchCheckbox = document.getElementById('switch');
+  const currentTheme = localStorage.getItem('theme');
 
-// Check if dark mode preference is stored in local storage
-var darkModeEnabled = localStorage.getItem("dark-mode") === "true";
-
-// Function to toggle dark mode
-function toggleDarkMode() {
-  var nav = document.getElementById("main_navbar") 
-  var footer = document.querySelector("footer");
-  var tables = document.querySelectorAll(".wrapper .table");
-  var linksTitle = document.querySelectorAll(".links-title");
-  var copyright = document.querySelector(".copyright");
-  var copyrightH3 = document.querySelector(".copyright h3");
-  var companyLogo = document.querySelector(".company-logo img");
-  var footerLogo = document.querySelector(".footer-logo img");
-  var currentPage = document.querySelector(".current-page");
-  var automaticChangeDiv = document.getElementById("automatic-change");
-  var featuresHeadingText = document.querySelector(".features-heading-text");
-  var h3Elements = document.querySelectorAll("h3");
-  var h4Elements = document.querySelectorAll("h4");
-  var usefulLinks = document.querySelectorAll(".useful-links");
-
-  document.body.classList.toggle("dark-mode", darkModeEnabled);
-  document.documentElement.style.setProperty("--primary-text-color", darkModeEnabled ? "#ffffff" : "#183b56");
-  document.documentElement.style.setProperty("--secondary-text-color", darkModeEnabled ? "#ffffff" : "#577592");
-
-  if (darkModeEnabled) {
+  function applyDarkModeStyles() {
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode');
     document.body.style.backgroundColor = "#111111";
-    nav.style.backgroundColor = /*"#38373768"*/"#38373743";
-    nav.style.backdropFilter = "blur(100px)"; 
-    
-    companyLogo.style = " -webkit-filter: invert(100%);";
-    footer.style.backgroundColor = "#242525";
-    tables.forEach(function (table) {
+
+    const nav = document.getElementById("main_navbar");
+    if (nav) {
+      nav.style.backgroundColor = "#38373743";
+      nav.style.backdropFilter = "blur(100px)";
+    }
+
+    const footer = document.querySelector("footer");
+    if (footer) {
+      footer.style.backgroundColor = "#242525";
+    }
+
+    const tables = document.querySelectorAll(".wrapper .table");
+    tables.forEach(table => {
       table.style.backgroundColor = "#242426";
     });
-    linksTitle.forEach(function (link) {
+
+    const linksTitle = document.querySelectorAll(".links-title");
+    linksTitle.forEach(link => {
       link.style.color = "#ffffff";
     });
-    copyright.style.backgroundColor = "#232325";
-    copyrightH3.style.color = "#ffffff";
-    companyLogo.src = "./assets/asset 45.png"; // change to asset 45 in dark mode
-    footerLogo.src = "./assets/asset 45.png"; // change to asset 45 in dark mode
-    currentPage.style.color = "#cfe2f3"; // change to #fffee0 in dark mode
-    currentPage.style.borderColor = "#6fa8dc"; // change to #9fc5e8 in dark mode
-    icon.src = "./assets/asset 44.png"; // change to asset 44 in dark mode
-    automaticChangeDiv.style.color = "#cfe2f3"; // change to #cfe2f3 in dark mode
-    automaticChangeDiv.style.textShadow = "2px 2px 2px #000000"; // add text shadow in dark mode
-    featuresHeadingText.style.color = "#cfe2f3"; // change to #cfe2f3 in dark mode
-    featuresHeadingText.style.textShadow = "2px 2px 2px #000000"; // add text shadow in dark mode
-    h3Elements.forEach(function (h3) {
-      h3.style.color = "#cfe2f3"; // change to #cfe2f3 in dark mode
-      h3.style.textShadow = "2px 2px 2px #000000"; // add text shadow in dark mode
-    });
-    h4Elements.forEach(function (h4) {
-      h4.style.color = "#cfe2f3"; // change to #cfe2f3 in dark mode
-      h4.style.textShadow = "2px 2px 2px #000000"; // add text shadow in dark mode
-    });
-    usefulLinks.forEach(function (link) {
-      link.style.color = "#cfe2f3"; // change to #cfe2f3 in dark mode
-      link.style.textShadow = "2px 2px 2px #000000"; // add text shadow in dark mode
-    });
-  } else {
-    document.body.style.backgroundColor = "#ffffff";
-    nav.style.backgroundColor = "#ffffff";
-    companyLogo.style = " fill : black;"
 
-    footer.style.backgroundColor = "#ebf2fa";
-    tables.forEach(function (table) {
-      table.style.backgroundColor = "#e9ebff";
+    const copyright = document.querySelector(".copyright");
+    if (copyright) {
+      copyright.style.backgroundColor = "#232325";
+    }
+
+    const copyrightH3 = document.querySelector(".copyright h3");
+    if (copyrightH3) {
+      copyrightH3.style.color = "#ffffff";
+    }
+
+    const companyLogo = document.querySelector(".company-logo img");
+    if (companyLogo) {
+      companyLogo.style = "-webkit-filter: invert(100%);";
+      companyLogo.src = "./assets/asset 45.png";
+    }
+
+    const footerLogo = document.querySelector(".footer-logo img");
+    if (footerLogo) {
+      footerLogo.src = "./assets/asset 45.png";
+    }
+
+    const currentPage = document.querySelector(".current-page");
+    if (currentPage) {
+      currentPage.style.color = "#cfe2f3";
+      currentPage.style.borderColor = "#6fa8dc";
+    }
+
+    const automaticChangeDiv = document.getElementById("automatic-change");
+    if (automaticChangeDiv) {
+      automaticChangeDiv.style.color = "#cfe2f3";
+      automaticChangeDiv.style.textShadow = "2px 2px 2px #000000";
+    }
+
+    const featuresHeadingText = document.querySelector(".features-heading-text");
+    if (featuresHeadingText) {
+      featuresHeadingText.style.color = "#cfe2f3";
+      featuresHeadingText.style.textShadow = "2px 2px 2px #000000";
+    }
+
+    const h3Elements = document.querySelectorAll("h3");
+    h3Elements.forEach(h3 => {
+      h3.style.color = "#cfe2f3";
+      h3.style.textShadow = "2px 2px 2px #000000";
     });
-    linksTitle.forEach(function (link) {
-      link.style.color = "rgb(33, 28, 28)";
+
+    const h4Elements = document.querySelectorAll("h4");
+    h4Elements.forEach(h4 => {
+      h4.style.color = "#cfe2f3";
+      h4.style.textShadow = "2px 2px 2px #000000";
     });
-    copyright.style.backgroundColor = "#d6d9fd";
-    copyrightH3.style.color = "rgb(33, 28, 28)";
-    companyLogo.src = "./assets/asset 41.png"; // change back to asset 41 in light mode
-    footerLogo.src = "./assets/asset 41.png"; // change back to asset 41 in light mode
-    currentPage.style.color = "#4d006b"; // change back to #4d006b in light mode
-    currentPage.style.borderColor = "rgb(0, 30, 94)"; // change back to rgb(0, 30, 94) in light mode
-    icon.src = "./assets/asset 43.png"; // change back to asset 43 in light mode
-    automaticChangeDiv.style.color = ""; // change back to original color in light mode
-    automaticChangeDiv.style.textShadow = ""; // remove text shadow in light mode
-    featuresHeadingText.style.color = ""; // change back to original color in light mode
-    featuresHeadingText.style.textShadow = ""; // remove text shadow in light mode
-    h3Elements.forEach(function (h3) {
-      h3.style.color = ""; // change back to original color in light mode
-      h3.style.textShadow = ""; // remove text shadow in light mode
+
+    const usefulLinks = document.querySelectorAll(".useful-links");
+    usefulLinks.forEach(link => {
+      link.style.color = "#cfe2f3";
+      link.style.textShadow = "2px 2px 2px #000000";
     });
-    h4Elements.forEach(function (h4) {
-      h4.style.color = ""; // change back to original color in light mode
-      h4.style.textShadow = ""; // remove text shadow in light mode
-    });
-    usefulLinks.forEach(function (link) {
-      link.style.color = ""; // change back to original color in light mode
-      link.style.textShadow = ""; // remove text shadow in light mode
-    });
+
+    document.documentElement.style.setProperty("--primary-text-color", "#ffffff");
+    document.documentElement.style.setProperty("--secondary-text-color", "#ffffff");
   }
 
-  // Update dark mode preference in local storage
-  localStorage.setItem("dark-mode", darkModeEnabled);
-}
+  function applyLightModeStyles() {
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
+    document.body.style.backgroundColor = "#ffffff";
 
-// Set initial dark mode state based on local storage preference
-toggleDarkMode();
+    const nav = document.getElementById("main_navbar");
+    if (nav) {
+      nav.style.backgroundColor = "#ffffff";
+      nav.style.backdropFilter = "none";
+    }
 
-// Toggle dark mode when icon is clicked
-icon.onclick = function () {
-  darkModeEnabled = !darkModeEnabled;
-  toggleDarkMode();
-};
+    const footer = document.querySelector("footer");
+    if (footer) {
+      footer.style.backgroundColor = "#ebf2fa";
+    }
+
+    const tables = document.querySelectorAll(".wrapper .table");
+    tables.forEach(table => {
+      table.style.backgroundColor = "#e9ebff";
+    });
+
+    const linksTitle = document.querySelectorAll(".links-title");
+    linksTitle.forEach(link => {
+      link.style.color = "rgb(33, 28, 28)";
+    });
+
+    const copyright = document.querySelector(".copyright");
+    if (copyright) {
+      copyright.style.backgroundColor = "#d6d9fd";
+    }
+
+    const copyrightH3 = document.querySelector(".copyright h3");
+    if (copyrightH3) {
+      copyrightH3.style.color = "rgb(33, 28, 28)";
+    }
+
+    const companyLogo = document.querySelector(".company-logo img");
+    if (companyLogo) {
+      companyLogo.style = "fill: black;";
+      companyLogo.src = "./assets/asset 41.png";
+    }
+
+    const footerLogo = document.querySelector(".footer-logo img");
+    if (footerLogo) {
+      footerLogo.src = "./assets/asset 41.png";
+    }
+
+    const currentPage = document.querySelector(".current-page");
+    if (currentPage) {
+      currentPage.style.color = "#4d006b";
+      currentPage.style.borderColor = "rgb(0, 30, 94)";
+    }
+
+    const automaticChangeDiv = document.getElementById("automatic-change");
+    if (automaticChangeDiv) {
+      automaticChangeDiv.style.color = "";
+      automaticChangeDiv.style.textShadow = "";
+    }
+
+    const featuresHeadingText = document.querySelector(".features-heading-text");
+    if (featuresHeadingText) {
+      featuresHeadingText.style.color = "";
+      featuresHeadingText.style.textShadow = "";
+    }
+
+    const h3Elements = document.querySelectorAll("h3");
+    h3Elements.forEach(h3 => {
+      h3.style.color = "";
+      h3.style.textShadow = "";
+    });
+
+    const h4Elements = document.querySelectorAll("h4");
+    h4Elements.forEach(h4 => {
+      h4.style.color = "";
+      h4.style.textShadow = "";
+    });
+
+    const usefulLinks = document.querySelectorAll(".useful-links");
+    usefulLinks.forEach(link => {
+      link.style.color = "";
+      link.style.textShadow = "";
+    });
+
+    document.documentElement.style.setProperty("--primary-text-color", "#183b56");
+    document.documentElement.style.setProperty("--secondary-text-color", "#577592");
+  }
+
+  if (currentTheme) {
+    if (currentTheme === 'dark-mode') {
+      applyDarkModeStyles();
+      switchCheckbox.checked = true;
+    } else {
+      applyLightModeStyles();
+    }
+  }
+
+  switchCheckbox.addEventListener('change', () => {
+    if (switchCheckbox.checked) {
+      applyDarkModeStyles();
+      localStorage.setItem('theme', 'dark-mode');
+    } else {
+      applyLightModeStyles();
+      localStorage.setItem('theme', 'light-mode');
+    }
+  });
+});
