@@ -90,24 +90,25 @@
     </header>
 
     <!-- About Us -->
+    <div class="container1">
     <div class="w-[80vw] text-center mx-auto my-0 info-text">
-      <p class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-1">
+      <p class="wrap" class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-1">
         Welcome to Virtuo Learn, a leading online education platform that offers a range of cutting-edge tools and resources designed to enhance the learning experience of students of all ages and backgrounds.
       </p>
-      <p class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para2">
+      <p class="wrap" class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para2">
         At Virtuo Learn, we believe that every student deserves access to quality education that is personalized, fun, interactive, and easy. That's why we have developed a comprehensive range of features that are tailored to the unique needs and learning styles of each student.
       </p>
-      <p class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-3">
+      <p class="wrap" class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-3">
         Our platform offers a vast library of video lectures, interactive simulations, 3D visualizations, and quizzes that provide instant feedback to help students track their progress and identify their areas of strengths and weaknesses. Our doubt engine is designed to resolve any doubts that students may have, providing a seamless learning experience.
       </p>
-      <p class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-4">
+      <p class="wrap" class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-4">
         We are passionate about technology and its ability to empower students to achieve their full potential. Our team of experienced educators and technologists work tirelessly to develop innovative tools and resources that enable students to learn and grow at their own pace.
       </p>
-      <p class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-5">
+      <p class="wrap" class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-5">
         Thank you for choosing Virtuo Learn as your partner in learning. We look forward to helping you achieve your goals and unlock your full potential.</p>
       </p>
       </div>
-
+    </div>
     <!-- footer -->
     <!-- <a class="no-underline inline-block" href="#" class="company-logo">
         <img src="./assets/asset 41.png" alt="company logo">
@@ -131,6 +132,28 @@
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
       })
+      
+    
+      document.addEventListener("DOMContentLoaded", function () {
+    const wraps = document.querySelectorAll('.wrap');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }else {
+    entry.target.classList.remove('show'); /* Highlighted addition */
+}
+
+        });
+    }, { threshold: 0.1 });
+
+    wraps.forEach(wrap => {
+        observer.observe(wrap);
+    });
+});
+
     </script>
     <script src="../../scroll-reveal.js"></script>
 
