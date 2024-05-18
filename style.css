@@ -149,6 +149,19 @@ nav {
 	background-color: #edc8c827;
     z-index: 1;
     }
+	.search input[type=text] {
+  float: right;
+  margin-left: 280px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+  color: whitesmoke;
+align-items:end;
+padding-left: 5px;
+flex-direction: row;
+  
+}
+	
     
     nav ul{
       list-style: none;
