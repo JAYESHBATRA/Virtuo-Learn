@@ -64,10 +64,10 @@ nav {
     
     nav li {
        display: inline-block;
-       padding: 5px 5px;
+       padding: 6px 6px;
     }
     
     nav a {
       font-weight: normal;
-      font-size: .80em;
+      font-size: .90em;
     }
