@@ -296,10 +296,12 @@ ul {
 .main-nav {
     /* margin-top: 20px; */
     justify-content: space-between;
+	overflow: hidden;
 }
 
 .company-logo img {
     width: 200px;
+	height: 50px;
 }
 
 .nav-links {
