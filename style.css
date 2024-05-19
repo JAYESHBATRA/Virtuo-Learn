@@ -731,6 +731,14 @@ p.aj_des {
 	.table.ultimate {
 		margin: 0px;
 	}
+
+	[data-typewriter],.wrapper1 {
+		font-size: 2rem !important;
+		justify-content: center !important;
+	}
+	#sub-para{
+		margin-top: 1.5rem;
+	}
 }
 
 ::selection {
