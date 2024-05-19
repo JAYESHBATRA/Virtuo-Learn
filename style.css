@@ -211,14 +211,7 @@ ul {
 
 /* nav bar */
 
-.main-nav {
-	margin-top: 20px;
-	justify-content: space-between;
-}
 
-.company-logo img {
-	width: 200px;
-}
 
 .nav-links {
 	flex-basis: 730px;
