@@ -63,6 +63,7 @@ nav {
 	position: sticky;
 	top: 2px;
 	background-color: #edc8c827;
+
 	z-index: 1;
 }
 
@@ -83,6 +84,7 @@ nav a {
 }
 
 .wrapper1 {
+
 	font-size: 3rem !important;
 	position: relative;
 	z-index: -10;
@@ -656,6 +658,14 @@ p.aj_des {
 
 	.table.ultimate {
 		margin: 0px;
+	}
+
+	[data-typewriter],.wrapper1 {
+		font-size: 2rem !important;
+		justify-content: center !important;
+	}
+	#sub-para{
+		margin-top: 1.5rem;
 	}
 }
 
