@@ -4,6 +4,7 @@ let button1, button2, button3, slider, button4;
 let slider_m1, slider_m2, slider_u1, slider_u2;
 let x, y;
 let ball_u1 = 10, ball_u2 = 0, ball_m1 = 100, ball_m2 = 100;
+let isFirst=true;
 
 let posx = 200;
 
@@ -20,10 +21,13 @@ function setup() {
 	}
 	slider_m1 = createSlider(50, 200, ball_m1, 10);
 	slider_m1.position(width - posx, height * 0.23);
-	text_m1 = createP(); // Initialize text_m1
-	text_m2 = createP(); // Initialize text_m
-	text_u1 = createP(); // Initialize text_m
-	text_u2 = createP(); // Initialize text_m
+
+	if(isFirst){
+		text_m1 = createP(); // Initialize text_m1
+		text_m2 = createP(); // Initialize text_m
+		text_u1 = createP(); // Initialize text_m
+		text_u2 = createP(); // Initialize text_m
+	}
 
 	slider_m2 = createSlider(50, 200, ball_m2, 10);
 	slider_m2.position(width - posx, height * 0.26);
@@ -53,6 +57,7 @@ function setup() {
 	else
 	b2 = new Ball(x + 80, y, ball_m2, ball_u2, c2);
 	frameRate(27);
+	isFirst=false;
 }
 
 function draw() {

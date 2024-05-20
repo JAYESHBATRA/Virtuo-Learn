@@ -108,7 +108,7 @@ function drawWave(time, d) {
     scr.fillText('Time: ' + t.toFixed(2) + 's', 45, maxy-20);
 }
 
-/* Functon to clear the screen */
+/* Function to clear the screen */
 function clrscr() {
     scr.fillStyle = "#ffffff";
     scr.fillRect(0,0,maxx,maxy);

@@ -163,7 +163,7 @@ nav {
     
     nav a {
       font-weight: normal;
-      font-size: .80em;
+      font-size: .88em;
     }
 .wrapper1{
 	font-size: 3rem !important;
@@ -296,10 +296,12 @@ ul {
 .main-nav {
     /* margin-top: 20px; */
     justify-content: space-between;
+	overflow: hidden;
 }
 
 .company-logo img {
     width: 200px;
+	height: 50px;
 }
 
 .nav-links {
@@ -728,6 +730,14 @@ p.aj_des {
 	}
 	.table.ultimate {
 		margin: 0px;
+	}
+
+	[data-typewriter],.wrapper1 {
+		font-size: 2rem !important;
+		justify-content: center !important;
+	}
+	#sub-para{
+		margin-top: 1.5rem;
 	}
 }
 
