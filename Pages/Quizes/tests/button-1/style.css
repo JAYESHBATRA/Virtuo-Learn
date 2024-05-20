@@ -200,7 +200,7 @@ ul {
     background-color: #F0F1FF;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-    width: 500px;
+    width: 1000px;
     max-width: 95vw;
     overflow: hidden;
   }
@@ -211,7 +211,7 @@ ul {
   
   h2 {
     padding: 1rem;
-    text-align: center;
+    text-align: left;
     margin: 0;
   }
   
@@ -223,6 +223,16 @@ ul {
   .quiz-ul li {
     font-size: 1.2rem;
     margin: 1rem 0;
+    width: 60rem;
+    height: 3.7rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(214, 219, 248);
+  }
+
+  .quiz-ul li:hover{
+    background-color: rgb(179, 188, 255);
+
   }
   
   .quiz-ul li label {
@@ -232,17 +242,19 @@ ul {
   button {
     background-color: #242969 ;
     color: #fff;
-    border: none;
+    border-radius: 15px;
     display: block;
-    width: 100%;
+    width: 25%;
     cursor: pointer;
     font-size: 1.1rem;
     font-family: inherit;
-    padding: 1.1rem;
+    padding: 1rem;
+    margin-left: 21.8rem;
+    margin-top: 3rem;
   }
   
   button:hover {
-    background-color: #732d91;
+    background-color:  #2d4ed1;
   }
   
   button:focus {
@@ -335,16 +347,17 @@ ul {
 }
 /* footer */
 .max-wrapper{
-   background-color:#F0F1FF;
-   border-radius: 50%;
-   width:100px;
-   height:100px;
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   border : 7px solid #242969;
-   margin-bottom: 20px;
-   padding: 5px;
+  background-color:#F0F1FF;
+  border-radius: 50%;
+  width:10rem;
+  height:10rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : 7px solid #242969;
+  margin-bottom: 6rem;
+  padding: 5px;
+  font-size: 1.5rem;
 }
 #max-score{
   font-family: 'Poppins', sans-serif;
