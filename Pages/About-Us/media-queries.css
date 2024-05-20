@@ -54,6 +54,9 @@
     .nav-menu{
         height:400px;
     }
+    .switch-container{
+        bottom: -10px;
+    }
 }
 
 @media screen and (max-width: 479px) {
