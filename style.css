@@ -147,7 +147,7 @@ nav {
 	position: sticky;
 	top:2px;
 	background-color: #edc8c827;
-    z-index: 1;
+    z-index: 1000;
     }
     
     nav ul{
