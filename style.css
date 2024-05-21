@@ -138,6 +138,11 @@ body {
 	backdrop-filter: blur(70px);
         -webkit-backdrop-filter: blur(50px);
         border: 1px solid rgba(236, 235, 255, 0.3);
+	position: fixed;
+    	top: 0px;
+    	width: 100%;
+    	z-index: 1000;
+}
   }
   
   
