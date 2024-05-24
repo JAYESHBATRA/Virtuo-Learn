@@ -3,8 +3,12 @@ let D = 0.994;
 let G = 1;
 let R = 48.0;
 let isFirst = true;
+let text_d, text_g, text_r;
+let width=window.innerWidth,height=window.innerHeight;
+
 
 function setup() {
+
   if (windowWidth > 1010) {
 
     createCanvas(windowWidth, windowHeight);
@@ -32,15 +36,22 @@ function setup() {
   }
   pendulum = new Pendulum(createVector(width / 2, 0), 400);
 
-  createP("d").position(width * (0.14), height * 0.458);
-  createP("g").position(width * (0.14), height * 0.508);
-  createP("r").position(width * (0.14), height * 0.558);
-  
   if (isFirst) {
-    text_g = createP();
-    text_r = createP();
-    text_d = createP();
+
+
+    text_d = createP("d").position(width * (0.14), height * 0.458);
+    text_g = createP("g").position(width * (0.14), height * 0.508);
+    text_r = createP("r").position(width * (0.14), height * 0.558);
+
+    value_g = createP();
+    value_r = createP();
+    value_d = createP();
   }
+  // else{
+  //   text_d.position(width * (0.14), height * 0.458)
+  //   text_g.position(width * (0.14), height * 0.508)
+  //   text_r.position(width * (0.14), height * 0.558)
+  // }
 
   isFirst = false
 }
@@ -55,34 +66,34 @@ function draw() {
     text("Damping = " + D, width / 4, 40);
     textSize(14);
 
-    text_g.position(width * (0.03), height * 0.508);
-    text_g.html(slider_g.value());
-    text_g.style('font-size', '12pt'); // Set the desired font size
+    value_g.position(width * (0.03), height * 0.508);
+    value_g.html(slider_g.value());
+    value_g.style('font-size', '12pt'); // Set the desired font size
 
-    text_r.position(width * (0.025), height * 0.558);
-    text_r.html(slider_r.value());
-    text_r.style('font-size', '12pt'); // Set the desired font size
+    value_r.position(width * (0.025), height * 0.558);
+    value_r.html(slider_r.value());
+    value_r.style('font-size', '12pt'); // Set the desired font size
 
-    text_d.position(width * (0.015), height * 0.458);
-    text_d.html(slider_d.value());
-    text_d.style('font-size', '12pt'); // Set the desired font size
+    value_d.position(width * (0.015), height * 0.458);
+    value_d.html(slider_d.value());
+    value_d.style('font-size', '12pt'); // Set the desired font size
   }
   else {
     fill(1);
     // text("Damping = " + D, width/16, 20);
     textSize(14);
 
-    text_g.position(width * (0.23), height * 1.255);
-    text_g.html(slider_g.value());
-    text_g.style('font-size', '12pt'); // Set the desired font size
+    value_g.position(width * (0.23), height * 1.255);
+    value_g.html(slider_g.value());
+    value_g.style('font-size', '12pt'); // Set the desired font size
 
-    text_r.position(width * (0.21), height * 1.305);
-    text_r.html(slider_r.value());
-    text_r.style('font-size', '12pt'); // Set the desired font size
+    value_r.position(width * (0.21), height * 1.305);
+    value_r.html(slider_r.value());
+    value_r.style('font-size', '12pt'); // Set the desired font size
 
-    text_d.position(width * (0.18), height * 1.21);
-    text_d.html(slider_d.value());
-    text_d.style('font-size', '12pt'); // Set the desired font size
+    value_d.position(width * (0.18), height * 1.21);
+    value_d.html(slider_d.value());
+    value_d.style('font-size', '12pt'); // Set the desired font size
 
   }
   pendulum.go();
