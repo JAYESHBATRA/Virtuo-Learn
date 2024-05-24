@@ -143,7 +143,7 @@ body {
     	width: 100%;
     	z-index: 1000;
 }
-  }
+  
   
   
 
@@ -303,10 +303,45 @@ ul {
     justify-content: space-between;
 	overflow: hidden;
 }
+.logo1{
+	margin-left:5px;
 
+}
+.company-logo{
+	display:flex;
+	margin:auto;
+	align-items: center;
+	
+}
+.company-logo:hover{
+	transform:scale(1.05);
+	text-shadow: 3px 4px 7px rgba(146, 145, 144, 0.8);
+	
+}
+.container .main-nav .company-logo{
+margin-left:-50px;
+
+
+}
 .company-logo img {
-    width: 200px;
+    width: 100px;
 	height: 50px;
+	display:flex;
+	
+	
+}
+.company-logo h1{
+
+	font-size: 1.5rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 400;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#7b3ae4;
+}
+.company-logo h1:hover{
+
+text-shadow: 3px 4px 7px rgba(146, 145, 144, 0.8);
 }
 
 .nav-links {
