@@ -276,7 +276,7 @@ ul {
 
 /* footer */
 
-footer{
+/* footer{
   
   bottom: 0;
   left: 0;
@@ -287,7 +287,23 @@ footer{
   padding-top: 40px;
   background-color: #ebf2fa;
   margin-top: 5vh;
-}
+} */
+
+.footer{
+
+
+  
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: #111;
+    /* height: auto; */
+    width: 100vw;
+    padding-top: 40px;
+    background-color: #ebf2fa;
+    margin-top: 5vh;
+  }
 
 .footer-content{
   display: flex;
@@ -295,6 +311,7 @@ footer{
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: fixed;
 }
 
 .footer-logo{
@@ -310,6 +327,7 @@ footer{
   line-height: 28px;
   font-size: 14px;
   color: #cacdd2;
+  position: fixed;
 }
 nav {
     text-align: center;
