@@ -389,3 +389,9 @@ footer{
   font-size: 14px;
   color: #cacdd2;
 }
+
+#reset_button{
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
