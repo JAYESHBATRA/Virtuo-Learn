@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 p-0 box-border font-poppins scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtuo Learn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-queries.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary_text_color: '#183b56',
+            secondary_text_color: '#577592',
+            accent_color: '#2294ed',
+            accent_color_dark: '#1d69a3',
+            padding_inline_section: '20px',
+            author_color: '#cacdd2',
+          }
+        },
+        fontFamily: {
+          'roboto': ['Roboto', 'sans-serif'],
+          'poppins': ['Poppins', 'sans-serif']
+        },
+        screens: {
+          'lg': '1030px',
+          // => @media (min-width: 1535px) { ... }
+
+          'md': '479px',
+          // => @media (min-width: 767px) { ... }
+
+          'sm': '100px'
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="text-primary_text_color overflow-x-hidden font-poppins">
+  <!-- nav bar -->
+  <nav>
+    <div
+      class="container main-navi max-w-[1180px] overflow-hidden m-auto px-[20px] lg:px-[10px] justify-between mt-5 flex items-center">
+      <a class="no-underline inline-block company-logo" href="../../index.html">
+        <img src="./assets/asset 41.png" alt="company logo" class="md:w-[200px] sm:min-w-[200px]">
+      </a>
+      <div class="basis-[730px] nav-links" id="nav-links">
+        <ul class="nav-menu flex items-center list-none justify-between">
+          <li><a href="../../index.html"
+              class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
+              <i class="fa-solid fa-house" style="font-size:10px;"></i>
+              Home</a>
+          </li>
+
+          <li><a href="../About-Us/index.html"
+              class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color current-page">
+              <i class="fa-solid fa-building-columns" style="font-size:10px;"></i>
+              About Us</a>
+            </li>
+
+          <li><a href="../Simulation/index.html"
+              class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
+              <i class="fa-solid fa-plug-circle-check" style="font-size:10px;"></i>
+              Simulations</a></li>
+          <li><a href="../3D-Visualizations/index.html"
+              class="text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
+              <i class="fa-brands fa-unity" style="font-size:10px;"></i>
+              3D Visualisations</a></li>
+          <li><a href="../Quizes/index.html"
+              class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
+              <i class="fa-solid fa-list-check" style="font-size:10px;"></i>
+              Quizzes</a></li>
+          <li><a href="../Videos/index.html"
+              class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
+              <i class="fa-solid fa-video" style="font-size:10px;"></i>
+              Videos</a></li>
+          <li><a href="../Doubt Engine/index.html"
+              class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
+              <i class="fa-solid fa-check-double" style="font-size:10px;"></i>
+              Doubt Engine</a></li>
+        </ul>
+      </div>
+      <div class="hamburger cursor-pointer">
+        <span
+          class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
+        <span
+          class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
+        <span
+          class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header section -->
+  <header>
+    <div class="header">
+      <h1 class="text-[2rem] font-bold text-center mt-[4vh] md:text-[2rem] lg:text-5xl head-txt">About Us</h1>
+      <img src="assets/asset 42.svg" alt="About-Us" class="block md:w-[40vw] mx-auto my-0 w-[80vw] head-img">
+    </div>
+  </header>
+
+  <!-- About Us -->
+  <div class="container1">
+    <div class="w-[80vw] text-center mx-auto my-0 info-text">
+      <p class=" wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para1">
+        Welcome to Virtuo Learn, a leading online education platform that offers a range of cutting-edge tools and
+        resources designed to enhance the learning experience of students of all ages and backgrounds.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para2">
+        At Virtuo Learn, we believe that every student deserves access to quality education that is personalized, fun,
+        interactive, and easy. That's why we have developed a comprehensive range of features that are tailored to the
+        unique needs and learning styles of each student.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para3">
+        Our platform offers a vast library of video lectures, interactive simulations, 3D visualizations, and quizzes
+        that
+        provide instant feedback to help students track their progress and identify their areas of strengths and
+        weaknesses. Our doubt engine is designed to resolve any doubts that students may have, providing a seamless
+        learning experience.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para4">
+        We are passionate about technology and its ability to empower students to achieve their full potential. Our team
+        of experienced educators and technologists work tirelessly to develop innovative tools and resources that enable
+        students to learn and grow at their own pace.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para5">
+        Thank you for choosing Virtuo Learn as your partner in learning. We look forward to helping you achieve your
+        goals
+        and unlock your full potential.</p>
+      </p>
+    </div>
+  </div>
+  <!-- footer -->
+  <!-- <a class="no-underline inline-block" href="#" class="company-logo">
+        <img src="./assets/asset 41.png" alt="company logo">
+    </a> -->
+  <!-- <footer class="h-auto w-screen bg-[#ebf2fa] mt-[5vh] pt-10 bottom-0 inset-x-0">
+    <div class="flex items-center justify-center flex-col text-center footer-content">
+      <a class="no-underline inline-block w-[200px] text-[2.1rem] font-medium capitalize leading-[3rem] company-logo footer-logo"
+        href="#">
+        <img src="./assets/asset 41.png" alt="company logo">
+      </a>
+      <p class="max-w-[500px] leading-7 text-[14px] text-author_color mx-auto my-2.5">Developed By Jayesh Batra</p>
+    </div>
+  </footer> -->
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="app-info">
+        <div class="company-logo footer-logo">
+          <a href="index.html">
+            <img src="./assets/asset 41.png" alt="company logo" />
+          </a>
+        </div>
+        <p class="app-paragraph">
+          We specialize in delivering an enriching learning experience through
+          a combination of simulations, 3D visualizations, customized quizzes,
+          and videos to immerse learners in real-world scenarios, fostering a
+          dynamic and engaging educational journey.
+        </p>
+      </div>
+
+      <div class="useful-links">
+        <div class="links-title">
+          <span class="links-title-span">Useful Links</span>
+        </div>
+        <ul>
+          <li><a href="./Pages/Simulation/index.html"><i class="fa-solid fa-plug-circle-check"></i> Stimulations</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-house" class="hover-link current-page"></i> Home</a></li>
+          <li>
+            <a href="./Pages/3D-Visualizations/index.html"
+              ><i class="fa-brands fa-unity"></i> 3D Visualisations</a
+            >
+          </li>
+          <li><a href="./Pages/About-Us/index.html"><i class="fa-solid fa-building-columns"></i> About Us</a></li>
+          <li><a href="./Pages/Quizes/index.html"><i class="fa-solid fa-list-check"></i> Quizzes</a></li>
+          <li><a href="#"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+          <li><a href="./Pages/Videos/index.html"><i class="fa-solid fa-video"></i> Videos</a></li>
+          <li><a href="./Pages/Doubt Engine/index.html"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <h3>
+        Copyright &copy; <span id="copyright-year"></span> Virtuo Learn | All rights reserved | Developed
+        By <a href="https://github.com/JAYESHBATRA">Jayesh Batra</a>
+      </h3>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    })
+    document.addEventListener("DOMContentLoaded", function () {
+      const wraps = document.querySelectorAll('.wrap');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          } else {
+            entry.target.classList.remove('show'); /* Highlighted addition */
+          }
+
+        });
+      }, { threshold: 0.1 });
+
+      wraps.forEach(wrap => {
+        observer.observe(wrap);
+      });
+    });
+  </script>
+  <script src="../../scroll-reveal.js"></script>
+
+</body>
+
+</html>
