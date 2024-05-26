@@ -311,7 +311,132 @@ footer{
   font-size: 14px;
   color: #cacdd2;
 }
-nav {
+
+.footer {
+    /*	bottom: 0;
+        left: 0;
+        right: 0;
+        background: #111;
+        */
+        
+        height: auto;
+        
+        padding-top: 20px;
+        background-color: #ebf2fa; 
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center ;
+        flex-direction: row;
+        padding: 3vh;
+    }
+    
+    .app-logo{
+        margin-left: 50px;
+        padding-left: 50px;
+        width: 300px;
+    }
+    
+    .app-info{
+        margin-right: 10px;
+        padding-left: 100px;
+        width: 1000px;
+        align-items: center;
+        /* padding-right: 100px; */
+    
+        
+    }
+    
+    .app-paragraph{
+        word-wrap: break-word;
+        margin-right: 4vh;
+    }
+    .footer-logo img{
+        height: 61px;
+        width: 270px;
+        border-left: 6px solid #2d4bf0;
+        padding-left: 10px;
+        padding-right: 15px;
+        border-right: 6px solid #2d4bf0;
+    }
+    .app-info p{
+        padding-bottom: 30px;
+        color: ffffff;
+        /* padding-left: 20px; */
+        
+    }
+    
+    .useful-links{
+        margin: auto;
+        width: 500px;
+        text-decoration:underline;
+        /* padding-right: 30px; */
+    }
+    
+    .useful-links ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: auto;
+        /* text-align: center; */
+        
+    }
+    .links-title{
+        font-size: 1.40rem;
+        width: 100%;
+        text-align: start;
+        line-height: 1.30rem;
+        color: rgb(33, 28, 28);
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .links-title-span{
+        padding-left: 10px;
+        border-left: 6px solid #2d4bf0;
+        padding-right: 10px;
+        border-right: 6px solid #2d4bf0;
+        
+    }
+    .useful-links ul li {
+        font-size: 2.3vh;
+        padding: 3px;
+        color: ffffff;
+        
+    }
+    
+    .useful-links ul li a:hover{
+        color: #111;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+    
+    .footer-logo {
+        font-size: 2.1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    .copyright{
+        background-color:  #d6d9fd;
+        padding: 18px;
+        text-align: center;
+    }
+    .copyright h3{
+        font-size: 20px;
+        color: rgb(33, 28, 28);
+    }
+    .copyright h3 a{
+        
+        color: rgb(34, 91, 184);
+    }
+    .copyright h3 a:hover{
+        
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+
+    nav {
     text-align: center;
     }
     
