@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtuo Learn</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media-queries.css" />
+    <link rel="stylesheet" href="chatbot.css">
 
-    <link
-      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
 
     <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/796ee7d577.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,32 +21,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: "#da373d",
-              },
-            },
-          },
-        };
-      });
+        document.addEventListener("DOMContentLoaded", function() {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                        },
+                    },
+                },
+            };
+        });
     </script>
-  </head>
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-80WSMNJP27"
-  ></script>
-  <script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80WSMNJP27"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
-      dataLayer.push(arguments);
+        dataLayer.push(arguments);
     }
     gtag("js", new Date());
 
     gtag("config", "G-80WSMNJP27");
-  </script>
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <!-- Swiper CSS -->
@@ -58,43 +52,60 @@
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="Pages/Testimonials/test-style.css">
-  <body>
+
+<body>
     <!-- social media section -->
 
     <div class="mf-social-side-list">
-      <ul>
-        <li>
-          <a href="https://www.facebook.com" target="_blank"
-            ><i class="fab fa-facebook-f"></i
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i
           ></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com" target="_blank"
-            ><i class="fab fa-instagram"></i
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i
           ></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com" target="_blank"
-            ><i class="fab fa-youtube"></i
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i
           ></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com" target="_blank"
-            ><i class="fab fa-linkedin-in"></i
+            </li>
+            <li>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i
           ></a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com" target="_blank">
-            <img
-              src="assets/twitterLogo.jpg"
-              alt="Twitter Logo"
-              id="tw-logo"
-              style="border-radius: 50%; width: full"
-            />
-          </a>
-        </li>
-      </ul>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="assets/twitterLogo.jpg" alt="Twitter Logo" id="tw-logo" style="border-radius: 50%; width: full" />
+                </a>
+            </li>
+        </ul>
     </div>
+
+    <!-- ChatBot -->
+    <button class="chatbot__button">
+      <span class="material-symbols-outlined">ChatBot</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <div class="chatbot__header">
+            <h3 class="chatbox__title">Virtuo-Learn</h3>
+            <span class="material-symbols-outlined">close</span>
+        </div>
+        <ul class="chatbot__box">
+            <li class="chatbot__chat incoming">
+                <p>Welcome ! to ChatBot...</p>
+            </li>
+            <li class="chatbot__chat outgoing">
+                <!-- <p>...</p> -->
+            </li>
+        </ul>
+        <div class="chatbot__input-box">
+            <textarea class="chatbot__textarea" placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+    <!-- ChatBot html close -->
     <!--our products Section -->
     <svg height="0" width="0">
       <filter id="my-shadow" color-interpolation-filters="sRGB">
@@ -103,153 +114,141 @@
   </svg>
 
     <!-- nav bar -->
-    <nav id = "main_navbar">
-      <div class="container main-nav flex">
-        <a href="./index.html" class="company-logo">
-          <img src="./assets/asset 41.png" alt="company logo" />
-        </a>
-        <div class="nav-links" id="nav-links">
-          <ul class="nav-menu">
-          <li>
-            <div >
-              
-              
-              <a href="index.html" class="hover-link current-page" id="home-hover">
-                <i class="fa-solid fa-house" class="hover-link current-page"></i>
-                Home</a></li>
-            
-            <li>
-              
-              <a href="./Pages/About-Us/index.html" class="hover-link"
-                >
-                <i class="fa-solid fa-building-columns"></i>
-                About Us</a
-              >
-            </li>
-            <li>
-              
-              <a href="./Pages/Simulation/index.html" class="hover-link"
-                >
-                <i class="fa-solid fa-plug-circle-check"></i>
-                Simulations</a
-              >
-            </li>
-            <li>
-              
-              <a href="./Pages/3D-Visualizations/index.html" class="hover-link"
-                >
-                <i class="fa-brands fa-unity"></i>
-                3D Visualisations</a
-              >
-            </li>
-            <li>
-              
-              <a href="./Pages/Quizes/index.html" class="hover-link">
-                <i class="fa-solid fa-list-check"></i>
-                Quizzes</a>
-            </li>
-            <li>
-              
-              <a href="./Pages/Videos/index.html" class="hover-link">
-                <i class="fa-solid fa-video"></i>
-                Videos</a>
-            </li>
-            <li>
-              
-              <a href="./Pages/Doubt Engine/index.html" class="hover-link"
-                >
-                <i class="fa-solid fa-check-double"></i>
-                Doubt Engine</a
-              >
-            </li>
-            <li>
-              <div class="switch-container">
-                <input type="checkbox" id="switch" class="switch-checkbox">
-                <label for="switch" class="switch-label">
+    <nav id="main_navbar">
+        <div class="container main-nav flex">
+            <a href="./index.html" class="company-logo">
+                <img src="./assets/asset 41.png" alt="company logo" />
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="nav-menu">
+                    <li>
+                        <div>
+
+
+                            <a href="index.html" class="hover-link current-page" id="home-hover">
+                                <i class="fa-solid fa-house" class="hover-link current-page"></i> Home
+                            </a>
+                    </li>
+
+                    <li>
+
+                        <a href="./Pages/About-Us/index.html" class="hover-link">
+                            <i class="fa-solid fa-building-columns"></i> About Us</a>
+                    </li>
+                    <li>
+
+                        <a href="./Pages/Simulation/index.html" class="hover-link">
+                            <i class="fa-solid fa-plug-circle-check"></i> Simulations
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="./Pages/3D-Visualizations/index.html" class="hover-link">
+                            <i class="fa-brands fa-unity"></i> 3D Visualisations</a>
+                    </li>
+                    <li>
+
+                        <a href="./Pages/Quizes/index.html" class="hover-link">
+                            <i class="fa-solid fa-list-check"></i> Quizzes
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="./Pages/Videos/index.html" class="hover-link">
+                            <i class="fa-solid fa-video"></i> Videos
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="./Pages/Doubt Engine/index.html" class="hover-link">
+                            <i class="fa-solid fa-check-double"></i> Doubt Engine</a>
+                    </li>
+                    <li>
+                        <div class="switch-container">
+                            <input type="checkbox" id="switch" class="switch-checkbox">
+                            <label for="switch" class="switch-label">
                     <div class="switch-button">
                         <span class="material-icons sun-icon">wb_sunny</span>
                         <span class="material-icons moon-icon">brightness_2</span>
                     </div>
                 </label>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-            </li>
-          </ul>
-        </div>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
     </nav>
 
     <!-- header section -->
     <header>
-      <div class="container header-section flex">
-        <div class="header-left">
-          <div class="wrapper1">
-            <div class="static-txt">Learn </div>
-            <div data-typewriter="Interactively,Engagingly,Intelligently,Happily"></div>
-<!--            insert words here-->
-          </div>
+        <div class="container header-section flex">
+            <div class="header-left">
+                <div class="wrapper1">
+                    <div class="static-txt">Learn </div>
+                    <div data-typewriter="Interactively,Engagingly,Intelligently,Happily"></div>
+                    <!--            insert words here-->
+                </div>
 
-          <script>
-            class Typerwriter {
-              constructor(el, options){
-                this.el = el;
-                this.words = [...this.el.dataset.typewriter.split(',')];
-                this.speed = options?.speed || 100;
-                this.delay = options?.delay || 1500;
-                this.repeat = options?.repeat;
-                this.initTyping();
-              }
+                <script>
+                    class Typerwriter {
+                        constructor(el, options) {
+                            this.el = el;
+                            this.words = [...this.el.dataset.typewriter.split(',')];
+                            this.speed = options ? .speed || 100;
+                            this.delay = options ? .delay || 1500;
+                            this.repeat = options ? .repeat;
+                            this.initTyping();
+                        }
 
-              wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+                        wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
-              toggleTyping = () => this.el.classList.toggle('typing');
+                        toggleTyping = () => this.el.classList.toggle('typing');
 
-              async typewrite(word){
-                await this.wait(this.delay);
-                this.toggleTyping();
-                for (const letter of word.split('')) {
-                  this.el.textContent += letter;
-                  await this.wait(this.speed)
-                }
-                this.toggleTyping();
-                await this.wait(this.delay);
-                this.toggleTyping();
-                while (this.el.textContent.length !== 0){
-                  this.el.textContent = this.el.textContent.slice(0, -1);
-                  await this.wait(this.speed)
-                }
-                this.toggleTyping();
-              }
+                        async typewrite(word) {
+                            await this.wait(this.delay);
+                            this.toggleTyping();
+                            for (const letter of word.split('')) {
+                                this.el.textContent += letter;
+                                await this.wait(this.speed)
+                            }
+                            this.toggleTyping();
+                            await this.wait(this.delay);
+                            this.toggleTyping();
+                            while (this.el.textContent.length !== 0) {
+                                this.el.textContent = this.el.textContent.slice(0, -1);
+                                await this.wait(this.speed)
+                            }
+                            this.toggleTyping();
+                        }
 
-              async initTyping() {
-                for (const word of this.words){
-                  await this.typewrite(word);
-                }
-                if(this.repeat){
-                  await this.initTyping();
-                } else {
-                  this.el.style.animation = 'none';
-                }
-              }
-            }
+                        async initTyping() {
+                            for (const word of this.words) {
+                                await this.typewrite(word);
+                            }
+                            if (this.repeat) {
+                                await this.initTyping();
+                            } else {
+                                this.el.style.animation = 'none';
+                            }
+                        }
+                    }
 
-            document.querySelectorAll('[data-typewriter]').forEach(el => {
-              new Typerwriter(el, {
-                repeat: true,
-              })
-            })
-          </script>
+                    document.querySelectorAll('[data-typewriter]').forEach(el => {
+                        new Typerwriter(el, {
+                            repeat: true,
+                        })
+                    })
+                </script>
 
-          <p id="sub-para">
-            Experience immersive learning like never before with simulations, 3D
-            visualizations, customized quizzes, and videos all in one place!
-          </p>
-          <a href="#features" class="primary-button get-started-btn"
-            >Get Started</a
+                <p id="sub-para">
+                    Experience immersive learning like never before with simulations, 3D visualizations, customized quizzes, and videos all in one place!
+                </p>
+                <a href="#features" class="primary-button get-started-btn">Get Started</a
           >
         </div>
         <div class="header-right">
@@ -298,64 +297,54 @@
             <a href="./Pages/Simulation/index.html" class="secondary-button"
               >Learn More <i class="fa-solid fa-right-long"></i
             ></a>
-          </div>
-          <div class="features-card flex">
-            <img src="./assets/asset 13.svg" alt="" />
-            <h3>3D Visualisations</h3>
-            <p>
-              Experience & learn concepts in a whole new dimension with 3D
-              visualizations.
-            </p>
-            <a
-              href="./Pages/3D-Visualizations/index.html"
-              class="secondary-button"
-              >Learn more <i class="fa-solid fa-right-long"></i
+            </div>
+            <div class="features-card flex">
+                <img src="./assets/asset 13.svg" alt="" />
+                <h3>3D Visualisations</h3>
+                <p>
+                    Experience & learn concepts in a whole new dimension with 3D visualizations.
+                </p>
+                <a href="./Pages/3D-Visualizations/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i
             ></a>
-          </div>
-          <div class="features-card flex">
-            <img src="./assets/asset 14.svg" alt="" />
-            <h3>Quizzes</h3>
-            <p>
-              Pinpoint knowledge gaps and improve understanding with
-              personalized quiz feedback.
-            </p>
-            <a href="./Pages/Quizes/index.html" class="secondary-button"
-              >Learn more <i class="fa-solid fa-right-long"></i
+            </div>
+            <div class="features-card flex">
+                <img src="./assets/asset 14.svg" alt="" />
+                <h3>Quizzes</h3>
+                <p>
+                    Pinpoint knowledge gaps and improve understanding with personalized quiz feedback.
+                </p>
+                <a href="./Pages/Quizes/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i
             ></a>
-          </div>
-          <div class="features-card flex">
-            <img src="./assets/asset 15.svg" alt="" />
-            <h3>Videos</h3>
-            <p>
-              Explore key concepts through engaging, informative videos with
-              expert instruction.
-            </p>
-            <a href="./Pages/Videos/index.html" class="secondary-button"
-              >Learn more <i class="fa-solid fa-right-long"></i
+            </div>
+            <div class="features-card flex">
+                <img src="./assets/asset 15.svg" alt="" />
+                <h3>Videos</h3>
+                <p>
+                    Explore key concepts through engaging, informative videos with expert instruction.
+                </p>
+                <a href="./Pages/Videos/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i
             ></a>
-          </div>
-          <div class="features-card flex center">
-            <img src="./assets/asset 16.svg" alt="" />
-            <h3>Doubt Engine</h3>
-            <p>Complex doubts made simple with our powerful doubt engine.</p>
-            <a href="./Pages/Doubt Engine/index.html" class="secondary-button"
-              >Learn more <i class="fa-solid fa-right-long"></i
+            </div>
+            <div class="features-card flex center">
+                <img src="./assets/asset 16.svg" alt="" />
+                <h3>Doubt Engine</h3>
+                <p>Complex doubts made simple with our powerful doubt engine.</p>
+                <a href="./Pages/Doubt Engine/index.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i
             ></a>
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
+        </div>
+        </section>
 
-    <!-- big features section -->
-    <section class="big-feature-section  step-1">
-      <div class="container flex big-feature-container">
-        <div class="feature-img">
-          <img src="./assets/asset 18.svg" alt="" class="feature-image-left" />
-        </div>
-        <div class="feature-desc flex right">
-          <h4>Step 1</h4>
-          <a class="hover-link" href="./Pages/Videos/index.html"
-            >Watch videos</a
+        <!-- big features section -->
+        <section class="big-feature-section  step-1">
+            <div class="container flex big-feature-container">
+                <div class="feature-img">
+                    <img src="./assets/asset 18.svg" alt="" class="feature-image-left" />
+                </div>
+                <div class="feature-desc flex right">
+                    <h4>Step 1</h4>
+                    <a class="hover-link" href="./Pages/Videos/index.html">Watch videos</a
           >
           <p>
             Test interfaces, interaction flows, iconography and more, to help
@@ -690,92 +679,87 @@
     <!-- <a href="#" class="company-logo">
         <img src="./assets/asset 41.png" alt="company logo">
     </a> -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="app-info">
-          <div class="company-logo footer-logo">
-            <a href="index.html">
-              <img src="./assets/asset 41.png" alt="company logo" />
-            </a>
-          </div>
-          <p class="app-paragraph">
-            We specialize in delivering an enriching learning experience through
-            a combination of simulations, 3D visualizations, customized quizzes,
-            and videos to immerse learners in real-world scenarios, fostering a
-            dynamic and engaging educational journey.
-          </p>
-        </div>
+                    <footer class="footer">
+                        <div class="footer-content">
+                            <div class="app-info">
+                                <div class="company-logo footer-logo">
+                                    <a href="index.html">
+                                        <img src="./assets/asset 41.png" alt="company logo" />
+                                    </a>
+                                </div>
+                                <p class="app-paragraph">
+                                    We specialize in delivering an enriching learning experience through a combination of simulations, 3D visualizations, customized quizzes, and videos to immerse learners in real-world scenarios, fostering a dynamic and engaging educational journey.
+                                </p>
+                            </div>
 
-        <div class="useful-links">
-          <div class="links-title">
-            <span class="links-title-span">Useful Links</span>
-          </div>
-          <ul>
-            <li><a href="./Pages/Simulation/index.html"><i class="fa-solid fa-plug-circle-check"></i> Stimulations</a></li>
-            <li><a href="index.html"><i class="fa-solid fa-house" class="hover-link current-page"></i> Home</a></li>
-            <li>
-              <a href="./Pages/3D-Visualizations/index.html"
-                ><i class="fa-brands fa-unity"></i> 3D Visualisations</a
+                            <div class="useful-links">
+                                <div class="links-title">
+                                    <span class="links-title-span">Useful Links</span>
+                                </div>
+                                <ul>
+                                    <li><a href="./Pages/Simulation/index.html"><i class="fa-solid fa-plug-circle-check"></i> Stimulations</a></li>
+                                    <li><a href="index.html"><i class="fa-solid fa-house" class="hover-link current-page"></i> Home</a></li>
+                                    <li>
+                                        <a href="./Pages/3D-Visualizations/index.html"><i class="fa-brands fa-unity"></i> 3D Visualisations</a
               >
             </li>
             <li><a href="./Pages/About-Us/index.html"><i class="fa-solid fa-building-columns"></i> About Us</a></li>
-            <li><a href="./Pages/Quizes/index.html"><i class="fa-solid fa-list-check"></i> Quizzes</a></li>
-            <li><a href="#"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
-            <li><a href="./Pages/Videos/index.html"><i class="fa-solid fa-video"></i> Videos</a></li>
-            <li><a href="./Pages/Doubt Engine/index.html"><i class="fa-solid fa-circle-question"></i> Help</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <h3>
-          Copyright &copy; <span id="copyright-year"></span> Virtuo Learn | All rights reserved | Developed
-          By <a href="https://github.com/JAYESHBATRA">Jayesh Batra</a>
-        </h3>
-      </div>
-    </footer>
+                                    <li><a href="./Pages/Quizes/index.html"><i class="fa-solid fa-list-check"></i> Quizzes</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                                    <li><a href="./Pages/Videos/index.html"><i class="fa-solid fa-video"></i> Videos</a></li>
+                                    <li><a href="./Pages/Doubt Engine/index.html"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <h3>
+                                Copyright &copy; <span id="copyright-year"></span> Virtuo Learn | All rights reserved | Developed By <a href="https://github.com/JAYESHBATRA">Jayesh Batra</a>
+                            </h3>
+                        </div>
+                    </footer>
 
-    <script
-      src="https://kit.fontawesome.com/c1fc3d2826.js"
-      crossorigin="anonymous"
-    ></script>
+                    <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
+                    <script>
+                        const hamburger = document.querySelector(".hamburger");
+                        const navMenu = document.querySelector(".nav-menu");
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
+                        hamburger.addEventListener("click", () => {
+                            hamburger.classList.toggle("active");
+                            navMenu.classList.toggle("active");
+                        });
 
-      window.onscroll = function () {
-        scrollFunction();
-      };
+                        window.onscroll = function() {
+                            scrollFunction();
+                        };
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 200 ||
-          document.documentElement.scrollTop > 200
-        ) {
-          document.getElementById("myBtn").style.display = "block";
-        } else {
-          document.getElementById("myBtn").style.display = "none";
-        }
-      }
+                        function scrollFunction() {
+                            if (
+                                document.body.scrollTop > 200 ||
+                                document.documentElement.scrollTop > 200
+                            ) {
+                                document.getElementById("myBtn").style.display = "block";
+                            } else {
+                                document.getElementById("myBtn").style.display = "none";
+                            }
+                        }
 
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <script src="scroll-reveal.js"></script>
-    <script src="mode-switch.js"></script>
-      <!-- copyright-year Script -->
-    <script src="./copyrightYear.js"></script>
-    <!-- Swiper JS -->
-<script src="Pages/Testimonials/swiper-bundle.min.js"></script>
-<!-- Custom JavaScript -->
+                        function topFunction() {
+                            document.body.scrollTop = 0;
+                            document.documentElement.scrollTop = 0;
+                        }
+                    </script>
+                    <script src="scroll-reveal.js"></script>
+                    <script src="mode-switch.js"></script>
+                    // Chatbot script
+                    <script src="chatbot.js"></script>
+                    <!-- copyright-year Script -->
+                    <script src="./copyrightYear.js"></script>
+                    <!-- Swiper JS -->
+                    <script src="Pages/Testimonials/swiper-bundle.min.js"></script>
+                    <!-- Custom JavaScript -->
 
-<script src="Pages/Testimonials/test-script.js"></script>
-  </body>
+                    <script src="Pages/Testimonials/test-script.js"></script>
+</body>
+
 </html>
