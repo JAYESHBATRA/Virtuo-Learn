@@ -142,10 +142,7 @@ body {
     	top: 0px;
     	width: 100%;
     	z-index: 1000;
-}
-  }
-  
-  
+} 
 
 nav {
     text-align: center;
@@ -889,10 +886,13 @@ table .ribbon::after {
 	
 }
 
-.useful-links ul li a:hover{
-	color: #111;
-	transition: 0.5s;
-	transform: scale(1.1);
+.useful-links ul li a {
+    color: #111;
+    transition: transform 0.5s ease;
+}
+
+.useful-links ul li a:hover {
+    transform: scale(1.1);
 }
 
 .footer-logo {
