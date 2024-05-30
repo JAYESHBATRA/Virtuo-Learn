@@ -1,4 +1,4 @@
-<img width="952" alt="6" src="https://user-images.githubusercontent.com/112322302/234294672-145c9272-6ff9-490a-b6a8-a70de0432f79.png">
+<img width="952" alt="6" src="https://user-images.githubusercontent.com/112322302/234294672-145c9272-6ff9-490a-b6a8-a70de0432f79.png">  
 
 Virtuo Learn
 
