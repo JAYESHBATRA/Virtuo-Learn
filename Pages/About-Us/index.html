@@ -44,7 +44,89 @@
 
 <body class="text-primary_text_color overflow-x-hidden font-poppins">
   <!-- nav bar -->
-  <nav>
+
+  <nav id = "main_navbar">
+    <div class="container main-nav flex">
+      <a href="./index.html" class="company-logo">
+        <img src="./assets/asset 41.png" alt="company logo" />
+      </a>
+      <div class="nav-links" id="nav-links">
+        <ul class="nav-menu">
+        <li>
+          <div >
+            
+            
+            <a href="../../index.html" class="hover-link" id="home-hover">
+              <i class="fa-solid fa-house" class="hover-link"></i>
+              Home</a></li>
+          
+          <li>
+            
+            <a href="./index.html" class="hover-link current-page"
+              >
+              <i class="fa-solid fa-building-columns current-page"></i>
+              About Us</a
+            >
+          </li>
+          <li>
+            
+            <a href="../Simulation/index.html" class="hover-link"
+              >
+              <i class="fa-solid fa-plug-circle-check"></i>
+              Simulations</a
+            >
+          </li>
+          <li>
+            
+            <a href="../3D-Visualizations/index.html" class="hover-link"
+              >
+              <i class="fa-brands fa-unity"></i>
+              3D Visualisations</a
+            >
+          </li>
+          <li>
+            
+            <a href="../Quizes/index.html" class="hover-link">
+              <i class="fa-solid fa-list-check"></i>
+              Quizzes</a>
+          </li>
+          <li>
+            
+            <a href="../Videos/index.html" class="hover-link">
+              <i class="fa-solid fa-video"></i>
+              Videos</a>
+          </li>
+          <li>
+            
+            <a href="../Doubt Engine/index.html" class="hover-link"
+              >
+              <i class="fa-solid fa-check-double"></i>
+              Doubt Engine</a
+            >
+          </li>
+          <li>
+            <div class="switch-container">
+              <input type="checkbox" id="switch" class="switch-checkbox">
+              <label for="switch" class="switch-label">
+                  <div class="switch-button">
+                      <span class="material-icons sun-icon">wb_sunny</span>
+                      <span class="material-icons moon-icon">brightness_2</span>
+                  </div>
+              </label>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <nav>
     <div
       class="container main-navi max-w-[1180px] overflow-hidden m-auto px-[20px] lg:px-[10px] justify-between mt-5 flex items-center">
       <a class="no-underline inline-block company-logo" href="../../index.html">
@@ -92,7 +174,7 @@
           class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- header section -->
   <header>
@@ -104,33 +186,35 @@
 
   <!-- About Us -->
   <div class="container1">
-  <div class="w-[80vw] text-center mx-auto my-0 info-text">
-    <p class=" wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para1">
-      Welcome to Virtuo Learn, a leading online education platform that offers a range of cutting-edge tools and
-      resources designed to enhance the learning experience of students of all ages and backgrounds.
-    </p>
-    <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para2">
-      At Virtuo Learn, we believe that every student deserves access to quality education that is personalized, fun,
-      interactive, and easy. That's why we have developed a comprehensive range of features that are tailored to the
-      unique needs and learning styles of each student.
-    </p>
-    <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para3">
-      Our platform offers a vast library of video lectures, interactive simulations, 3D visualizations, and quizzes that
-      provide instant feedback to help students track their progress and identify their areas of strengths and
-      weaknesses. Our doubt engine is designed to resolve any doubts that students may have, providing a seamless
-      learning experience.
-    </p>
-    <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para4">
-      We are passionate about technology and its ability to empower students to achieve their full potential. Our team
-      of experienced educators and technologists work tirelessly to develop innovative tools and resources that enable
-      students to learn and grow at their own pace.
-    </p>
-    <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para5">
-      Thank you for choosing Virtuo Learn as your partner in learning. We look forward to helping you achieve your goals
-      and unlock your full potential.</p>
-    </p>
+    <div class="w-[80vw] text-center mx-auto my-0 info-text">
+      <p class=" wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para1">
+        Welcome to Virtuo Learn, a leading online education platform that offers a range of cutting-edge tools and
+        resources designed to enhance the learning experience of students of all ages and backgrounds.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para2">
+        At Virtuo Learn, we believe that every student deserves access to quality education that is personalized, fun,
+        interactive, and easy. That's why we have developed a comprehensive range of features that are tailored to the
+        unique needs and learning styles of each student.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para3">
+        Our platform offers a vast library of video lectures, interactive simulations, 3D visualizations, and quizzes
+        that
+        provide instant feedback to help students track their progress and identify their areas of strengths and
+        weaknesses. Our doubt engine is designed to resolve any doubts that students may have, providing a seamless
+        learning experience.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para4">
+        We are passionate about technology and its ability to empower students to achieve their full potential. Our team
+        of experienced educators and technologists work tirelessly to develop innovative tools and resources that enable
+        students to learn and grow at their own pace.
+      </p>
+      <p class="wrap text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para5">
+        Thank you for choosing Virtuo Learn as your partner in learning. We look forward to helping you achieve your
+        goals
+        and unlock your full potential.</p>
+      </p>
+    </div>
   </div>
-</div>
   <!-- footer -->
   <!-- <a class="no-underline inline-block" href="#" class="company-logo">
         <img src="./assets/asset 41.png" alt="company logo">

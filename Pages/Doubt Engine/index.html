@@ -43,44 +43,86 @@
 </head>
 <body class="text-primary_text_color overflow-x-hidden font-poppins">
     <!-- nav bar -->
-    <nav>
-      <div class="container main-navi max-w-[1180px] overflow-hidden m-auto px-[20px] lg:px-[10px] justify-between mt-5 flex items-center">
-          <a href="../../index.html" class="no-underline inline-block company-logo">
-              <img src="./assets/asset 41.png" alt="company logo" class="md:w-[200px] sm:min-w-[200px]">
-          </a>
-          <div class="basis-[730px] nav-links" id="nav-links">
-            <ul class="nav-menu flex items-center list-none justify-between">
-                <li><a href="../../index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
-                  <i class="fa-solid fa-house"  style="font-size:10px;"></i>
-                  Home</a>
-                </li>
-                <li><a href="../About-Us/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color ">
-                  <i class="fa-solid fa-building-columns" style="font-size:10px;"></i>
-                  About Us</a></li>
-                <li><a href="../Simulation/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
-                  <i class="fa-solid fa-plug-circle-check" style="font-size:10px;"></i>
-                  Simulations</a></li>
-                <li><a href="../3D-Visualizations/index.html" class="text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
-                  <i class="fa-brands fa-unity"  style="font-size:10px;"></i>
-                  3D Visualisations</a></li>
-                <li><a href="../Quizes/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
-                  <i class="fa-solid fa-list-check"  style="font-size:10px;"></i>
-                  Quizzes</a></li>
-                <li><a href="../Videos/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
-                  <i class="fa-solid fa-video"  style="font-size:10px;"></i>
-                  Videos</a></li>
-                <li><a href="../Doubt Engine/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color current-page">
-                  <i class="fa-solid fa-check-double" style="font-size:10px;"></i>
-                  Doubt Engine</a></li>
-            </ul>
+    <nav id = "main_navbar">
+      <div class="container main-nav flex">
+        <a href="./index.html" class="company-logo">
+          <img src="./assets/asset 41.png" alt="company logo" />
+        </a>
+        <div class="nav-links" id="nav-links">
+          <ul class="nav-menu">
+          <li>
+            <div >
+              
+              
+              <a href="../../index.html" class="hover-link" id="home-hover">
+                <i class="fa-solid fa-house" class="hover-link"></i>
+                Home</a></li>
+            
+            <li>
+              
+              <a href="../About-Us/index.html" class="hover-link"
+                >
+                <i class="fa-solid fa-building-columns"></i>
+                About Us</a
+              >
+            </li>
+            <li>
+              
+              <a href="../Simulation/index.html" class="hover-link"
+                >
+                <i class="fa-solid fa-plug-circle-check"></i>
+                Simulations</a
+              >
+            </li>
+            <li>
+              
+              <a href="../3D-Visualizations/index.html" class="hover-link"
+                >
+                <i class="fa-brands fa-unity"></i>
+                3D Visualisations</a
+              >
+            </li>
+            <li>
+              
+              <a href="../Quizes/index.html" class="hover-link">
+                <i class="fa-solid fa-list-check"></i>
+                Quizzes</a>
+            </li>
+            <li>
+              
+              <a href="../Videos/index.html" class="hover-link">
+                <i class="fa-solid fa-video"></i>
+                Videos</a>
+            </li>
+            <li>
+              
+              <a href="../Doubt Engine/index.html" class="hover-link current-page"
+                >
+                <i class="fa-solid fa-check-double current-page"></i>
+                Doubt Engine</a
+              >
+            </li>
+            <li>
+              <div class="switch-container">
+                <input type="checkbox" id="switch" class="switch-checkbox">
+                <label for="switch" class="switch-label">
+                    <div class="switch-button">
+                        <span class="material-icons sun-icon">wb_sunny</span>
+                        <span class="material-icons moon-icon">brightness_2</span>
+                    </div>
+                </label>
+            </div>
+            </li>
+          </ul>
         </div>
-        <div class="hamburger cursor-pointer">
-          <span class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
-          <span class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
-          <span class="bar block w-[25px] h-[3px] transition-all duration-[0.3s] ease-in-out bg-[black] mx-auto my-[5px]"></span>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </div>
-  </nav>
+    </nav>
+
 
     <!-- header section -->
     <header>
