@@ -305,9 +305,12 @@ ul {
 }
 
 .company-logo img {
-    width: 200px;
-	height: 50px;
+	width: 100%;  /* Use 100% width to make the image responsive */
+	height: auto;  /* Maintain the aspect ratio */
+	max-width: 200px;  /* Ensure the image doesn't grow larger than its intended size */
+	max-height: 50px;  /* Ensure the image doesn't grow larger than its intended size */
 }
+
 
 .nav-links {
     flex-basis: 730px;
