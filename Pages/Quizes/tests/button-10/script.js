@@ -1,106 +1,105 @@
 const quizData = [
     {
-      question: "How many electrons does a neutral nitrogen atom have?",
-      a: "5",
-      b: "6",
-      c: "7",
-      d: "8",
+      question: "Type of attachement of teeth in humans: ",
+      a: "Diphyodont",
+      b: "Heterodont",
+      c: "Thecodont",
+      d: "None",
       correct: "c",
-      topic: "Atom",
+      topic: "Digestive system",
       difficulty: "Easy",
     },
     {
-      question: "Which group in the periodic table contains noble gases?",
-      a: "Group 1",
-      b: "Group 2",
-      c: "Group 17",
-      d: "Group 18",
-      correct: "d",
-      topic: "Noble Gases",
-      difficulty: "Easy",
-    },
-
-    {
-      question: " What is the main energy level (shell) for the outermost electrons in Group 16 elements?",
-      a: "n=1",
-      b: "n=2",
-      c: "n=3",
-      d: "n=4",
-      correct: "d",
-      topic: "Periodic Table",
-      difficulty: "Medium",
-    },
-    {
-      question: " Which element is at the center of a molecule with a trigonal bipyramidal molecular geometry?",
-      a: "Carbon",
-      b: "Nitrogen",
-      c: "Phosphorus",
-      d: "Sulphur",
+      question: "Vermiform appendix arises from ? ",
+      a: "Colon",
+      b: "Jejunum",
+      c: "Caecum",
+      d: "Ileum",
       correct: "c",
-      topic: "Periodic Table",
+      topic: "Digestive system",
+      difficulty: "medium",
+    },
+    {
+      question: "Which of the following are the causes of indigestion?",
+      a: "Anxiety",
+      b: "Food poisoning",
+      c: "Over eating",
+      d: "All of  these",
+      correct: "d",
+      topic: "Disorder of digestive system",
       difficulty: "Hard",
     },
     {
-        question: "What is the charge of a chloride ion (Cl-)?",
-        a: "-1",
-        b: "+1",
-        c: "0",
-        d: "-2",
-        correct: "a",
-        topic: "Halogens",
-        difficulty: "Easy",
-      },
-      {
-        question: "What is the common oxidation state of oxygen in compounds?",
-        a: "-1",
-        b: "0",
-        c: "+1",
-        d: "-2",
-        correct: "d",
-        topic: "Group 16",
-        difficulty: "Medium",
-      },
-      {
-        question: "Which of the following elements has the highest atomic radius?",
-        a: "Oxygen",
-        b: "Nitrogen",
-        c: "Carbon",
-        d: "Fluorine",
-        correct: "c",
-        topic: "Group 14",
-        difficulty: "Hard",
-      },
-      {
-        question: "What is the trend of atomic radius as you move from left to right across a period in the periodic table?",
-        a: "Increases",
-        b: "Decreases",
-        c: "Remains Constant",
-        d: "No Pattern",
+      question: "The optimum pH of pepsin is :",
+      a: "1.5 - 2.5",
+      b: "5.5 - 6.5",
+      c: "6.8 - 7.5",
+      d: "4.5 - 5.5",
+      correct: "a",
+      topic: "Digestion of food",
+      difficulty: "Medium",
+    },
+    {
+        question: "which part of mammalian alimentary canal does not secrete any enzyme : ",
+        a: "Mouth",
+        b: "Oesophagus",
+        c: "Stomach",
+        d: "Duodenum",
         correct: "b",
-        topic: "Atoms",
+        topic: "Digestive system",
+        difficulty: "Easy",
+      },
+      {
+        question: "Pepsin converts protein into :",
+        a: "rennin",
+        b: "Proteoses and peptones",
+        c: "Amino acids",
+        d: "Lipase",
+        correct: "b",
+        topic: "Digestion of food",
+        difficulty: "Easy",
+      },
+      {
+        question: "Kwashiorkar occurs due to: ",
+        a: "Protein and Calorie deficiency",
+        b: "Protein deficiency",
+        c: "Calcium deficiency",
+        d: "Fat deficiency",
+        correct: "b",
+        topic: "Disorder of digestive system",
         difficulty: "Medium",
       },
       {
-        question: "Which ion is isoelectronic with argon?",
-        a: "Cl-",
-        b: "K+",
-        c: "Ca2+",
-        d: "S2-",
-        correct: "c",
-        topic: "Inert Elements",
+        question: "The common bile duct in human is formed by the joining of : ",
+        a: "Pancreatic duct and bile duct",
+        b: "Cystic duct and hepatic duct",
+        c: "Cystic duct and pancreatic duct",
+        d: "Hepatic duct and pancreatic duct",
+        correct: "b",
+        topic: "Digestive System",
         difficulty: "Hard",
       },
       {
-        question: "In which period is the element chlorine located?",
-        a: "1",
-        b: "2",
-        c: "3",
-        d: "4",
-        correct: "c",
-        topic: "Periodic Table",
-        difficulty: "Easy",
+        question: "Pepsin acts in :",
+        a: "Basic medium",
+        b: "Acidic medium",
+        c: "Neutral medium",
+        d: "All types of medium",
+        correct: "b",
+        topic: "Digestion of food",
+        difficulty: "Medium",
       },
-    ];
+      {
+        question: "Carrier ions like Na+ facilitate the absorption of substances like:",
+        a: "Amino acids and glucose",
+        b: "Glucose and fatty acids",
+        c: "Fatty acid and glycerol",
+        d: "Fructose and some amino acids",
+        correct: "a",
+        topic: "Absorption of digestive products",
+        difficulty: "Hard",
+      },
+  ];
   
   const quiz = document.getElementById("quiz");
   const answerElements = document.querySelectorAll(".answer");
@@ -114,8 +113,13 @@ const quizData = [
   const quizcount = document.getElementById("quizcount");
   const prev_score= document.getElementById("max-score");
   const max_wrapper= document.getElementsByClassName("max-wrapper")[0]
-const loadScore=()=>{
-    const score= localStorage.getItem('btn-6-max');
+
+  
+  let currentQuiz = 0;
+  let score = 0;
+  const weak_topics=[];
+  const loadScore=()=>{
+    const score= localStorage.getItem('btn-10-max');
    if(score){
     prev_score.innerHTML=`Max score <br>${score}`;
    }else{
@@ -124,16 +128,11 @@ const loadScore=()=>{
     
   }
   const storeMax=(score)=>{
-    const maxscore = localStorage.getItem('btn-6-max');
+    const maxscore = localStorage.getItem('btn-10-max');
     if (score>maxscore){
-      localStorage.setItem('btn-6-max',score)
+      localStorage.setItem('btn-10-max',score)
     }
   }
-
-  
-  let currentQuiz = 0;
-  let score = 0;
-  const weak_topics=[];
   
   const deselectAnswers = () => {
     answerElements.forEach((answer) => (answer.checked = false));
@@ -146,6 +145,7 @@ const loadScore=()=>{
     });
     return answer;
   };
+
   
   const loadQuiz = () => {
     deselectAnswers();
@@ -181,7 +181,6 @@ const loadScore=()=>{
         `
         storeMax(score);
         loadScore();
-        
         var temp;
         for (i = 0; i < weak_topics.length; i++) {
           if(i===0){
@@ -197,28 +196,24 @@ const loadScore=()=>{
             temp.className = 'thumbnail';
             document.querySelector(".recommendation-thumbnails").appendChild(image);
           }
-
+          
         for (i = 0; i < weak_topics.length; i++) {
             if(i===0){
-                // this is for weak topics heading
                 temp = document.createElement('div');
                 temp.className = 'heading';
                 temp.innerHTML = "Weak Topics:" ;
                 document.getElementsByClassName('weak')[0].appendChild(temp);
             }
-            // this is for weak topics
             temp = document.createElement('div');
             temp.className = 'topic';
             temp.innerHTML = weak_topics[i];
             document.getElementsByClassName('weak')[0].appendChild(temp);
             }
-
-
       }
     }
     if(currentQuiz>=quizData.length){
       let link = document.createElement("a");
-      link.href="/Pages/Quizes/tests/button-6/solution.html";
+      link.href="/Pages/Quizes/tests/button-10/solution.html";
 
         temp = document.createElement('button');
         
@@ -228,5 +223,4 @@ const loadScore=()=>{
         link.appendChild(temp);
         document.getElementsByClassName('solution-div')[0].appendChild(link);
     }
-
-  })
+  });
