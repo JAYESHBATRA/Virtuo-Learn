@@ -93,6 +93,7 @@ html.sr .load-hidden {
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
+	z-index: 0;
 }
 
 :root {
@@ -141,7 +142,7 @@ body {
 	position: fixed;
     	top: 0px;
     	width: 100%;
-    	z-index: 1000;
+    	z-index: 10;
 }
   
   
@@ -301,7 +302,7 @@ ul {
 .main-nav {
     /* margin-top: 20px; */
     justify-content: space-between;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .company-logo img {
