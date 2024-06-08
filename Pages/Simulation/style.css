@@ -226,7 +226,10 @@ ul {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
-
+.course:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
 .course h2 {
 	letter-spacing: 1px;
 	margin: 10px 0;
