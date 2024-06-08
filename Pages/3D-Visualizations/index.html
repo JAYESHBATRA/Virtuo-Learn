@@ -136,6 +136,13 @@ rel="stylesheet"
     </div>
   </div>
 
+  <button
+      onclick="topFunction()"
+      class="icon-arrow-up"
+      id="myBtn"
+      title="Scroll to Top"
+    ></button>
+
     
     <!-- footer -->
     <!-- <a href="#" class="company-logo">
@@ -160,6 +167,26 @@ rel="stylesheet"
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
       })
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <script src="../../scroll-reveal.js"></script>
 

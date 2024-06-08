@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Virtuo Learn</title>
   <link rel="stylesheet" href="style.css">
+  <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" href="media-queries.css">
   <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -131,6 +135,13 @@
     </p>
   </div>
 </div>
+
+<button
+onclick="topFunction()"
+class="icon-arrow-up"
+id="myBtn"
+title="Scroll to Top"
+></button>
   <!-- footer -->
   <!-- <a class="no-underline inline-block" href="#" class="company-logo">
         <img src="./assets/asset 41.png" alt="company logo">
@@ -174,6 +185,26 @@
         observer.observe(wrap);
       });
     });
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+      ) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
   <script src="../../scroll-reveal.js"></script>
 
