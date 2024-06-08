@@ -268,6 +268,38 @@ ul {
 
 }
 
+/*Up-arrow button*/
+
+
+#myBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(97, 96, 96, 0.2);
+    cursor: pointer;
+	z-index: 1;
+}
+
+#myBtn:hover{
+    opacity: 1;
+    background-color: #91f0c0;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        transform: translateY(3px);
+    }
+}
+
 
 /* footer */
 
