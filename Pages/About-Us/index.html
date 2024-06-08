@@ -44,6 +44,24 @@
 
 <body class="text-primary_text_color overflow-x-hidden font-poppins">
   <!-- nav bar -->
+  <div class="nav-wrapper">
+    <div class="progress-bar"></div>
+ </div>
+
+ <style>
+  .nav-wrapper{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 12;
+ }
+ .progress-bar{
+    height: 5px;
+    width: 0;
+    border: 4px solid rgb(71, 71, 132);
+    background-color:rgb(81, 81, 153);
+ }	
+ </style>
   <nav>
     <div
       class="container main-navi max-w-[1180px] overflow-hidden m-auto px-[20px] lg:px-[10px] justify-between mt-5 flex items-center">
