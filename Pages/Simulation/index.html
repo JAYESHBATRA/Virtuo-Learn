@@ -7,6 +7,7 @@
     <title>Virtuo Learn</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link
@@ -16,7 +17,7 @@
 </head>
 <body>
     <!-- nav bar -->
-    <nav>
+    <nav id="main_navbar">
       <div class="container main-navi flex">
           <a href="../../index.html" class="company-logo">
               <img src="./assets/asset 41.png" alt="company logo">
@@ -45,6 +46,17 @@
                 <li><a href="../Doubt Engine/index.html" class="no-underline inline-block text-primary_text_color transition duration-200 ease-out hover:text-accent_color">
                   <i class="fa-solid fa-check-double" style="font-size:10px;"></i>
                   Doubt Engine</a></li>
+                  <li>
+                    <div class="switch-container">
+                        <input type="checkbox" id="switch" class="switch-checkbox">
+                        <label for="switch" class="switch-label">
+                            <div class="switch-button">
+                                <span class="material-icons sun-icon">wb_sunny</span>
+                                <span class="material-icons moon-icon">brightness_2</span>
+                            </div>
+                        </label>
+                    </div>
+                </li>
             </ul>
         </div>
           <div class="hamburger">
@@ -148,6 +160,7 @@
       })
     </script>
     <script src="../../scroll-reveal.js"></script>
+    <script src="mode-switch.js"></script>
 
 </body>
 </html>
