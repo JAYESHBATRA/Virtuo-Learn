@@ -284,6 +284,7 @@ ul {
     width: 60px;
     display: none;
     place-items: center;
+    color: black;
     border-radius: 50%;
     transition: opacity 0.3s, background-color 0.3s;
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3),
