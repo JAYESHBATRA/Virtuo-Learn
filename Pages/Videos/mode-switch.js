@@ -103,6 +103,16 @@ document.addEventListener('DOMContentLoaded', () => {
       companyLogo.style.filter = "none";
       companyLogo.src = "./assets/asset 41.png";
     }
+
+    const courseHeaders = document.querySelectorAll('.course h6');
+    courseHeaders.forEach(header => {
+        header.style.color = "#ffffff"; // Change text color to white
+    });
+
+    const courseHeaders2 = document.querySelectorAll('.course-preview h2');
+    courseHeaders2.forEach(header => {
+        header.style.color = "#ffffff"; // Change text color to white
+    });
   }
 
   if (currentTheme) {
