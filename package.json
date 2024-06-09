@@ -1,0 +1,21 @@
+{
+  "name": "virtuo-learn",
+  "version": "1.0.0",
+  "description": "Welcome to Virtuo-Learn , it is a platform that provides immersive learning experiences like never before. It offers simulations, 3D visualizations, customized quizzes, doubt engine, and videos, all in one place.",
+  "main": "copyrightYear.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "matter-js": "^0.19.0",
+    "p5": "^1.9.4",
+    "three": "^0.165.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

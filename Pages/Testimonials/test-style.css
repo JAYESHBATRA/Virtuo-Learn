@@ -1,10 +1,14 @@
-/* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 .slide-container {
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
+  margin: auto;
 }
 
 .slide-content {
@@ -85,6 +89,7 @@
   border-radius: 25px;
   background-color: #e9ebff;
   height: 300px;
+  margin-bottom: 20px; 
 }
 
 .fronts {
@@ -140,30 +145,4 @@
   content: "\201D";
   bottom: -50px;
   right: 0px;
-}
-
-.swiper-navBtn {
-  color: #3c4aea;
-  transition: color 0.3s ease;
-}
-
-.swiper-navBtn:hover {
-  color: #3c4aea;
-}
-
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-  font-size: 35px;
-}
-.switch-checkbox:checked + .switch-label .switch-button .moon-icon {
-  color: black;
-}
-
-.switch-checkbox:checked + .switch-label .switch-button .sun-icon {
-  color: #ffc107;
-}
-
-.switch-checkbox:checked + .switch-label .switch-button .moon-icon + .fronts,
-.switch-checkbox:checked + .switch-label .switch-button .moon-icon + .backs {
-  color: black;
 }
