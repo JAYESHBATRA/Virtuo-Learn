@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+  
+::-webkit-scrollbar{
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+  
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top, #2294ed , #1d69a3);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* nav bar */
+
+.main-navi {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 200px;
+}
+.nav-menu{
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+    justify-content: space-between;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+
+nav {
+    top:0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width:1425px;
+    }
+    
+nav ul{
+      list-style: none;
+      margin: 0 2px;
+      padding: 0;
+    }
+    
+nav li {
+       display: inline-block;
+       padding: 6px 6px;
+    }
+    
+nav a {
+      font-weight: normal;
+      font-size: .90em;
+    }
+
+body {
+    margin: 0;
+    background-color:white;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    overflow-x: hidden;
+    height:100vh;
+}
+
+.container {
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: 85%;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.image-section {
+    width: 60%;
+    flex: 1;
+    background-position: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    width: 790px;
+}
+
+.login-section {
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 28px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin:10px;
+    background: url('https://cdn-icons-png.flaticon.com/128/3781/3781605.png') no-repeat 7px center / 15px auto;
+}
+
+.input-group input[type="password"] {
+    background: url('https://cdn-icons-png.flaticon.com/128/2889/2889676.png') no-repeat 7px center / 20px auto;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+.divider {
+    width: 1px;
+    background-color: #ccc;
+    height: 100%;
+    position:relative;
+    right:-2%;
+}
+ 
+/* footer */
+
+footer{
+  
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    padding-top: 40px;
+    background-color: #ebf2fa;
+    margin-top: 1vh;
+    width:1425px;
+  }
+  
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-logo{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+
+
+.current-page {
+	color:#4d006b;
+	background-origin: border-box; 
+	padding: 8px 12px;
+    border-radius: 8px; 
+    border: 2px solid rgb(0, 30, 94);
+    text-decoration: none; 
+	font-weight: lighter;
+}
