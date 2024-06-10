@@ -805,6 +805,7 @@ table .ribbon::after {
 	width: auto;
 	
 	height: auto;
+	position : relative;
 
 
 	
