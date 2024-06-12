@@ -141,7 +141,8 @@ ul {
 }
 
 .nav-links {
-    flex-basis: 730px;
+    /* flex-basis: 730px; */
+    display: grid;
 }
 
 .nav-menu{
