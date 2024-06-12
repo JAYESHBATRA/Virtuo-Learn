@@ -539,7 +539,6 @@ transform: scale(1.05);
 	justify-content: center;
 	min-height: 100vh;
 	padding: 20px;
-
 	margin-bottom: 5vh;
 }
 .wrapper {
@@ -553,6 +552,9 @@ transform: scale(1.05);
 .wrapper .table {
 	background: #fff;
 	width: calc(33% - 20px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 30px 30px;
 	position: relative;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -581,7 +583,7 @@ p.aj_des {
 }
 
 .table.premium {
-	margin: -20px;
+	margin-top: -30px;
 }
 
 .premium_all {
@@ -676,6 +678,10 @@ p.aj_des {
 	color: red;
 }
 
+.basic .price-section{
+	margin-top: 60px;
+}
+
 .basic .btn button {
 	background: red;
 	color: #fff;
@@ -683,7 +689,7 @@ p.aj_des {
 }
 
 .basic .btn button:hover {
-	background: rgba(240, 101, 36);
+	background: #f06524;
 	color: #fff;
 }
 
@@ -695,6 +701,14 @@ p.aj_des {
 	margin-bottom: 1.5vh;
 }
 
+.premium .package-name{
+	margin-top: -5px;
+}
+
+.premium .features{
+	padding-bottom: 15%;
+}
+
 .premium .btn button {
 	background: #ba24f0;
 	color: #fff;
@@ -702,7 +716,7 @@ p.aj_des {
 }
 
 .premium .btn button:hover {
-	background: rgba(240, 101, 36);
+	background: #8117a8;
 	color: #fff;
 }
 
@@ -711,7 +725,7 @@ p.aj_des {
 .ultimate .inner-area,
 .ultimate .head_tab h2 {
 	color: #f5b55a;
-	margin-bottom: 1vh;
+	/* margin-bottom: 1vh; */
 }
 
 .ultimate .btn button {
@@ -721,7 +735,7 @@ p.aj_des {
 }
 
 .ultimate .btn button:hover {
-	background: rgba(240, 101, 36);
+	background: #e49b35;
 	color: #fff;
 }
 
