@@ -802,8 +802,12 @@ table .ribbon::after {
 	right: 0;
 	background: #111;
 	*/
+	width: auto;
 	
 	height: auto;
+	position : relative;
+
+
 	
 	padding-top: 20px;
 	background-color: #ebf2fa; 

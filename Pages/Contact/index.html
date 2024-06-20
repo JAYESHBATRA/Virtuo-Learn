@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <!-- <img src="./asset 47/asset 47.svg" class="contact" alt="contact us img"/> -->
+
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 50px;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn-submit {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        .contact{
+            height: 300px;
+           width: 300px;
+       /* position: relative; */
+       padding-bottom: 500px;
+       position: absolute;
+     top: 50%;
+        left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name...">
+            <div class="error" id="nameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email...">
+            <div class="error" id="emailError"></div>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject...">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write something..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
+        
+    
+
+
+<script>
+    function validateForm() {
+        let isValid = true;
+
+        // Validate name
+        let name = document.getElementById('name').value;
+        let nameError = document.getElementById('nameError');
+        if (name === "") {
+            nameError.textContent = "Name is required.";
+            isValid = false;
+        } else {
+            nameError.textContent = "";
+        }
+
+        // Validate email
+        let email = document.getElementById('email').value;
+        let emailError = document.getElementById('emailError');
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+            emailError.textContent = "Email is required.";
+            isValid = false;
+        } else if (!emailPattern.test(email)) {
+            emailError.textContent = "Invalid email format.";
+            isValid = false;
+        } else {
+            emailError.textContent = "";
+        }
+
+        return isValid;
+    }
+</script>
+
+</body>
+</html>
