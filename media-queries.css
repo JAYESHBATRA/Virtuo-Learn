@@ -178,17 +178,23 @@
 
   /* footer */
 
-  @media  screen and (max-width:768px) {
+  @media  screen and (max-width:100%) {
+    .footer{
+        width : 100%;
+    }
     .footer-content{
         display: flex;
         flex-direction: column;
+        width: 100%; /* Ensures the footer takes the full width of the page */
+        box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+        padding: 20px;
     }
     .app-paragraph{
         text-align: center;
         margin-right: 0;
     }
     .useful-links{  
-        width: 60vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;  
