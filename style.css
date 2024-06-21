@@ -14,20 +14,23 @@
     display: none;
 }
 
-/* Switch Label */
+/* S/* Switch Label */
 .switch-label {
     position: relative;
-    width: 55px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 20px;
+    width: 40px;
+    height: 24px;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    border: 2px solid #af4261;
+    border-radius: 12px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.5s ease;
+    padding: 0 3px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+witch Label */
 }
 
 .switch-label .sun-icon,
