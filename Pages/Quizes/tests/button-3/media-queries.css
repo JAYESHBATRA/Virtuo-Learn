@@ -67,6 +67,14 @@
         bottom: 5vh;
         right: 5vw;
     }
+    /* Submit button */
+    button {
+        margin-left: 16.2rem;
+    }
+    /* Options  */
+    .quiz-ul li {
+        width: 40rem;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -94,5 +102,5 @@
         position: relative;
         left: 0vw;
     }
-    
+
 }
