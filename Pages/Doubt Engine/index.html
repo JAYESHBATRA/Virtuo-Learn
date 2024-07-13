@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" type="image/x-icon" href="../HomePage/assets/logo.png">
+    <style>
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+    
+        50% {
+          transform: translateY(-10px);
+        }
+    
+        100% {
+          transform: translateY(0);
+        }
+      }
+    
+      #tsparticles {
+        pointer-events: none;
+        width: 100% !important;
+        height: 100% !important;
+        position: fixed !important;
+        top: 0px !important;
+        left: 0px !important;
+      }
+    </style>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -86,7 +110,7 @@
     <header>
       <div class="header">
         <h1 class="text-[2rem] font-bold text-center mt-[4vh] md:text-[2rem] lg:text-5xl head-txt">Doubt Engine</h1>
-        <img src="assets/asset 42.svg" alt="Doubt Engine" class="block md:w-[30vw] mx-auto mt-[7vh] w-[80vw] head-img">
+        <img src="assets/asset 42.svg" alt="Doubt Engine" class="block md:w-[30vw] mx-auto mt-[7vh] w-[80vw] head-img" style="animation: float 2s ease-in-out infinite;">
       </div>
     </header>
 
