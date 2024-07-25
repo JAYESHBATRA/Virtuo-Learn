@@ -36,20 +36,23 @@
         /* max-height: 10vh; */
         margin-top: 50px;
         padding: 0;
+       }
 
-        background: rgba(236, 235, 255, 0.2);
-        /* border-radius: 16px; */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3.3px);
-        -webkit-backdrop-filter: blur(3.3px);
-        border: 1px solid rgba(236, 235, 255, 0.3);
-
+       body.dark-mode .nav-menu {
+        background-color: rgba(0, 0, 0, 0.932);
+        backdrop-filter: blur(8px); 
     }
+    
+    .nav-menu:not(.dark-mode) {
+        background-color:rgba(194, 190, 190, 0.925); 
+        backdrop-filter: blur(10px)
+    }
+
     .hover-link{
         margin: 16px 0;
     }
     #home-hover:hover{
-        color: #61b3f2;
+        color: #9dc3df;
     }
     .nav-menu.active{
         top: 13%;
@@ -58,6 +61,13 @@
     .company-logo{
         min-width: 200px;
     }
+
+    .switch-container {
+        cursor: pointer;
+        bottom: -15px;
+    }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -89,15 +99,20 @@
         flex-direction: column;
     }
 
-    .footer-container {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-        align-items: center;
-    }
+    
+
+
 
     .link-column {
         align-items: stretch;
+    }
+
+
+
+    .app-info{
+        width: fit-content;
+        padding: 2px 3vh;
+        word-wrap: break-word;
     }
 
 
@@ -141,4 +156,50 @@
         position: relative;
         /* left: -13vw; */
     }
+
+    /* .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    } */
 }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+
+    .links-title {
+        /* font-size: small; */
+        text-align: center;
+
+    }
+
+
+  }
+
+  /* footer */
+
+  @media  screen and (max-width:768px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .app-paragraph{
+        text-align: center;
+        margin-right: 0;
+    }
+    .useful-links{  
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .useful-links ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .useful-links ul li{
+        padding: 0;
+    }
+    .copyright h3{
+        font-size: 15px;
+    }
+  }

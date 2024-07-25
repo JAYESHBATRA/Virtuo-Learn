@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+    <div class="acc">
+        <div class="image-box">
+            <img src="oip1.png" alt="">
+        </div>
+        <div class="acc-text">
+            <div class="title">FAQ</div>
+        <ul class="faq-text">
+            <li>
+                <div class="question-arrow">
+                    <span class="question">What is Virtuo Learn ?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p>Virtuo Learn, a leading online education platform that offers  quality education that is personalized, fun, interactive, and easy.</p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">What kind of content is tought in Virtuo Learn ?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p>Our platform offers a vast library of <br>
+                    1.  Video Lectures <br>
+                    2. Interactive Simulations<br>
+                    3. 3D Visualizations<br>
+                    4. Quizzes <br>
+                    </p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">How I stated leaning in Virto Learn ?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p>Step 1 - Watch Videos<br>
+                    Step 2 - Refer Simulations & 3D visualizations<br>
+                    Step 3 - Resolve Doubts from Doubt Engine<br>
+                    Step 4 - Give Quizzes<br>
+                    Step 5 - Take feedback<br>
+                    </p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">How can I register for Virtue Learn ?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p>You can view & register for Virtue Learn by clicking <a href="index.html">here</a> </p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">Cost for subscribing VirtuO Learn programs?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p>Yes , there are 3 packs <br>
+                    Skill Builder Elite       - ₹499/mo<br>
+                    Academic Edge Pro         - ₹699/mo<br>
+                    Career Launch Accelerator - ₹899/mo<br>
+                    </p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">What subjects are covered in Virtuo Learn?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p>Virtuo Learn contains Physics , Biology and Chemistry.</p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">What languages are available for learning programs?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p>All learning programs are available in English.</p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">Do you provide any feedback support for doubts ?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p> Yes, we provide doubts feedback support by Doubt Engine . Complex doubts made simple with our powerful doubt engine.</p>
+                <span class="line"></span>
+            </li>
+            
+        </ul>
+    </div>
+    </div>
+    
+    <script>
+        let li = document.querySelectorAll(".faq-text li");
+        for (var i = 0; i < li.length; i++) {
+            li[i].addEventListener("click", (e)=>{
+                let clickedLi;
+                if(e.target.classList.contains("question-arrow")){
+                    clickedLi = e.target.parentElement;
+                }else{
+                    clickedLi = e.target.parentElement.parentElement;
+                }
+                clickedLi.classList.toggle("showAnswer")
+            });
+        }
+    </script>
+</body>
+</html>

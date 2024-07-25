@@ -94,10 +94,28 @@ ul {
 .hover-link {
     color: var(--primary-text-color);
     transition: 0.2s ease-out;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
+
+.selected{
+    border: 2.3px solid #4D006B;
+    color: #4D006B;
+    height: 38px;
+    width: 88px;
+    border-radius: 8.5px;
+}
+
 
 .hover-link:hover {
     color: var(--accent-color);
+}
+
+.selected:hover{
+    color: #4D006B;
 }
 
 .primary-button {
@@ -141,7 +159,7 @@ ul {
 }
 
 .nav-links {
-    flex-basis: 730px;
+    flex-basis: 740px;
 }
 
 .nav-menu{

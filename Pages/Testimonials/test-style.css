@@ -1,0 +1,169 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 25px 0;
+}
+
+.card-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3c4aea;
+}
+
+.swiper-navBtn {
+  color: #3c4aea;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #3c4aea;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #3c4aea;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3c4aea;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+.card {
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  border-radius: 25px;
+  background-color: #e9ebff;
+  height: 300px;
+}
+
+.fronts {
+  backface-visibility: hidden;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .fronts {
+  opacity: 0;
+}
+
+.backs {
+  backface-visibility: hidden;
+  border: 2px solid #3c4aea;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 1em;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 40px;
+}
+
+.rating i {
+  color: #ffc107;
+}
+
+.card:hover .backs {
+  opacity: 1;
+}
+
+.backs::before,
+.backs::after {
+  content: "\201C";
+  position: absolute;
+  font-weight: bold;
+  font-size: 4em;
+  color: #3c4aea;
+  font-family: Georgia, Times, serif;
+}
+
+.backs::before {
+  top: -30px;
+  left: 0px;
+}
+
+.backs::after {
+  content: "\201D";
+  bottom: -50px;
+  right: 0px;
+}
+
+.swiper-navBtn {
+  color: #3c4aea;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #3c4aea;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+.switch-checkbox:checked + .switch-label .switch-button .moon-icon {
+  color: black;
+}
+
+.switch-checkbox:checked + .switch-label .switch-button .sun-icon {
+  color: #ffc107;
+}
+
+.switch-checkbox:checked + .switch-label .switch-button .moon-icon + .fronts,
+.switch-checkbox:checked + .switch-label .switch-button .moon-icon + .backs {
+  color: black;
+}

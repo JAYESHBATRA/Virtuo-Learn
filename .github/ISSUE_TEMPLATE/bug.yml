@@ -48,10 +48,9 @@ body:
         - label: "I am willing to work on this issue (optional)"
           required: false
         
-        - label: "I am a SWOC'24 contributor"
+        - label: "I am a GSSOC'24 contributor"
           required: false
-        - label: "I am an IWOC 2.0 contributor"
-          required: false
+
 
 
                  
