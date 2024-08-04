@@ -9,6 +9,10 @@
 	justify-content: center;
 }
 
+.nav-menu li:last-child {
+	padding-left: 20px; /* Adds space before the theme button */
+  }
+
 /* Hidden Checkbox */
 .switch-checkbox {
 	display: none;
