@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+    <style>
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+    
+        50% {
+          transform: translateY(-10px);
+        }
+    
+        100% {
+          transform: translateY(0);
+        }
+      }
+    
+      #tsparticles {
+        pointer-events: none;
+        width: 100% !important;
+        height: 100% !important;
+        position: fixed !important;
+        top: 0px !important;
+        left: 0px !important;
+      }
+    </style>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head><link
 href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
@@ -58,7 +82,7 @@ rel="stylesheet"
     <header>
       <div class="header">
         <h1 class="head-txt">3D Visualizations</h1>
-        <img src="assets/asset 42.svg" alt="3D-Visualizations" class="head-img">
+        <img src="assets/asset 42.svg" alt="3D-Visualizations" class="head-img" style="animation: float 2s ease-in-out infinite;">
       </div>
     </header>
 
