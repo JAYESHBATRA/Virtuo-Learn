@@ -46,7 +46,7 @@
 }
 
 .switch-label .moon-icon {
-	color: #bdc3c7;
+	color: #264153;
 	opacity: 0;
 	left: 5px;
 }
@@ -65,7 +65,7 @@
 
 /* Checkbox Checked State */
 .switch-checkbox:checked+.switch-label {
-	background-color: #111111;
+	background-color: #622828;
 }
 
 .switch-checkbox:checked+.switch-label .sun-icon {
@@ -540,18 +540,20 @@ img:hover {
 }
 
 #features h3:hover {
-	color: #7b3ae4;
+	color: #2b1f3c;
 	text-shadow: 3px 4px 7px rgba(146, 145, 144, 0.8);
 }
 
 .features-header:hover {
-	color: #7b3ae4;
+	color: #42305f;
 	text-shadow: 3px 4px 7px rgba(146, 145, 144, 0.8);
 	transform: scale(1.05);
 }
 
 /* pricing section */
 .pricehead {
+	height: auto;
+	width:auto;
 	text-align: center;
 	font-weight: 700;
 	padding-bottom: 45px;
