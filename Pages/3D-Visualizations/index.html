@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtuo Learn</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head><link
 href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
@@ -135,7 +137,6 @@ rel="stylesheet"
 
     </div>
   </div>
-
     
     <!-- footer -->
     <!-- <a href="#" class="company-logo">
@@ -148,6 +149,12 @@ rel="stylesheet"
             </a>
             <p>Developed By Jayesh Batra</p>
         </div>
+          <button
+    onclick="topFunction()"
+    class="icon-arrow-up"
+    id="myBtn"
+    title="Scroll to Top"
+></button>
     </footer>
 
     <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
@@ -161,6 +168,27 @@ rel="stylesheet"
         navMenu.classList.toggle("active");
       })
     </script>
+      <script>
+        window.onscroll = function () {
+         scrollFunction();
+       };
+ 
+       function scrollFunction() {
+         if (
+           document.body.scrollTop > 200 ||
+           document.documentElement.scrollTop > 200
+         ) {
+           document.getElementById("myBtn").style.display = "block";
+         } else {
+           document.getElementById("myBtn").style.display = "none";
+         }
+       }
+ 
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+   </script>
     <script src="../../scroll-reveal.js"></script>
 
 </body>
