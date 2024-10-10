@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtuo Learn</title>
     <link rel="stylesheet" href="style.css">
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" type="image/x-icon" href="../HomePage/assets/logo.png">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -99,6 +103,13 @@
       <p class="text-secondary_text_color leading-[1.8rem] font-roboto mt-[3vh] text-[1rem] md:text-xl para-2">While we work on completing this page, please feel free to explore the rest of our website. We offer a wide range of products and services that we believe will be of interest to you. From our user-friendly interface to our top-of-the-line customer service, we strive to provide you with the best possible experience.</p>
     </div>
 
+    <button
+      onclick="topFunction()"
+      class="icon-arrow-up"
+      id="myBtn"
+      title="Scroll to Top"
+    ></button>
+
 
     <!-- footer -->
     <footer class="h-auto w-screen bg-[#ebf2fa] mt-[5vh] pt-10 bottom-0 inset-x-0">
@@ -120,6 +131,26 @@
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
       })
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <script src="../../scroll-reveal.js"></script>
 
