@@ -219,7 +219,11 @@ ul {
 	overflow: hidden;
 	width:70vw;
 }
-
+.course:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow:3px 3px 3px 3px  rgba(41, 26, 208, 0.2);
+}
 .course h6 {
 	opacity: 0.6;
 	margin: 0;
