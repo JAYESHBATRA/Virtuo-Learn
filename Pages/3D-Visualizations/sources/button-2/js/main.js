@@ -20,7 +20,6 @@ loader.load(
     scene.add(object);
   },
   function (xhr) {
-    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
   },
   function (error) {
     console.error(error);
@@ -75,7 +74,6 @@ loader.load(
     loadingOverlay.style.display = 'none';
   },
   function (xhr) {
-    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
   },
   function (error) {
     console.error(error);

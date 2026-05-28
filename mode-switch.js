@@ -87,6 +87,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.documentElement.style.setProperty("--primary-text-color", "#ffffff");
     document.documentElement.style.setProperty("--secondary-text-color", "#ffffff");
+
+    const paragraphs = document.querySelectorAll("p");
+    paragraphs.forEach(p => {
+      p.style.color = "#cfe2f3";
+    });
+
+    const navLinks = document.querySelectorAll(".nav-links a");
+    navLinks.forEach(link => {
+      link.style.color = "#ffffff";
+    });
+
+    const footerLinks = document.querySelectorAll(".useful-links ul li a");
+    footerLinks.forEach(link => {
+      link.style.color = "#cfe2f3";
+    });
+
+    const appParagraph = document.querySelector(".app-paragraph");
+    if (appParagraph) {
+      appParagraph.style.color = "#cfe2f3";
+    }
+
+    const featureDesc = document.querySelectorAll(".feature-desc p");
+    featureDesc.forEach(p => {
+      p.style.color = "#cfe2f3";
+    });
+
+    const subPara = document.getElementById("sub-para");
+    if (subPara) {
+      subPara.style.color = "#cfe2f3";
+    }
+
+    const ajDes = document.querySelectorAll(".aj_des");
+    ajDes.forEach(el => {
+      el.style.color = "#aaaaaa";
+    });
+
+    const listNames = document.querySelectorAll(".list-name");
+    listNames.forEach(el => {
+      el.style.color = "#cfe2f3";
+    });
+
+    const copyrightLink = document.querySelector(".copyright h3 a");
+    if (copyrightLink) {
+      copyrightLink.style.color = "#6fa8dc";
+    }
   }
 
   function applyLightModeStyles() {
@@ -174,6 +219,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.documentElement.style.setProperty("--primary-text-color", "#183b56");
     document.documentElement.style.setProperty("--secondary-text-color", "#577592");
+
+    const paragraphs = document.querySelectorAll("p");
+    paragraphs.forEach(p => {
+      p.style.color = "";
+    });
+
+    const navLinks = document.querySelectorAll(".nav-links a");
+    navLinks.forEach(link => {
+      link.style.color = "";
+    });
+
+    const footerLinks = document.querySelectorAll(".useful-links ul li a");
+    footerLinks.forEach(link => {
+      link.style.color = "";
+    });
+
+    const appParagraph = document.querySelector(".app-paragraph");
+    if (appParagraph) {
+      appParagraph.style.color = "";
+    }
+
+    const featureDesc = document.querySelectorAll(".feature-desc p");
+    featureDesc.forEach(p => {
+      p.style.color = "";
+    });
+
+    const subPara = document.getElementById("sub-para");
+    if (subPara) {
+      subPara.style.color = "";
+    }
+
+    const ajDes = document.querySelectorAll(".aj_des");
+    ajDes.forEach(el => {
+      el.style.color = "";
+    });
+
+    const listNames = document.querySelectorAll(".list-name");
+    listNames.forEach(el => {
+      el.style.color = "";
+    });
+
+    const copyrightLink = document.querySelector(".copyright h3 a");
+    if (copyrightLink) {
+      copyrightLink.style.color = "";
+    }
   }
 
   if (currentTheme) {

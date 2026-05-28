@@ -178,7 +178,6 @@ nav a {
 .wrapper1 {
 	font-size: 3rem !important;
 	position: relative;
-	z-index: -10;
 	display: flex;
 }
 
@@ -207,8 +206,6 @@ nav a {
 
 h2 {
 	font-size: 2rem !important;
-	z-index: -10;
-	position: relative;
 }
 
 h3 {
@@ -220,8 +217,6 @@ p {
 	font-size: 1.1rem !important;
 	color: var(--secondary-text-color);
 	line-height: 1.8rem;
-	z-index: -10;
-	position: relative;
 }
 
 a {
@@ -305,7 +300,6 @@ ul {
 /* nav bar */
 
 .main-nav {
-	/* margin-top: 20px; */
 	justify-content: space-between;
 	overflow: hidden;
 }
@@ -332,6 +326,11 @@ ul {
 
 .nav-links ul li {
 	padding-left: 5px;
+}
+
+.nav-links ul li a i {
+	margin-right: 6px;
+	font-size: 14px;
 }
 
 .nav-toggle {
@@ -446,14 +445,10 @@ header {
 }
 
 .header-right {
-	z-index: -10;
 	position: relative;
 }
 
 .header-right img {
-	/* width: 200%; */
-	/* transform: translateX(-13vw); */
-	z-index: -10;
 	position: relative;
 }
 
@@ -494,6 +489,8 @@ header {
 
 .features-card img {
 	width: 60px;
+	height: auto;
+	max-width: 100%;
 }
 
 /* big feature section */
@@ -533,7 +530,8 @@ header {
 }
 
 /*Our products section */
-img:hover {
+.features-card img:hover,
+.big-feature-section img:hover {
 	transform: scale(1.05);
 	filter: url(#my-shadow);
 
@@ -881,8 +879,7 @@ table .ribbon::after {
 
 .app-info p {
 	padding-bottom: 30px;
-	color: ffffff;
-	/* padding-left: 20px; */
+	color: #ffffff;
 
 }
 
@@ -922,7 +919,7 @@ table .ribbon::after {
 .useful-links ul li {
 	font-size: 2.3vh;
 	padding: 3px;
-	color: ffffff;
+	color: #ffffff;
 
 }
 

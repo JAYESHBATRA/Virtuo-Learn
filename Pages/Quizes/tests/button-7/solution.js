@@ -162,10 +162,9 @@ const loadQuiz = () => {
       if (currentQuiz == 9) {
         next_Button.disabled = true;
       } else {
-        currentQuiz++;
-        console.log(currentQuiz);
-    
-        next_Button.disabled = false;
+      currentQuiz++;
+      
+      next_Button.disabled = false;
         document.getElementById("answer").innerHTML = quizData[currentQuiz].correct;
         loadQuiz();
       }

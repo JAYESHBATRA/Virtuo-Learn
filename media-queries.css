@@ -43,7 +43,7 @@
         backdrop-filter: blur(8px); 
     }
     
-    .nav-menu:not(.dark-mode) {
+    body:not(.dark-mode) .nav-menu {
         background-color:rgba(194, 190, 190, 0.925); 
         backdrop-filter: blur(10px)
     }
